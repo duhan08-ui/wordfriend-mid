@@ -619,6 +619,8 @@ def page_admin(words):
     st.caption("말하기 인식이 자꾸 실패하면 관대함을 3으로 올려보세요. 아무 소리나 통과되면 1로 낮추세요.")
     _abc = st.checkbox("🔤 홈에 '알파벳 소리' 버튼 보이기 (파닉스용 · 중등판은 보통 끔)",
                        value=bool(_cfg.get("showAbc", 0)))
+    _child = st.text_input("👤 아이 이름 (학습 리포트·관리자 앱에 표시 · 비우면 폰 기종 이름)",
+                           value=str(_cfg.get("childName", "")), max_chars=20)
     st.caption("저장하면 아이 폰이 다음에 앱을 열 때 조용히 자동 적용돼요 (아이 화면에 안내 없음). "
                "적용 확인은 각 폰의 관리자 대시보드 상단에서.")
     if st.button("⚙️ 설정 저장 → 앱에 적용", use_container_width=True):
@@ -626,6 +628,7 @@ def page_admin(words):
         body = _cjson.dumps({
             **_cfg,
             "showAbc": 1 if _abc else 0,
+            "childName": _child.strip(),
             "batchSize": int(_batch),
             "batchStar": int(_bstar),
             "dailyStarCap": int(_cap),
