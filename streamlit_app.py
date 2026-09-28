@@ -64,6 +64,55 @@ def load_words():
     return words
 
 
+GRAMMAR_FILE = "grammar.json"
+
+
+def load_grammar():
+    """문법 콘텐츠 (중등판 저장소에만 있음). 없거나 깨졌으면 None"""
+    import json as _j
+    if not os.path.exists(GRAMMAR_FILE):
+        return None
+    try:
+        return _j.load(open(GRAMMAR_FILE, encoding="utf-8"))
+    except Exception:
+        return None
+
+
+def validate_grammar(g):
+    """앱(Grammar.kt)과 같은 규칙으로 검사. 문제 목록(오류 문자열) 반환 — 비어 있으면 OK"""
+    errs = []
+    if not isinstance(g, dict) or not isinstance(g.get("units"), list) or not g["units"]:
+        return ["units 목록이 없어요"]
+    ids = set()
+    for u in g["units"]:
+        uid = u.get("id", "")
+        if not uid:
+            errs.append("id 없는 단원이 있어요"); continue
+        if uid in ids:
+            errs.append(f"{uid}: 단원 id 중복")
+        ids.add(uid)
+        for sec in ("basic", "drill"):
+            for i, q in enumerate(u.get(sec) or []):
+                w = f"{uid} {sec} {i + 1}번"
+                t = q.get("t")
+                if t == "c":
+                    o = q.get("o") or []
+                    if len(o) < 2 or not isinstance(q.get("a"), int) or not 0 <= q["a"] < len(o):
+                        errs.append(f"{w}: 보기/정답 번호 확인")
+                elif t == "b":
+                    if not q.get("a") or not all(str(a).strip() for a in q["a"]):
+                        errs.append(f"{w}: 빈칸 정답 없음")
+                    if str(q.get("q", "")).count("___") != 1:
+                        errs.append(f"{w}: 빈칸(___)이 정확히 1개여야 해요")
+                elif t == "o":
+                    a = str(q.get("a", "")).split("||")[0].strip()
+                    if len(a.split()) < 2:
+                        errs.append(f"{w}: 배열 정답 문장이 너무 짧아요")
+                else:
+                    errs.append(f"{w}: 유형(t)은 c/b/o 중 하나")
+    return errs
+
+
 def audio_path(en: str):
     p = os.path.join("audio", slug(en) + ".mp3")
     return p if os.path.exists(p) else None
@@ -488,6 +537,151 @@ def page_report(words):
             use_container_width=True, hide_index=True,
         )
 
+    grammar_report(stats)
+
+
+def grammar_report(stats):
+    g = load_grammar()
+    if not g:
+        return
+    import pandas as pd
+    gs = stats.get("grammar") or {}
+    days = stats.get("days") or {}
+    from datetime import datetime, timedelta, timezone
+    today = (datetime.now(timezone.utc) + timedelta(hours=9)).date()
+    wk = [(today - timedelta(days=i)).isoformat() for i in range(7)]
+    gr = sum((days.get(d) or {}).get("gRight", 0) for d in wk)
+    gw = sum((days.get(d) or {}).get("gWrong", 0) for d in wk)
+    st.markdown("##### 📐 문법 진도")
+    c1, c2, c3 = st.columns(3)
+    done = sum(1 for u in g["units"] if (gs.get(u["id"]) or {}).get("basic"))
+    c1.metric("시작한 단원", f"{done} / {len(g['units'])}")
+    c2.metric("최근 7일 문법 문제", gr + gw)
+    c3.metric("최근 7일 문법 정답률", f"{round(gr / (gr + gw) * 100)}%" if (gr + gw) else "-")
+
+    def cell(u, sec):
+        r = (gs.get(u["id"]) or {}).get(sec)
+        if not r:
+            return "-"
+        mark = " ✅" if r.get("best", 0) >= r.get("total", 0) > 0 else ""
+        return f"{r.get('best', 0)}/{r.get('total', 0)}{mark} ({r.get('tries', 0)}회)"
+
+    rows = [{
+        "단원": f"{u.get('level', '')} {u.get('title', '')}",
+        "기본(최고)": cell(u, "basic"),
+        "다지기(최고)": cell(u, "drill"),
+        "최근": max([((gs.get(u["id"]) or {}).get(s) or {}).get("date", "") for s in ("basic", "drill")]) or "-",
+    } for u in g["units"]]
+    st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+
+
+def page_grammar_admin():
+    st.subheader("📐 문법 관리")
+    if not check_admin():
+        return
+    import json as _j
+    g = load_grammar()
+    if not g:
+        st.info("grammar.json 이 없어요 (문법은 중등판 저장소에서만 사용)")
+        return
+    units = g["units"]
+    labels = [f"{u['id']} · {u.get('level', '')} {u.get('title', '')}" for u in units]
+    pick = st.selectbox("단원", labels)
+    u = units[labels.index(pick)]
+    st.caption(f"기본 {len(u.get('basic') or [])}문제 · 다지기 {len(u.get('drill') or [])}문제 · 예문 {len(u.get('examples') or [])}개")
+
+    with st.expander("📖 개념 설명 · 예문 수정"):
+        concept = st.text_area("개념 설명", u.get("concept", ""), height=220, key=f"cc_{u['id']}")
+        ex_text = st.text_area("예문 (한 줄에 하나: 영어 | 우리말)",
+                               "\n".join(f"{e['en']} | {e['ko']}" for e in u.get("examples") or []),
+                               height=140, key=f"ex_{u['id']}")
+
+    type_names = {"c": "고르기", "b": "빈칸", "o": "배열"}
+    to_delete = []
+    for sec, secname in (("basic", "기본 문제"), ("drill", "다지기")):
+        with st.expander(f"📋 {secname} 목록 ({len(u.get(sec) or [])})"):
+            for i, q in enumerate(u.get(sec) or []):
+                if q["t"] == "c":
+                    desc = f"{q['q']}  → {q['o'][q['a']]}"
+                elif q["t"] == "b":
+                    desc = f"{q['q']}  → {' / '.join(q['a'])}"
+                else:
+                    desc = f"{q['ko']}  → {q['a']}"
+                if st.checkbox(f"[{type_names.get(q['t'], '?')}] {desc}", key=f"del_{u['id']}_{sec}_{i}",
+                               help="체크하면 저장할 때 삭제"):
+                    to_delete.append((sec, i))
+
+    st.markdown("**➕ 새 문제 추가**")
+    a1, a2 = st.columns(2)
+    add_sec = a1.selectbox("넣을 곳", ["basic", "drill"], format_func=lambda s: "기본 문제" if s == "basic" else "다지기")
+    add_t = a2.selectbox("유형", ["c", "b", "o"], format_func=lambda t: {"c": "고르기 (보기 4개)", "b": "빈칸 쓰기", "o": "단어 배열"}[t])
+    new_q = None
+    if add_t == "c":
+        q = st.text_input("문제 (빈칸은 ___ )", key="nq_c")
+        opts = [st.text_input(f"보기 {k + 1}", key=f"nq_o{k}") for k in range(4)]
+        ans = st.radio("정답", [1, 2, 3, 4], horizontal=True, key="nq_a")
+        x = st.text_input("해설", key="nq_x")
+        if q.strip() and all(o.strip() for o in opts):
+            new_q = {"t": "c", "q": q.strip(), "o": [o.strip() for o in opts], "a": int(ans) - 1, "x": x.strip()}
+    elif add_t == "b":
+        q = st.text_input("문제 (빈칸 ___ 1개, 힌트는 괄호로)", key="nq_bq")
+        a = st.text_input("정답 (여러 개면 | 로 구분, 예: cancelled|canceled)", key="nq_ba")
+        x = st.text_input("해설", key="nq_bx")
+        if q.strip() and a.strip():
+            new_q = {"t": "b", "q": q.strip(), "a": [s.strip() for s in a.split("|") if s.strip()], "x": x.strip()}
+    else:
+        ko = st.text_input("우리말 문장", key="nq_ok")
+        a = st.text_input("영어 정답 문장 (끝 마침표 없이, 단어는 띄어쓰기로 나눔)", key="nq_oa")
+        x = st.text_input("해설", key="nq_ox")
+        if ko.strip() and len(a.split()) >= 2:
+            new_q = {"t": "o", "ko": ko.strip(), "a": a.strip().rstrip(".?!"), "x": x.strip()}
+
+    if st.button("💾 문법 저장 → 앱에 적용", type="primary", use_container_width=True):
+        g2 = _j.loads(_j.dumps(g))
+        u2 = next(x for x in g2["units"] if x["id"] == u["id"])
+        u2["concept"] = concept.strip()
+        exs = []
+        for line in ex_text.splitlines():
+            if "|" in line:
+                en, ko = line.split("|", 1)
+                if en.strip() and ko.strip():
+                    exs.append({"en": en.strip(), "ko": ko.strip()})
+        u2["examples"] = exs
+        for sec, i in sorted(to_delete, key=lambda t: -t[1]):
+            del u2[sec][i]
+        if new_q:
+            u2.setdefault(add_sec, []).append(new_q)
+        for sec in ("basic", "drill"):
+            for i, q in enumerate(u2.get(sec) or []):
+                q["id"] = f"{u2['id']}{sec[0]}{i + 1}"
+        errs = validate_grammar(g2)
+        if errs:
+            st.error("저장 안 됨 — 확인해 주세요:\n" + "\n".join(errs[:10]))
+        else:
+            try:
+                commit_files({GRAMMAR_FILE: _j.dumps(g2, ensure_ascii=False, indent=1).encode("utf-8")},
+                             f"grammar: {u2['id']} 수정")
+                st.success(f"저장 완료! (삭제 {len(to_delete)}개" + (", 추가 1개" if new_q else "") +
+                           ") 앱은 다음에 홈을 열 때 자동으로 받아요. 이 화면은 1~2분 뒤 새로고침하면 반영돼요.")
+            except Exception as e:
+                st.error(f"GitHub 저장 실패: {e}")
+
+    with st.expander("🛠 전체 JSON 직접 편집 (고급)"):
+        raw = st.text_area("grammar.json", _j.dumps(g, ensure_ascii=False, indent=1), height=300)
+        if st.button("검사 후 저장", key="raw_save"):
+            try:
+                g3 = _j.loads(raw)
+            except Exception as e:
+                st.error(f"JSON 형식 오류: {e}")
+                return
+            errs = validate_grammar(g3)
+            if errs:
+                st.error("저장 안 됨:\n" + "\n".join(errs[:10]))
+            else:
+                commit_files({GRAMMAR_FILE: _j.dumps(g3, ensure_ascii=False, indent=1).encode("utf-8")},
+                             "grammar: 전체 수정")
+                st.success("저장 완료!")
+
 
 def page_admin(words):
     st.subheader("⚙️ 단어 관리 (보호자)")
@@ -706,12 +900,17 @@ def page_admin(words):
 
 words = load_words()
 st.markdown(f"## {APP_ICON} {APP_TITLE}")
-tab = st.sidebar.radio("메뉴", ["📖 단어 배우기", "🎯 퀴즈", "📊 학습 리포트", "⚙️ 단어 관리"])
+_menu = ["📖 단어 배우기", "🎯 퀴즈", "📊 학습 리포트", "⚙️ 단어 관리"]
+if os.path.exists(GRAMMAR_FILE):
+    _menu.append("📐 문법 관리")
+tab = st.sidebar.radio("메뉴", _menu)
 if tab.startswith("📖"):
     page_learn(words)
 elif tab.startswith("🎯"):
     page_quiz(words)
 elif tab.startswith("📊"):
     page_report(words)
+elif tab.startswith("📐"):
+    page_grammar_admin()
 else:
     page_admin(words)

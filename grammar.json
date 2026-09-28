@@ -1,0 +1,3938 @@
+{
+ "version": 1,
+ "units": [
+  {
+   "id": "g01",
+   "level": "중1",
+   "title": "be동사 (am / is / are)",
+   "concept": "• be동사는 '~이다, ~에 있다'라는 뜻이에요.\n• 주어에 따라 모양이 바뀌어요: I → am / He·She·It·단수 명사 → is / You·We·They·복수 명사 → are\n• 줄임말: I'm, You're, He's, She's, It's, We're, They're\n• 부정문: be동사 뒤에 not → I am not / He is not(isn't) / They are not(aren't)\n• 의문문: be동사를 주어 앞으로 → Are you ~? / Is he ~?\n  대답: Yes, I am. / No, he isn't.",
+   "examples": [
+    {
+     "en": "I am a middle school student.",
+     "ko": "나는 중학생이다."
+    },
+    {
+     "en": "My parents are at home now.",
+     "ko": "우리 부모님은 지금 집에 계신다."
+    },
+    {
+     "en": "She is not in the classroom.",
+     "ko": "그녀는 교실에 없다."
+    },
+    {
+     "en": "Is this your bag? — Yes, it is.",
+     "ko": "이거 네 가방이니? — 응, 그래."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "She ___ my best friend.",
+     "o": [
+      "am",
+      "is",
+      "are",
+      "be"
+     ],
+     "a": 1,
+     "x": "주어 She(3인칭 단수) → is",
+     "id": "g01b1"
+    },
+    {
+     "t": "c",
+     "q": "We ___ in the same class.",
+     "o": [
+      "am",
+      "is",
+      "are",
+      "be"
+     ],
+     "a": 2,
+     "x": "주어 We(복수) → are",
+     "id": "g01b2"
+    },
+    {
+     "t": "b",
+     "q": "I ___ not tired. (be동사)",
+     "a": [
+      "am"
+     ],
+     "x": "주어 I → am",
+     "id": "g01b3"
+    },
+    {
+     "t": "c",
+     "q": "___ your brother tall?",
+     "o": [
+      "Am",
+      "Is",
+      "Are",
+      "Do"
+     ],
+     "a": 1,
+     "x": "your brother(3인칭 단수) → Is로 시작하는 의문문",
+     "id": "g01b4"
+    },
+    {
+     "t": "o",
+     "ko": "그들은 지금 도서관에 있지 않다.",
+     "a": "They are not in the library now",
+     "x": "부정문: be동사 뒤에 not",
+     "id": "g01b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "My cat ___ very cute.",
+     "o": [
+      "am",
+      "is",
+      "are",
+      "be"
+     ],
+     "a": 1,
+     "x": "My cat(단수) → is",
+     "id": "g01d1"
+    },
+    {
+     "t": "c",
+     "q": "Tom and Jerry ___ good friends.",
+     "o": [
+      "is",
+      "am",
+      "are",
+      "be"
+     ],
+     "a": 2,
+     "x": "A and B는 복수 → are",
+     "id": "g01d2"
+    },
+    {
+     "t": "b",
+     "q": "___ you ready for the test? (be동사)",
+     "a": [
+      "are"
+     ],
+     "x": "주어 you → Are",
+     "id": "g01d3"
+    },
+    {
+     "t": "c",
+     "q": "Is she a teacher? — No, ___.",
+     "o": [
+      "she is",
+      "she isn't",
+      "she doesn't",
+      "she not"
+     ],
+     "a": 1,
+     "x": "be동사 의문문은 be동사로 대답 → No, she isn't.",
+     "id": "g01d4"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "I'm hungry.",
+      "They're my cousins.",
+      "He are my uncle.",
+      "It's cold today."
+     ],
+     "a": 2,
+     "x": "He는 is를 써요 → He is my uncle.",
+     "id": "g01d5"
+    },
+    {
+     "t": "b",
+     "q": "The books ___ on the desk. (be동사)",
+     "a": [
+      "are"
+     ],
+     "x": "The books(복수) → are",
+     "id": "g01d6"
+    },
+    {
+     "t": "o",
+     "ko": "너의 여동생은 몇 살이니?",
+     "a": "How old is your sister",
+     "x": "의문사 + be동사 + 주어",
+     "id": "g01d7"
+    }
+   ]
+  },
+  {
+   "id": "g02",
+   "level": "중1",
+   "title": "일반동사 현재형",
+   "concept": "• 일반동사: be동사·조동사가 아닌 동사 (play, like, study, go …)\n• 주어가 3인칭 단수(He, She, It, Tom …)면 동사에 -s / -es\n  - 대부분 +s: plays, likes\n  - -s, -sh, -ch, -x, -o로 끝나면 +es: watches, goes, does\n  - 자음+y → y를 i로 바꾸고 +es: study → studies\n  - have → has\n• 부정문: do not(don't) / does not(doesn't) + 동사원형\n• 의문문: Do / Does + 주어 + 동사원형 ~?",
+   "examples": [
+    {
+     "en": "My sister plays the piano every day.",
+     "ko": "내 여동생은 매일 피아노를 친다."
+    },
+    {
+     "en": "He doesn't eat breakfast.",
+     "ko": "그는 아침을 먹지 않는다."
+    },
+    {
+     "en": "Do you like science?",
+     "ko": "너는 과학을 좋아하니?"
+    },
+    {
+     "en": "She studies English after school.",
+     "ko": "그녀는 방과 후에 영어를 공부한다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "He ___ soccer on Sundays.",
+     "o": [
+      "play",
+      "plays",
+      "playing",
+      "is play"
+     ],
+     "a": 1,
+     "x": "3인칭 단수 → plays",
+     "id": "g02b1"
+    },
+    {
+     "t": "b",
+     "q": "My father ___ (watch) the news every night.",
+     "a": [
+      "watches"
+     ],
+     "x": "-ch로 끝남 → +es",
+     "id": "g02b2"
+    },
+    {
+     "t": "c",
+     "q": "She ___ like carrots.",
+     "o": [
+      "don't",
+      "doesn't",
+      "isn't",
+      "not"
+     ],
+     "a": 1,
+     "x": "3인칭 단수 부정 → doesn't + 동사원형",
+     "id": "g02b3"
+    },
+    {
+     "t": "c",
+     "q": "___ they live near here?",
+     "o": [
+      "Do",
+      "Does",
+      "Are",
+      "Is"
+     ],
+     "a": 0,
+     "x": "주어 they → Do",
+     "id": "g02b4"
+    },
+    {
+     "t": "o",
+     "ko": "그는 영어를 공부하지 않는다.",
+     "a": "He does not study English",
+     "x": "does not + 동사원형",
+     "id": "g02b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "b",
+     "q": "Mina ___ (study) math every day.",
+     "a": [
+      "studies"
+     ],
+     "x": "자음+y → ies",
+     "id": "g02d1"
+    },
+    {
+     "t": "b",
+     "q": "My uncle ___ (have) two cars.",
+     "a": [
+      "has"
+     ],
+     "x": "have의 3인칭 단수형은 has",
+     "id": "g02d2"
+    },
+    {
+     "t": "c",
+     "q": "Does your brother ___ to school by bus?",
+     "o": [
+      "go",
+      "goes",
+      "going",
+      "went"
+     ],
+     "a": 0,
+     "x": "Does 뒤에는 동사원형",
+     "id": "g02d3"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "She washes her hands.",
+      "He don't know the answer.",
+      "They like pizza.",
+      "It rains a lot here."
+     ],
+     "a": 1,
+     "x": "He는 doesn't → He doesn't know the answer.",
+     "id": "g02d4"
+    },
+    {
+     "t": "c",
+     "q": "Do you have a pen? — Yes, ___.",
+     "o": [
+      "I am",
+      "I do",
+      "I have",
+      "I does"
+     ],
+     "a": 1,
+     "x": "Do로 물으면 do로 대답",
+     "id": "g02d5"
+    },
+    {
+     "t": "b",
+     "q": "The shop ___ (close) at 9 p.m.",
+     "a": [
+      "closes"
+     ],
+     "x": "The shop(단수) → closes",
+     "id": "g02d6"
+    },
+    {
+     "t": "o",
+     "ko": "너의 엄마는 어디에서 일하시니?",
+     "a": "Where does your mom work",
+     "x": "의문사 + does + 주어 + 동사원형",
+     "id": "g02d7"
+    }
+   ]
+  },
+  {
+   "id": "g03",
+   "level": "중1",
+   "title": "명사와 관사",
+   "concept": "• 셀 수 있는 명사: 하나일 때 a/an, 둘 이상이면 복수형\n  - a + 자음 소리(a book, a uniform) / an + 모음 소리(an apple, an hour)\n  - 복수형: +s(books), +es(boxes, dishes), y→ies(babies), f→ves(leaves)\n  - 불규칙: man→men, child→children, foot→feet, tooth→teeth, mouse→mice\n• 셀 수 없는 명사(water, money, bread, information)는 a/an과 -s를 못 붙여요\n  → a glass of water, a piece of bread 처럼 단위로 세요\n• the: 이미 말한 것, 서로 아는 것, 하나뿐인 것(the sun), 악기(play the piano)",
+   "examples": [
+    {
+     "en": "I have an idea.",
+     "ko": "나에게 아이디어가 하나 있다."
+    },
+    {
+     "en": "There are three children in the park.",
+     "ko": "공원에 아이 세 명이 있다."
+    },
+    {
+     "en": "Can I have a glass of water?",
+     "ko": "물 한 잔 마실 수 있을까요?"
+    },
+    {
+     "en": "The sun rises in the east.",
+     "ko": "해는 동쪽에서 뜬다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "I eat ___ apple every morning.",
+     "o": [
+      "a",
+      "an",
+      "the",
+      "(없음)"
+     ],
+     "a": 1,
+     "x": "apple은 모음 소리 → an",
+     "id": "g03b1"
+    },
+    {
+     "t": "b",
+     "q": "one child → two ___",
+     "a": [
+      "children"
+     ],
+     "x": "child의 복수형은 불규칙 children",
+     "id": "g03b2"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 셀 수 없는 명사는?",
+     "o": [
+      "book",
+      "money",
+      "chair",
+      "egg"
+     ],
+     "a": 1,
+     "x": "money는 셀 수 없음",
+     "id": "g03b3"
+    },
+    {
+     "t": "c",
+     "q": "She plays ___ violin very well.",
+     "o": [
+      "a",
+      "an",
+      "the",
+      "(없음)"
+     ],
+     "a": 2,
+     "x": "악기 앞에는 the",
+     "id": "g03b4"
+    },
+    {
+     "t": "b",
+     "q": "one box → two ___",
+     "a": [
+      "boxes"
+     ],
+     "x": "-x로 끝남 → +es",
+     "id": "g03b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "It takes ___ hour to get there.",
+     "o": [
+      "a",
+      "an",
+      "the",
+      "(없음)"
+     ],
+     "a": 1,
+     "x": "hour는 h가 소리 나지 않아 모음 소리 → an",
+     "id": "g03d1"
+    },
+    {
+     "t": "b",
+     "q": "one leaf → many ___",
+     "a": [
+      "leaves"
+     ],
+     "x": "f → ves",
+     "id": "g03d2"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 올바른 표현은?",
+     "o": [
+      "two breads",
+      "a bread",
+      "two pieces of bread",
+      "a breads"
+     ],
+     "a": 2,
+     "x": "bread는 셀 수 없어 piece로 셈",
+     "id": "g03d3"
+    },
+    {
+     "t": "b",
+     "q": "one tooth → two ___",
+     "a": [
+      "teeth"
+     ],
+     "x": "불규칙 복수형",
+     "id": "g03d4"
+    },
+    {
+     "t": "c",
+     "q": "I saw a dog. ___ dog was very big.",
+     "o": [
+      "A",
+      "An",
+      "The",
+      "(없음)"
+     ],
+     "a": 2,
+     "x": "앞에서 말한 것 → The",
+     "id": "g03d5"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 것은?",
+     "o": [
+      "a university",
+      "an umbrella",
+      "an uniform",
+      "an egg"
+     ],
+     "a": 2,
+     "x": "uniform은 '유' 자음 소리 → a uniform",
+     "id": "g03d6"
+    },
+    {
+     "t": "b",
+     "q": "one baby → three ___",
+     "a": [
+      "babies"
+     ],
+     "x": "자음+y → ies",
+     "id": "g03d7"
+    }
+   ]
+  },
+  {
+   "id": "g04",
+   "level": "중1",
+   "title": "대명사",
+   "concept": "• 인칭대명사의 격\n  주격(~은/는): I, you, he, she, it, we, they\n  소유격(~의): my, your, his, her, its, our, their\n  목적격(~을/를): me, you, him, her, it, us, them\n  소유대명사(~의 것): mine, yours, his, hers, ours, theirs\n• 재귀대명사(~자신): myself, yourself, himself, herself, itself, ourselves, yourselves, themselves\n  - 주어와 목적어가 같을 때: She loves herself.\n• this/that(단수) ↔ these/those(복수)",
+   "examples": [
+    {
+     "en": "This is my bike. That bike is his.",
+     "ko": "이것은 내 자전거다. 저 자전거는 그의 것이다."
+    },
+    {
+     "en": "I know him, but he doesn't know me.",
+     "ko": "나는 그를 알지만 그는 나를 모른다."
+    },
+    {
+     "en": "Please help yourself.",
+     "ko": "마음껏 드세요."
+    },
+    {
+     "en": "These shoes are mine.",
+     "ko": "이 신발은 내 것이다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "This is ___ notebook.",
+     "o": [
+      "I",
+      "my",
+      "me",
+      "mine"
+     ],
+     "a": 1,
+     "x": "명사 앞 → 소유격 my",
+     "id": "g04b1"
+    },
+    {
+     "t": "c",
+     "q": "Can you help ___?",
+     "o": [
+      "we",
+      "our",
+      "us",
+      "ours"
+     ],
+     "a": 2,
+     "x": "동사 뒤 목적어 → us",
+     "id": "g04b2"
+    },
+    {
+     "t": "b",
+     "q": "This pencil is not yours. It's ___. (나의 것)",
+     "a": [
+      "mine"
+     ],
+     "x": "소유대명사 mine",
+     "id": "g04b3"
+    },
+    {
+     "t": "c",
+     "q": "___ are my classmates.",
+     "o": [
+      "This",
+      "That",
+      "These",
+      "It"
+     ],
+     "a": 2,
+     "x": "복수 → These",
+     "id": "g04b4"
+    },
+    {
+     "t": "b",
+     "q": "He looked at ___ in the mirror. (그 자신)",
+     "a": [
+      "himself"
+     ],
+     "x": "주어=목적어 → 재귀대명사",
+     "id": "g04b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "I like Jenny. ___ is kind.",
+     "o": [
+      "Her",
+      "She",
+      "Hers",
+      "Herself"
+     ],
+     "a": 1,
+     "x": "주어 자리 → She",
+     "id": "g04d1"
+    },
+    {
+     "t": "c",
+     "q": "Those are the students. I teach ___.",
+     "o": [
+      "they",
+      "their",
+      "them",
+      "theirs"
+     ],
+     "a": 2,
+     "x": "목적어 → them",
+     "id": "g04d2"
+    },
+    {
+     "t": "b",
+     "q": "Is this bag yours or ___? (그녀의 것)",
+     "a": [
+      "hers"
+     ],
+     "x": "소유대명사 hers",
+     "id": "g04d3"
+    },
+    {
+     "t": "c",
+     "q": "The dog is wagging ___ tail.",
+     "o": [
+      "it's",
+      "its",
+      "it",
+      "itself"
+     ],
+     "a": 1,
+     "x": "소유격 its (it's는 it is)",
+     "id": "g04d4"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "We did it ourselves.",
+      "That's our house.",
+      "Them are my friends.",
+      "Tell me the truth."
+     ],
+     "a": 2,
+     "x": "주어 자리 → They are my friends.",
+     "id": "g04d5"
+    },
+    {
+     "t": "b",
+     "q": "Did you make it ___? (너 스스로)",
+     "a": [
+      "yourself"
+     ],
+     "x": "you(단수) → yourself",
+     "id": "g04d6"
+    },
+    {
+     "t": "o",
+     "ko": "저것들은 우리의 것이 아니다.",
+     "a": "Those are not ours",
+     "x": "those(복수) + are, 소유대명사 ours",
+     "id": "g04d7"
+    }
+   ]
+  },
+  {
+   "id": "g05",
+   "level": "중1",
+   "title": "현재진행형",
+   "concept": "• 형태: am/is/are + 동사-ing  → '(지금) ~하고 있다'\n• -ing 만들기\n  - 대부분 +ing: play → playing\n  - -e로 끝나면 e 빼고 +ing: make → making\n  - 단모음+단자음이면 자음 하나 더: run → running, swim → swimming\n  - -ie → ying: lie → lying, die → dying\n• 부정문: be동사 + not + -ing / 의문문: Be동사 + 주어 + -ing ~?\n• 상태 동사(like, know, want, have(가지다))는 진행형으로 잘 쓰지 않아요",
+   "examples": [
+    {
+     "en": "I am doing my homework now.",
+     "ko": "나는 지금 숙제를 하고 있다."
+    },
+    {
+     "en": "They are swimming in the lake.",
+     "ko": "그들은 호수에서 수영하고 있다."
+    },
+    {
+     "en": "Is it raining outside?",
+     "ko": "밖에 비가 오고 있니?"
+    },
+    {
+     "en": "She isn't sleeping. She's reading.",
+     "ko": "그녀는 자고 있지 않다. 책을 읽고 있다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "Look! The baby ___.",
+     "o": [
+      "sleep",
+      "sleeps",
+      "is sleeping",
+      "are sleeping"
+     ],
+     "a": 2,
+     "x": "Look! → 지금 진행 중 → is sleeping",
+     "id": "g05b1"
+    },
+    {
+     "t": "b",
+     "q": "run → ___ (-ing)",
+     "a": [
+      "running"
+     ],
+     "x": "단모음+단자음 → n 한 번 더",
+     "id": "g05b2"
+    },
+    {
+     "t": "b",
+     "q": "make → ___ (-ing)",
+     "a": [
+      "making"
+     ],
+     "x": "e 빼고 +ing",
+     "id": "g05b3"
+    },
+    {
+     "t": "c",
+     "q": "___ you listening to me?",
+     "o": [
+      "Do",
+      "Is",
+      "Are",
+      "Am"
+     ],
+     "a": 2,
+     "x": "you → Are ~ing",
+     "id": "g05b4"
+    },
+    {
+     "t": "o",
+     "ko": "그는 점심을 먹고 있다.",
+     "a": "He is eating lunch",
+     "x": "is + eating",
+     "id": "g05b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "b",
+     "q": "lie → ___ (-ing)",
+     "a": [
+      "lying"
+     ],
+     "x": "-ie → ying",
+     "id": "g05d1"
+    },
+    {
+     "t": "c",
+     "q": "What are you doing? — I ___ a letter.",
+     "o": [
+      "write",
+      "am writing",
+      "writing",
+      "am write"
+     ],
+     "a": 1,
+     "x": "진행형으로 대답",
+     "id": "g05d2"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "She is cooking dinner.",
+      "We are playing soccer.",
+      "I am knowing the answer.",
+      "It is snowing."
+     ],
+     "a": 2,
+     "x": "know는 상태 동사 → I know the answer.",
+     "id": "g05d3"
+    },
+    {
+     "t": "b",
+     "q": "swim → ___ (-ing)",
+     "a": [
+      "swimming"
+     ],
+     "x": "m 한 번 더",
+     "id": "g05d4"
+    },
+    {
+     "t": "c",
+     "q": "My brothers ___ TV right now.",
+     "o": [
+      "is watching",
+      "are watching",
+      "watches",
+      "watching"
+     ],
+     "a": 1,
+     "x": "복수 주어 → are watching",
+     "id": "g05d5"
+    },
+    {
+     "t": "c",
+     "q": "Is she dancing? — No, she ___.",
+     "o": [
+      "isn't",
+      "doesn't",
+      "aren't",
+      "don't"
+     ],
+     "a": 0,
+     "x": "Is로 물으면 isn't로 대답",
+     "id": "g05d6"
+    },
+    {
+     "t": "o",
+     "ko": "아이들이 공원에서 뛰고 있다.",
+     "a": "The children are running in the park",
+     "x": "복수 주어 + are running",
+     "id": "g05d7"
+    }
+   ]
+  },
+  {
+   "id": "g06",
+   "level": "중1",
+   "title": "과거시제",
+   "concept": "• be동사 과거: am/is → was, are → were\n• 일반동사 과거\n  - 규칙: +ed (played), e로 끝나면 +d (liked), 자음+y → ied (studied), 단모음+단자음 → 자음 추가 (stopped)\n  - 불규칙: go→went, come→came, eat→ate, see→saw, have→had, make→made, buy→bought, take→took, get→got, write→wrote\n• 부정문: did not(didn't) + 동사원형\n• 의문문: Did + 주어 + 동사원형 ~?\n• 과거를 나타내는 말: yesterday, last week, ~ ago, in 2020",
+   "examples": [
+    {
+     "en": "I was sick yesterday.",
+     "ko": "나는 어제 아팠다."
+    },
+    {
+     "en": "We went to the beach last summer.",
+     "ko": "우리는 지난여름 해변에 갔다."
+    },
+    {
+     "en": "She didn't finish her homework.",
+     "ko": "그녀는 숙제를 끝내지 못했다."
+    },
+    {
+     "en": "Did you see the movie?",
+     "ko": "너 그 영화 봤니?"
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "They ___ at the museum yesterday.",
+     "o": [
+      "are",
+      "was",
+      "were",
+      "is"
+     ],
+     "a": 2,
+     "x": "They + 과거 → were",
+     "id": "g06b1"
+    },
+    {
+     "t": "b",
+     "q": "go → ___ (과거형)",
+     "a": [
+      "went"
+     ],
+     "x": "불규칙",
+     "id": "g06b2"
+    },
+    {
+     "t": "b",
+     "q": "study → ___ (과거형)",
+     "a": [
+      "studied"
+     ],
+     "x": "자음+y → ied",
+     "id": "g06b3"
+    },
+    {
+     "t": "c",
+     "q": "He didn't ___ the door.",
+     "o": [
+      "open",
+      "opened",
+      "opens",
+      "opening"
+     ],
+     "a": 0,
+     "x": "didn't + 동사원형",
+     "id": "g06b4"
+    },
+    {
+     "t": "o",
+     "ko": "너는 어제 무엇을 샀니?",
+     "a": "What did you buy yesterday",
+     "x": "의문사 + did + 주어 + 동사원형",
+     "id": "g06b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "b",
+     "q": "stop → ___ (과거형)",
+     "a": [
+      "stopped"
+     ],
+     "x": "단모음+단자음 → p 추가 +ed",
+     "id": "g06d1"
+    },
+    {
+     "t": "b",
+     "q": "eat → ___ (과거형)",
+     "a": [
+      "ate"
+     ],
+     "x": "불규칙",
+     "id": "g06d2"
+    },
+    {
+     "t": "c",
+     "q": "Did she call you? — Yes, she ___.",
+     "o": [
+      "did",
+      "was",
+      "called",
+      "does"
+     ],
+     "a": 0,
+     "x": "Did로 물으면 did로 대답",
+     "id": "g06d3"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "I met him two days ago.",
+      "She buyed a new phone.",
+      "We had fun.",
+      "It was hot."
+     ],
+     "a": 1,
+     "x": "buy의 과거 → bought",
+     "id": "g06d4"
+    },
+    {
+     "t": "c",
+     "q": "I ___ my grandparents last weekend.",
+     "o": [
+      "visit",
+      "visits",
+      "visited",
+      "am visiting"
+     ],
+     "a": 2,
+     "x": "last weekend → 과거",
+     "id": "g06d5"
+    },
+    {
+     "t": "b",
+     "q": "write → ___ (과거형)",
+     "a": [
+      "wrote"
+     ],
+     "x": "불규칙",
+     "id": "g06d6"
+    },
+    {
+     "t": "o",
+     "ko": "나는 그 편지를 쓰지 않았다.",
+     "a": "I did not write the letter",
+     "x": "did not + 동사원형",
+     "id": "g06d7"
+    }
+   ]
+  },
+  {
+   "id": "g07",
+   "level": "중1",
+   "title": "미래 표현 (will / be going to)",
+   "concept": "• will + 동사원형: '~할 것이다' (예측, 즉석 결정, 의지)\n  - 부정: will not = won't / 의문: Will + 주어 + 동사원형 ~?\n• be going to + 동사원형: '~할 예정이다' (이미 정한 계획, 확실한 예측)\n  - 부정: be동사 + not going to / 의문: Be동사 + 주어 + going to ~?\n• 미래를 나타내는 말: tomorrow, next week, soon, in the future",
+   "examples": [
+    {
+     "en": "It will rain tomorrow.",
+     "ko": "내일 비가 올 것이다."
+    },
+    {
+     "en": "I'm going to visit Busan next week.",
+     "ko": "나는 다음 주에 부산을 방문할 예정이다."
+    },
+    {
+     "en": "I won't be late again.",
+     "ko": "다시는 늦지 않을게."
+    },
+    {
+     "en": "Are you going to join the club?",
+     "ko": "너 그 동아리에 가입할 거니?"
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "I ___ help you tomorrow.",
+     "o": [
+      "will",
+      "am",
+      "was",
+      "do"
+     ],
+     "a": 0,
+     "x": "will + 동사원형",
+     "id": "g07b1"
+    },
+    {
+     "t": "c",
+     "q": "She is going to ___ a new bike.",
+     "o": [
+      "buys",
+      "bought",
+      "buy",
+      "buying"
+     ],
+     "a": 2,
+     "x": "be going to + 동사원형",
+     "id": "g07b2"
+    },
+    {
+     "t": "b",
+     "q": "I will not → I ___ (줄임말)",
+     "a": [
+      "won't"
+     ],
+     "x": "will not = won't",
+     "id": "g07b3"
+    },
+    {
+     "t": "c",
+     "q": "___ you come to my party tomorrow?",
+     "o": [
+      "Do",
+      "Will",
+      "Are",
+      "Is"
+     ],
+     "a": 1,
+     "x": "미래 → Will + 주어 + 동사원형",
+     "id": "g07b4"
+    },
+    {
+     "t": "o",
+     "ko": "우리는 내일 영화를 볼 예정이다.",
+     "a": "We are going to watch a movie tomorrow",
+     "x": "be going to + 동사원형",
+     "id": "g07b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "They ___ going to travel to Jeju.",
+     "o": [
+      "is",
+      "am",
+      "are",
+      "will"
+     ],
+     "a": 2,
+     "x": "They + are going to",
+     "id": "g07d1"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "He will be fine.",
+      "I will goes there.",
+      "It's going to snow.",
+      "Will you help me?"
+     ],
+     "a": 1,
+     "x": "will + 동사원형 → I will go there.",
+     "id": "g07d2"
+    },
+    {
+     "t": "c",
+     "q": "Will it be sunny tomorrow? — No, it ___.",
+     "o": [
+      "isn't",
+      "won't",
+      "doesn't",
+      "willn't"
+     ],
+     "a": 1,
+     "x": "Will로 물으면 won't로 대답",
+     "id": "g07d3"
+    },
+    {
+     "t": "b",
+     "q": "He is not going to ___ (come) today.",
+     "a": [
+      "come"
+     ],
+     "x": "going to + 동사원형",
+     "id": "g07d4"
+    },
+    {
+     "t": "c",
+     "q": "Look at the dark clouds! It ___ rain.",
+     "o": [
+      "is going to",
+      "was",
+      "is",
+      "did"
+     ],
+     "a": 0,
+     "x": "눈앞의 근거가 있는 예측 → be going to",
+     "id": "g07d5"
+    },
+    {
+     "t": "c",
+     "q": "I ___ call you later.",
+     "o": [
+      "will",
+      "am",
+      "going to",
+      "was"
+     ],
+     "a": 0,
+     "x": "going to 앞에는 be동사가 필요",
+     "id": "g07d6"
+    },
+    {
+     "t": "o",
+     "ko": "그녀는 그 경기에서 이기지 못할 것이다.",
+     "a": "She will not win the game",
+     "x": "will not + 동사원형",
+     "id": "g07d7"
+    }
+   ]
+  },
+  {
+   "id": "g08",
+   "level": "중1",
+   "title": "조동사 (can / may / must / should / have to)",
+   "concept": "• 조동사 + 동사원형 (주어가 3인칭이어도 -s 없음)\n• can: ~할 수 있다(능력), ~해도 된다(허락) = be able to(능력)\n• may: ~해도 된다(허락), ~일지도 모른다(추측)\n• must: ~해야 한다(의무), ~임에 틀림없다(강한 추측) / must not: ~하면 안 된다(금지)\n• have to(has to): ~해야 한다 / don't have to: ~할 필요 없다\n• should: ~하는 게 좋다, ~해야 한다(충고)",
+   "examples": [
+    {
+     "en": "She can speak three languages.",
+     "ko": "그녀는 세 개의 언어를 말할 수 있다."
+    },
+    {
+     "en": "You must not run in the hallway.",
+     "ko": "복도에서 뛰면 안 된다."
+    },
+    {
+     "en": "You don't have to wait for me.",
+     "ko": "나를 기다릴 필요 없다."
+    },
+    {
+     "en": "You should drink more water.",
+     "ko": "물을 더 마시는 게 좋겠다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "He can ___ very fast.",
+     "o": [
+      "swims",
+      "swim",
+      "swimming",
+      "swam"
+     ],
+     "a": 1,
+     "x": "조동사 + 동사원형",
+     "id": "g08b1"
+    },
+    {
+     "t": "c",
+     "q": "You ___ wear a seat belt. It's the law.",
+     "o": [
+      "may",
+      "can",
+      "must",
+      "don't have to"
+     ],
+     "a": 2,
+     "x": "법 → 의무 must",
+     "id": "g08b2"
+    },
+    {
+     "t": "c",
+     "q": "It's Sunday. You ___ get up early.",
+     "o": [
+      "must",
+      "don't have to",
+      "should",
+      "can"
+     ],
+     "a": 1,
+     "x": "일찍 일어날 필요 없다",
+     "id": "g08b3"
+    },
+    {
+     "t": "b",
+     "q": "She ___ to finish it today. (have to의 3인칭 단수)",
+     "a": [
+      "has"
+     ],
+     "x": "has to",
+     "id": "g08b4"
+    },
+    {
+     "t": "o",
+     "ko": "너는 여기서 사진을 찍으면 안 된다.",
+     "a": "You must not take pictures here",
+     "x": "must not = 금지",
+     "id": "g08b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "___ I use your pencil? (허락)",
+     "o": [
+      "May",
+      "Must",
+      "Should",
+      "Have"
+     ],
+     "a": 0,
+     "x": "허락을 구할 때 May I ~?",
+     "id": "g08d1"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "He cans play the guitar.",
+      "You should see a doctor.",
+      "It may rain.",
+      "We must hurry."
+     ],
+     "a": 0,
+     "x": "조동사에는 -s를 붙이지 않음 → He can play",
+     "id": "g08d2"
+    },
+    {
+     "t": "c",
+     "q": "She is able to read Chinese. = She ___ read Chinese.",
+     "o": [
+      "must",
+      "can",
+      "may",
+      "should"
+     ],
+     "a": 1,
+     "x": "be able to = can(능력)",
+     "id": "g08d3"
+    },
+    {
+     "t": "c",
+     "q": "He worked for 12 hours today. He ___ be tired.",
+     "o": [
+      "must",
+      "must not",
+      "doesn't have to",
+      "may not"
+     ],
+     "a": 0,
+     "x": "강한 추측 → must",
+     "id": "g08d4"
+    },
+    {
+     "t": "b",
+     "q": "You look sick. You ___ go home and rest. (충고)",
+     "a": [
+      "should"
+     ],
+     "x": "충고 → should",
+     "id": "g08d5"
+    },
+    {
+     "t": "c",
+     "q": "They ___ to wear uniforms at school.",
+     "o": [
+      "have",
+      "has",
+      "must",
+      "should"
+     ],
+     "a": 0,
+     "x": "They → have to",
+     "id": "g08d6"
+    },
+    {
+     "t": "o",
+     "ko": "너는 오늘 숙제를 끝내야 한다.",
+     "a": "You have to finish your homework today",
+     "x": "have to + 동사원형",
+     "id": "g08d7"
+    }
+   ]
+  },
+  {
+   "id": "g09",
+   "level": "중2",
+   "title": "형용사와 부사",
+   "concept": "• 형용사: 명사를 꾸미거나(a tall boy) be동사 뒤에서 주어를 설명(He is tall)\n• 부사: 동사·형용사·다른 부사·문장 전체를 꾸밈\n  - 형용사 + ly: quick → quickly, careful → carefully, easy → easily\n  - 모양이 같은 것: fast, hard, early, late / good → well\n  - hardly(거의 ~않다), lately(최근에)는 뜻이 달라요\n• 빈도부사: always > usually > often > sometimes > never\n  - 위치: be동사·조동사 뒤, 일반동사 앞 (She is always late. / I often walk.)\n• 감각동사(look, feel, sound, taste, smell) 뒤에는 형용사: You look happy.",
+   "examples": [
+    {
+     "en": "She is a careful driver. She drives carefully.",
+     "ko": "그녀는 조심성 있는 운전자다. 그녀는 조심스럽게 운전한다."
+    },
+    {
+     "en": "He always gets up early.",
+     "ko": "그는 항상 일찍 일어난다."
+    },
+    {
+     "en": "This soup tastes good.",
+     "ko": "이 수프는 맛이 좋다."
+    },
+    {
+     "en": "I can hardly believe it.",
+     "ko": "나는 그것을 거의 믿을 수 없다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "b",
+     "q": "slow → ___ (부사)",
+     "a": [
+      "slowly"
+     ],
+     "x": "형용사 + ly",
+     "id": "g09b1"
+    },
+    {
+     "t": "c",
+     "q": "He speaks English very ___.",
+     "o": [
+      "good",
+      "well",
+      "goodly",
+      "better"
+     ],
+     "a": 1,
+     "x": "good의 부사는 well",
+     "id": "g09b2"
+    },
+    {
+     "t": "c",
+     "q": "You look ___ today.",
+     "o": [
+      "happily",
+      "happy",
+      "happiness",
+      "happier"
+     ],
+     "a": 1,
+     "x": "look(감각동사) + 형용사",
+     "id": "g09b3"
+    },
+    {
+     "t": "c",
+     "q": "빈도부사의 위치가 바른 것은?",
+     "o": [
+      "I go always to bed at ten.",
+      "I always go to bed at ten.",
+      "Always I go to bed at ten.",
+      "I go to bed always at ten."
+     ],
+     "a": 1,
+     "x": "일반동사 앞",
+     "id": "g09b4"
+    },
+    {
+     "t": "o",
+     "ko": "그녀는 보통 7시에 일어난다.",
+     "a": "She usually gets up at seven",
+     "x": "빈도부사는 일반동사 앞",
+     "id": "g09b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "b",
+     "q": "easy → ___ (부사)",
+     "a": [
+      "easily"
+     ],
+     "x": "y → ily",
+     "id": "g09d1"
+    },
+    {
+     "t": "c",
+     "q": "He works ___. He is a hard worker.",
+     "o": [
+      "hard",
+      "hardly",
+      "hards",
+      "hardy"
+     ],
+     "a": 0,
+     "x": "열심히 = hard (hardly는 '거의 ~않다')",
+     "id": "g09d2"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "The flower smells sweet.",
+      "He is never late.",
+      "She sings beautiful.",
+      "They ran fast."
+     ],
+     "a": 2,
+     "x": "동사를 꾸미는 건 부사 → sings beautifully",
+     "id": "g09d3"
+    },
+    {
+     "t": "c",
+     "q": "She is ___ kind to everyone.",
+     "o": [
+      "always",
+      "alwaysly",
+      "never not",
+      "usual"
+     ],
+     "a": 0,
+     "x": "be동사 뒤 빈도부사",
+     "id": "g09d4"
+    },
+    {
+     "t": "b",
+     "q": "The music sounds ___. (좋다, 형용사)",
+     "a": [
+      "good",
+      "great",
+      "nice",
+      "wonderful",
+      "beautiful",
+      "lovely",
+      "fine"
+     ],
+     "x": "sound + 형용사",
+     "id": "g09d5"
+    },
+    {
+     "t": "c",
+     "q": "I have seen him a lot ___.",
+     "o": [
+      "late",
+      "lately",
+      "later",
+      "latest"
+     ],
+     "a": 1,
+     "x": "최근에 = lately",
+     "id": "g09d6"
+    },
+    {
+     "t": "o",
+     "ko": "나는 결코 그 날을 잊지 않을 것이다.",
+     "a": "I will never forget the day",
+     "x": "조동사 뒤에 빈도부사",
+     "id": "g09d7"
+    }
+   ]
+  },
+  {
+   "id": "g10",
+   "level": "중2",
+   "title": "비교급과 최상급",
+   "concept": "• 원급 비교: as + 원급 + as (~만큼 …한) / not as(so) ~ as (~만큼 …하지 않은)\n• 비교급: -er than / more + 원급 + than\n• 최상급: the -est / the most + 원급 (+ in 장소·집단 / of 복수)\n• 만드는 법: tall-taller-tallest / big-bigger-biggest / easy-easier-easiest\n  2음절 이상 대부분: beautiful - more beautiful - most beautiful\n• 불규칙: good/well - better - best, bad - worse - worst, many/much - more - most, little - less - least\n• 비교급 강조: much, even, far, a lot (very는 못 씀)",
+   "examples": [
+    {
+     "en": "My bag is as heavy as yours.",
+     "ko": "내 가방은 네 것만큼 무겁다."
+    },
+    {
+     "en": "A cheetah is faster than a lion.",
+     "ko": "치타는 사자보다 빠르다."
+    },
+    {
+     "en": "This is the most interesting book in the library.",
+     "ko": "이것은 도서관에서 가장 재미있는 책이다."
+    },
+    {
+     "en": "Your idea is much better than mine.",
+     "ko": "네 생각이 내 것보다 훨씬 낫다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "b",
+     "q": "big → ___ (비교급)",
+     "a": [
+      "bigger"
+     ],
+     "x": "단모음+단자음 → 자음 추가",
+     "id": "g10b1"
+    },
+    {
+     "t": "c",
+     "q": "Seoul is ___ than Busan.",
+     "o": [
+      "big",
+      "bigger",
+      "biggest",
+      "more big"
+     ],
+     "a": 1,
+     "x": "than 앞 비교급",
+     "id": "g10b2"
+    },
+    {
+     "t": "c",
+     "q": "He is the ___ student in our class.",
+     "o": [
+      "tall",
+      "taller",
+      "tallest",
+      "most tall"
+     ],
+     "a": 2,
+     "x": "the + 최상급",
+     "id": "g10b3"
+    },
+    {
+     "t": "b",
+     "q": "good → better → ___ (최상급)",
+     "a": [
+      "best"
+     ],
+     "x": "불규칙",
+     "id": "g10b4"
+    },
+    {
+     "t": "o",
+     "ko": "나는 너만큼 키가 크다.",
+     "a": "I am as tall as you",
+     "x": "as + 원급 + as",
+     "id": "g10b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "This book is ___ than that one.",
+     "o": [
+      "interesting",
+      "more interesting",
+      "most interesting",
+      "interestinger"
+     ],
+     "a": 1,
+     "x": "긴 형용사 → more + 원급",
+     "id": "g10d1"
+    },
+    {
+     "t": "c",
+     "q": "비교급을 강조할 수 없는 말은?",
+     "o": [
+      "much",
+      "even",
+      "very",
+      "far"
+     ],
+     "a": 2,
+     "x": "very는 비교급 강조 불가",
+     "id": "g10d2"
+    },
+    {
+     "t": "b",
+     "q": "bad → ___ (비교급)",
+     "a": [
+      "worse"
+     ],
+     "x": "불규칙",
+     "id": "g10d3"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "She is happier than before.",
+      "It's the best day of my life.",
+      "He is more smarter than me.",
+      "Math is easier than science."
+     ],
+     "a": 2,
+     "x": "more와 -er를 함께 쓰지 않음 → smarter than",
+     "id": "g10d4"
+    },
+    {
+     "t": "c",
+     "q": "Mt. Everest is the highest mountain ___ the world.",
+     "o": [
+      "of",
+      "in",
+      "than",
+      "as"
+     ],
+     "a": 1,
+     "x": "장소·범위 → in",
+     "id": "g10d5"
+    },
+    {
+     "t": "c",
+     "q": "My room is not ___ big as yours.",
+     "o": [
+      "so",
+      "more",
+      "than",
+      "most"
+     ],
+     "a": 0,
+     "x": "not so(as) ~ as",
+     "id": "g10d6"
+    },
+    {
+     "t": "o",
+     "ko": "오늘은 어제보다 훨씬 더 춥다.",
+     "a": "Today is much colder than yesterday",
+     "x": "much + 비교급",
+     "id": "g10d7"
+    }
+   ]
+  },
+  {
+   "id": "g11",
+   "level": "중2",
+   "title": "to부정사",
+   "concept": "• 형태: to + 동사원형\n• 명사적 용법(~하는 것): 주어·목적어·보어\n  - I want to learn Chinese. / My dream is to be a pilot.\n  - want, hope, plan, decide, need, would like 뒤에는 to부정사\n• 형용사적 용법(~할): 명사 뒤에서 꾸밈\n  - I have a lot of homework to do. / something to drink\n• 부사적 용법: 목적(~하기 위해), 감정의 원인(~해서)\n  - He went to the store to buy milk. / I'm glad to see you.",
+   "examples": [
+    {
+     "en": "I want to be a scientist.",
+     "ko": "나는 과학자가 되고 싶다."
+    },
+    {
+     "en": "Give me something cold to drink.",
+     "ko": "시원한 마실 것을 좀 줘."
+    },
+    {
+     "en": "She studied hard to pass the exam.",
+     "ko": "그녀는 시험에 합격하기 위해 열심히 공부했다."
+    },
+    {
+     "en": "We were surprised to hear the news.",
+     "ko": "우리는 그 소식을 듣고 놀랐다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "I hope ___ you again.",
+     "o": [
+      "see",
+      "to see",
+      "seeing",
+      "saw"
+     ],
+     "a": 1,
+     "x": "hope + to부정사",
+     "id": "g11b1"
+    },
+    {
+     "t": "c",
+     "q": "He has no time ___ TV.",
+     "o": [
+      "watch",
+      "to watch",
+      "watches",
+      "watched"
+     ],
+     "a": 1,
+     "x": "명사 time을 꾸미는 to부정사(형용사적)",
+     "id": "g11b2"
+    },
+    {
+     "t": "c",
+     "q": "She went to the library ___ books.",
+     "o": [
+      "borrow",
+      "to borrow",
+      "borrows",
+      "borrowed"
+     ],
+     "a": 1,
+     "x": "목적(~하기 위해)",
+     "id": "g11b3"
+    },
+    {
+     "t": "c",
+     "q": "My plan is ___ a trip to Jeju.",
+     "o": [
+      "take",
+      "to take",
+      "takes",
+      "took"
+     ],
+     "a": 1,
+     "x": "보어 역할(명사적)",
+     "id": "g11b4"
+    },
+    {
+     "t": "o",
+     "ko": "나는 너를 만나서 기쁘다.",
+     "a": "I am glad to meet you",
+     "x": "감정의 원인",
+     "id": "g11b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "to부정사의 쓰임이 나머지와 다른 것은?",
+     "o": [
+      "I need to rest.",
+      "She decided to leave.",
+      "I went out to get some air.",
+      "He wants to win."
+     ],
+     "a": 2,
+     "x": "③은 목적(부사적), 나머지는 목적어(명사적)",
+     "id": "g11d1"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "I'd like to order now.",
+      "She plans to study abroad.",
+      "We need a place to stay.",
+      "He decided to buying a car."
+     ],
+     "a": 3,
+     "x": "decide + to + 동사원형 → to buy",
+     "id": "g11d2"
+    },
+    {
+     "t": "b",
+     "q": "I have many friends ___ help me. (도와줄, to부정사)",
+     "a": [
+      "to"
+     ],
+     "x": "명사를 꾸미는 to부정사",
+     "id": "g11d3"
+    },
+    {
+     "t": "c",
+     "q": "Is there anything ___?",
+     "o": [
+      "eat",
+      "to eat",
+      "eating",
+      "ate"
+     ],
+     "a": 1,
+     "x": "anything to eat",
+     "id": "g11d4"
+    },
+    {
+     "t": "c",
+     "q": "He was sad ___ the game.",
+     "o": [
+      "lose",
+      "to lose",
+      "losing",
+      "lost"
+     ],
+     "a": 1,
+     "x": "감정의 원인 → to부정사",
+     "id": "g11d5"
+    },
+    {
+     "t": "o",
+     "ko": "그의 꿈은 가수가 되는 것이다.",
+     "a": "His dream is to be a singer",
+     "x": "보어로 쓰인 to부정사",
+     "id": "g11d6"
+    },
+    {
+     "t": "o",
+     "ko": "나는 쓸 펜이 필요하다.",
+     "a": "I need a pen to write with",
+     "x": "pen을 꾸미는 to부정사 + 전치사 with",
+     "id": "g11d7"
+    }
+   ]
+  },
+  {
+   "id": "g12",
+   "level": "중2",
+   "title": "동명사",
+   "concept": "• 형태: 동사원형 + -ing → '~하는 것'(명사 역할)\n• 주어: Reading books is fun. (동명사 주어는 단수 취급)\n• 목적어로 동명사만 쓰는 동사: enjoy, finish, mind, stop, give up, keep, avoid\n• to부정사만 쓰는 동사: want, hope, plan, decide, need, expect\n• 둘 다 가능: like, love, start, begin, hate\n• 전치사 뒤에는 동명사: I'm good at drawing. / Thank you for helping me.\n• 주의: stop -ing(~하는 것을 멈추다) ↔ stop to ~(~하기 위해 멈추다)",
+   "examples": [
+    {
+     "en": "Swimming is good for your health.",
+     "ko": "수영은 건강에 좋다."
+    },
+    {
+     "en": "I enjoy listening to music.",
+     "ko": "나는 음악 듣는 것을 즐긴다."
+    },
+    {
+     "en": "He finished cleaning his room.",
+     "ko": "그는 방 청소를 끝냈다."
+    },
+    {
+     "en": "Thank you for inviting me.",
+     "ko": "초대해 줘서 고마워."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "I enjoy ___ soccer.",
+     "o": [
+      "play",
+      "to play",
+      "playing",
+      "played"
+     ],
+     "a": 2,
+     "x": "enjoy + 동명사",
+     "id": "g12b1"
+    },
+    {
+     "t": "c",
+     "q": "She wants ___ a doctor.",
+     "o": [
+      "be",
+      "to be",
+      "being",
+      "been"
+     ],
+     "a": 1,
+     "x": "want + to부정사",
+     "id": "g12b2"
+    },
+    {
+     "t": "c",
+     "q": "He is good at ___.",
+     "o": [
+      "cook",
+      "to cook",
+      "cooking",
+      "cooked"
+     ],
+     "a": 2,
+     "x": "전치사 뒤 → 동명사",
+     "id": "g12b3"
+    },
+    {
+     "t": "b",
+     "q": "___ (read) comic books is fun.",
+     "a": [
+      "reading"
+     ],
+     "x": "주어 자리 동명사",
+     "id": "g12b4"
+    },
+    {
+     "t": "o",
+     "ko": "그는 게임하는 것을 그만두었다.",
+     "a": "He gave up playing games",
+     "x": "give up + 동명사",
+     "id": "g12b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "Would you mind ___ the window?",
+     "o": [
+      "open",
+      "to open",
+      "opening",
+      "opened"
+     ],
+     "a": 2,
+     "x": "mind + 동명사",
+     "id": "g12d1"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "I finished writing the report.",
+      "She kept talking.",
+      "We decided going home.",
+      "He likes to draw."
+     ],
+     "a": 2,
+     "x": "decide + to부정사 → decided to go",
+     "id": "g12d2"
+    },
+    {
+     "t": "c",
+     "q": "Watching movies ___ my hobby.",
+     "o": [
+      "is",
+      "are",
+      "be",
+      "am"
+     ],
+     "a": 0,
+     "x": "동명사 주어 → 단수 취급",
+     "id": "g12d3"
+    },
+    {
+     "t": "c",
+     "q": "He stopped ___ to his friend. (친구에게 말하는 것을 멈췄다)",
+     "o": [
+      "talk",
+      "to talk",
+      "talking",
+      "talked"
+     ],
+     "a": 2,
+     "x": "stop -ing: ~하는 것을 멈추다",
+     "id": "g12d4"
+    },
+    {
+     "t": "c",
+     "q": "I'm looking forward to ___ you.",
+     "o": [
+      "see",
+      "seeing",
+      "saw",
+      "be seen"
+     ],
+     "a": 1,
+     "x": "look forward to의 to는 전치사 → 동명사",
+     "id": "g12d5"
+    },
+    {
+     "t": "b",
+     "q": "Thank you for ___ (help) me.",
+     "a": [
+      "helping"
+     ],
+     "x": "전치사 for 뒤 동명사",
+     "id": "g12d6"
+    },
+    {
+     "t": "o",
+     "ko": "그녀는 일기 쓰는 것을 좋아한다.",
+     "a": "She likes keeping a diary",
+     "x": "like + 동명사 (to keep도 가능하지만 여기선 동명사)",
+     "id": "g12d7"
+    }
+   ]
+  },
+  {
+   "id": "g13",
+   "level": "중2",
+   "title": "현재완료",
+   "concept": "• 형태: have/has + 과거분사(p.p.)\n• 과거에 시작된 일이 지금과 연결될 때 써요\n  - 경험(~한 적 있다): ever, never, before, once, twice\n  - 계속(~해 왔다): for + 기간, since + 시작 시점\n  - 완료(막 ~했다): just, already, yet\n  - 결과(~해 버렸다, 그래서 지금 …): I have lost my key.\n• 부정: have not(haven't) + p.p. / 의문: Have + 주어 + p.p. ~?\n• 주의: yesterday, last year, ago 같은 과거 시점과는 함께 못 써요\n• 과거분사: go-gone, see-seen, eat-eaten, do-done, write-written, be-been",
+   "examples": [
+    {
+     "en": "I have been to Japan twice.",
+     "ko": "나는 일본에 두 번 가 본 적이 있다."
+    },
+    {
+     "en": "She has lived here since 2020.",
+     "ko": "그녀는 2020년부터 여기에 살아 왔다."
+    },
+    {
+     "en": "I have just finished my homework.",
+     "ko": "나는 막 숙제를 끝냈다."
+    },
+    {
+     "en": "Have you ever seen a whale?",
+     "ko": "너는 고래를 본 적이 있니?"
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "I have ___ this movie before.",
+     "o": [
+      "see",
+      "saw",
+      "seen",
+      "seeing"
+     ],
+     "a": 2,
+     "x": "have + 과거분사",
+     "id": "g13b1"
+    },
+    {
+     "t": "c",
+     "q": "He ___ in Seoul since 2015.",
+     "o": [
+      "lives",
+      "has lived",
+      "lived",
+      "is living"
+     ],
+     "a": 1,
+     "x": "since + 시작 시점 → 현재완료(계속)",
+     "id": "g13b2"
+    },
+    {
+     "t": "b",
+     "q": "eat → ate → ___ (과거분사)",
+     "a": [
+      "eaten"
+     ],
+     "x": "불규칙",
+     "id": "g13b3"
+    },
+    {
+     "t": "c",
+     "q": "___ you ever tried Thai food?",
+     "o": [
+      "Did",
+      "Have",
+      "Do",
+      "Are"
+     ],
+     "a": 1,
+     "x": "Have + 주어 + p.p.",
+     "id": "g13b4"
+    },
+    {
+     "t": "o",
+     "ko": "너는 숙제를 벌써 끝냈니?",
+     "a": "Have you finished your homework yet",
+     "x": "완료 의문 + yet",
+     "id": "g13b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "She has worked here ___ 2019.",
+     "o": [
+      "for",
+      "since",
+      "ago",
+      "during"
+     ],
+     "a": 1,
+     "x": "시작 시점 → since",
+     "id": "g13d1"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "I have known him for years.",
+      "He has gone to Paris.",
+      "I have seen her yesterday.",
+      "Have you eaten yet?"
+     ],
+     "a": 2,
+     "x": "yesterday는 현재완료와 못 씀 → I saw her yesterday.",
+     "id": "g13d2"
+    },
+    {
+     "t": "b",
+     "q": "write → wrote → ___ (과거분사)",
+     "a": [
+      "written"
+     ],
+     "x": "불규칙",
+     "id": "g13d3"
+    },
+    {
+     "t": "c",
+     "q": "Have you finished your homework? — Yes, I ___.",
+     "o": [
+      "did",
+      "have",
+      "do",
+      "finished"
+     ],
+     "a": 1,
+     "x": "Have로 물으면 have로 대답",
+     "id": "g13d4"
+    },
+    {
+     "t": "c",
+     "q": "I lost my phone, and I still can't find it. = I ___ my phone.",
+     "o": [
+      "lose",
+      "have lost",
+      "was losing",
+      "am losing"
+     ],
+     "a": 1,
+     "x": "결과: 잃어버려서 지금도 없음",
+     "id": "g13d5"
+    },
+    {
+     "t": "c",
+     "q": "They have been friends ___ five years.",
+     "o": [
+      "since",
+      "for",
+      "ago",
+      "in"
+     ],
+     "a": 1,
+     "x": "기간 → for",
+     "id": "g13d6"
+    },
+    {
+     "t": "o",
+     "ko": "너는 그를 만나 본 적이 있니?",
+     "a": "Have you ever met him",
+     "x": "경험: Have + 주어 + ever + p.p.",
+     "id": "g13d7"
+    }
+   ]
+  },
+  {
+   "id": "g14",
+   "level": "중2",
+   "title": "접속사",
+   "concept": "• 등위접속사: and(그리고), but(그러나), or(또는), so(그래서)\n• 시간: when(~할 때), before(~하기 전에), after(~한 후에), while(~하는 동안), until(~할 때까지)\n• 이유: because(~ 때문에) + 문장 / because of + 명사\n• 조건: if(만약 ~라면), unless(~하지 않으면)\n  - 시간·조건 부사절에서는 미래 일도 현재시제: If it rains tomorrow, I will stay home.\n• 양보: though / although(비록 ~이지만)\n• that: '~라는 것' (I think that he is right. — that은 생략 가능)",
+   "examples": [
+    {
+     "en": "I was tired, so I went to bed early.",
+     "ko": "나는 피곤해서 일찍 잤다."
+    },
+    {
+     "en": "When I got home, my mom was cooking.",
+     "ko": "내가 집에 왔을 때 엄마는 요리하고 계셨다."
+    },
+    {
+     "en": "If you hurry, you will catch the bus.",
+     "ko": "서두르면 버스를 탈 거야."
+    },
+    {
+     "en": "Although it was cold, we went out.",
+     "ko": "추웠지만 우리는 밖에 나갔다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "I like apples, ___ I don't like bananas.",
+     "o": [
+      "and",
+      "but",
+      "or",
+      "so"
+     ],
+     "a": 1,
+     "x": "반대 → but",
+     "id": "g14b1"
+    },
+    {
+     "t": "c",
+     "q": "She was sick, ___ she stayed home.",
+     "o": [
+      "because",
+      "but",
+      "so",
+      "or"
+     ],
+     "a": 2,
+     "x": "결과 → so",
+     "id": "g14b2"
+    },
+    {
+     "t": "c",
+     "q": "I couldn't sleep ___ the noise.",
+     "o": [
+      "because",
+      "because of",
+      "so",
+      "if"
+     ],
+     "a": 1,
+     "x": "명사 앞 → because of",
+     "id": "g14b3"
+    },
+    {
+     "t": "c",
+     "q": "If it ___ tomorrow, we won't go hiking.",
+     "o": [
+      "rains",
+      "will rain",
+      "rained",
+      "rain"
+     ],
+     "a": 0,
+     "x": "조건절은 현재시제로 미래 표현",
+     "id": "g14b4"
+    },
+    {
+     "t": "o",
+     "ko": "나는 그가 정직하다고 생각한다.",
+     "a": "I think that he is honest",
+     "x": "that + 문장 = ~라는 것",
+     "id": "g14b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "Wash your hands ___ you eat.",
+     "o": [
+      "before",
+      "because",
+      "unless",
+      "so"
+     ],
+     "a": 0,
+     "x": "먹기 전에",
+     "id": "g14d1"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "When he comes, I will tell him.",
+      "I will call you when I will arrive.",
+      "Unless you hurry, you'll be late.",
+      "Wait here until I come back."
+     ],
+     "a": 1,
+     "x": "시간 부사절 → when I arrive",
+     "id": "g14d2"
+    },
+    {
+     "t": "c",
+     "q": "___ he is young, he is very wise.",
+     "o": [
+      "Because",
+      "Although",
+      "If",
+      "So"
+     ],
+     "a": 1,
+     "x": "양보 → Although",
+     "id": "g14d3"
+    },
+    {
+     "t": "c",
+     "q": "Do you want tea ___ coffee?",
+     "o": [
+      "and",
+      "but",
+      "or",
+      "so"
+     ],
+     "a": 2,
+     "x": "선택 → or",
+     "id": "g14d4"
+    },
+    {
+     "t": "b",
+     "q": "___ you don't study, you will fail. (만약 ~라면)",
+     "a": [
+      "if"
+     ],
+     "x": "조건 → If",
+     "id": "g14d5"
+    },
+    {
+     "t": "c",
+     "q": "I read a book ___ I was waiting for the bus.",
+     "o": [
+      "while",
+      "because of",
+      "so",
+      "or"
+     ],
+     "a": 0,
+     "x": "~하는 동안 → while",
+     "id": "g14d6"
+    },
+    {
+     "t": "o",
+     "ko": "비가 와서 우리는 집에 있었다.",
+     "a": "We stayed home because it rained",
+     "x": "because + 문장",
+     "id": "g14d7"
+    }
+   ]
+  },
+  {
+   "id": "g15",
+   "level": "중2",
+   "title": "문장의 형식 (감각동사·수여동사·5형식)",
+   "concept": "• 2형식: 주어 + 동사 + 보어 — 감각동사(look, feel, sound, smell, taste) + 형용사\n  - You look tired. (tiredly ×) / look like + 명사: You look like a model.\n• 4형식: 주어 + 수여동사 + 사람(~에게) + 사물(~을)\n  - give, send, show, tell, teach, buy, make, lend\n  - 3형식 바꾸기: give/send/show/tell/teach/lend + 사물 + to + 사람 / buy/make/cook + 사물 + for + 사람 / ask + 사물 + of + 사람\n• 5형식: 주어 + 동사 + 목적어 + 목적격보어\n  - make/keep/find + 목적어 + 형용사: The news made me happy.\n  - call/name + 목적어 + 명사: We call him Captain.\n  - want/ask/tell + 목적어 + to부정사: I want you to come.",
+   "examples": [
+    {
+     "en": "This cake smells sweet.",
+     "ko": "이 케이크는 달콤한 냄새가 난다."
+    },
+    {
+     "en": "My uncle gave me a watch.",
+     "ko": "삼촌이 나에게 시계를 주셨다."
+    },
+    {
+     "en": "She bought a present for her mom.",
+     "ko": "그녀는 엄마를 위해 선물을 샀다."
+    },
+    {
+     "en": "The movie made us sad.",
+     "ko": "그 영화는 우리를 슬프게 했다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "This song sounds ___.",
+     "o": [
+      "beautifully",
+      "beautiful",
+      "beauty",
+      "more beautifully"
+     ],
+     "a": 1,
+     "x": "감각동사 + 형용사",
+     "id": "g15b1"
+    },
+    {
+     "t": "c",
+     "q": "He showed ___ his new phone.",
+     "o": [
+      "I",
+      "my",
+      "me",
+      "mine"
+     ],
+     "a": 2,
+     "x": "수여동사 + 사람(목적격)",
+     "id": "g15b2"
+    },
+    {
+     "t": "c",
+     "q": "She sent a letter ___ her grandma.",
+     "o": [
+      "to",
+      "for",
+      "of",
+      "at"
+     ],
+     "a": 0,
+     "x": "send + 사물 + to + 사람",
+     "id": "g15b3"
+    },
+    {
+     "t": "c",
+     "q": "My mom made a cake ___ me.",
+     "o": [
+      "to",
+      "for",
+      "of",
+      "with"
+     ],
+     "a": 1,
+     "x": "make + 사물 + for + 사람",
+     "id": "g15b4"
+    },
+    {
+     "t": "o",
+     "ko": "그 소식이 나를 행복하게 만들었다.",
+     "a": "The news made me happy",
+     "x": "make + 목적어 + 형용사",
+     "id": "g15b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "You look ___ a movie star.",
+     "o": [
+      "like",
+      "as",
+      "to",
+      "(없음)"
+     ],
+     "a": 0,
+     "x": "look like + 명사",
+     "id": "g15d1"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "He teaches us English.",
+      "Keep your room clean.",
+      "The pizza tastes greatly.",
+      "They call her Queen."
+     ],
+     "a": 2,
+     "x": "taste + 형용사 → tastes great",
+     "id": "g15d2"
+    },
+    {
+     "t": "c",
+     "q": "Can I ask a favor ___ you?",
+     "o": [
+      "to",
+      "for",
+      "of",
+      "with"
+     ],
+     "a": 2,
+     "x": "ask + 사물 + of + 사람",
+     "id": "g15d3"
+    },
+    {
+     "t": "c",
+     "q": "I want you ___ with me.",
+     "o": [
+      "come",
+      "to come",
+      "coming",
+      "came"
+     ],
+     "a": 1,
+     "x": "want + 목적어 + to부정사",
+     "id": "g15d4"
+    },
+    {
+     "t": "c",
+     "q": "He lent me his umbrella. = He lent his umbrella ___ me.",
+     "o": [
+      "to",
+      "for",
+      "of",
+      "on"
+     ],
+     "a": 0,
+     "x": "lend + 사물 + to + 사람",
+     "id": "g15d5"
+    },
+    {
+     "t": "b",
+     "q": "I found the question ___. (어려운, 형용사)",
+     "a": [
+      "difficult",
+      "hard"
+     ],
+     "x": "find + 목적어 + 형용사",
+     "id": "g15d6"
+    },
+    {
+     "t": "o",
+     "ko": "선생님은 우리에게 조용히 하라고 말씀하셨다.",
+     "a": "The teacher told us to be quiet",
+     "x": "tell + 목적어 + to부정사",
+     "id": "g15d7"
+    }
+   ]
+  },
+  {
+   "id": "g16",
+   "level": "중2",
+   "title": "수동태 기본",
+   "concept": "• 능동태: 주어가 행동을 함 / 수동태: 주어가 행동을 당함\n• 형태: be동사 + 과거분사(p.p.) (+ by 행위자)\n  - Many people love the song. → The song is loved by many people.\n• 시제는 be동사로 표현: is made(현재) / was made(과거) / will be made(미래)\n• 부정: be동사 + not + p.p. / 의문: Be동사 + 주어 + p.p. ~?\n• 행위자가 중요하지 않거나 일반인이면 by ~를 생략\n  - English is spoken in many countries.",
+   "examples": [
+    {
+     "en": "This house was built in 1990.",
+     "ko": "이 집은 1990년에 지어졌다."
+    },
+    {
+     "en": "The window was broken by Tom.",
+     "ko": "창문은 Tom에 의해 깨졌다."
+    },
+    {
+     "en": "English is spoken all over the world.",
+     "ko": "영어는 전 세계에서 쓰인다."
+    },
+    {
+     "en": "Was the letter written by her?",
+     "ko": "그 편지는 그녀가 쓴 것이니?"
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "The car ___ by my father.",
+     "o": [
+      "washes",
+      "is washed",
+      "washed",
+      "is washing"
+     ],
+     "a": 1,
+     "x": "be + p.p.",
+     "id": "g16b1"
+    },
+    {
+     "t": "c",
+     "q": "This bridge ___ in 2010.",
+     "o": [
+      "built",
+      "is built",
+      "was built",
+      "builds"
+     ],
+     "a": 2,
+     "x": "과거 수동 → was built",
+     "id": "g16b2"
+    },
+    {
+     "t": "b",
+     "q": "The room is cleaned ___ my sister. (~에 의해)",
+     "a": [
+      "by"
+     ],
+     "x": "행위자 → by",
+     "id": "g16b3"
+    },
+    {
+     "t": "c",
+     "q": "The books ___ by many students.",
+     "o": [
+      "read",
+      "is read",
+      "are read",
+      "reads"
+     ],
+     "a": 2,
+     "x": "복수 주어 → are + p.p.",
+     "id": "g16b4"
+    },
+    {
+     "t": "o",
+     "ko": "이 그림은 피카소가 그렸다.",
+     "a": "This picture was painted by Picasso",
+     "x": "과거 수동태",
+     "id": "g16b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "Tom broke the vase. → The vase ___ by Tom.",
+     "o": [
+      "broke",
+      "was broken",
+      "is broken",
+      "was broke"
+     ],
+     "a": 1,
+     "x": "과거 → was broken",
+     "id": "g16d1"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "The song is loved by teens.",
+      "Rice is grown in Asia.",
+      "The cake was made by Mom.",
+      "The letter was wrote by him."
+     ],
+     "a": 3,
+     "x": "write의 p.p.는 written",
+     "id": "g16d2"
+    },
+    {
+     "t": "c",
+     "q": "___ this cake made by your mom?",
+     "o": [
+      "Is",
+      "Does",
+      "Did",
+      "Has"
+     ],
+     "a": 0,
+     "x": "수동태 의문문 → Be동사 + 주어 + p.p.",
+     "id": "g16d3"
+    },
+    {
+     "t": "c",
+     "q": "The work will ___ tomorrow.",
+     "o": [
+      "finish",
+      "be finished",
+      "finished",
+      "is finished"
+     ],
+     "a": 1,
+     "x": "미래 수동 → will be + p.p.",
+     "id": "g16d4"
+    },
+    {
+     "t": "b",
+     "q": "The game was not ___ (cancel) because of the rain.",
+     "a": [
+      "cancelled",
+      "canceled"
+     ],
+     "x": "not + p.p.",
+     "id": "g16d5"
+    },
+    {
+     "t": "c",
+     "q": "Spanish ___ in Mexico.",
+     "o": [
+      "speaks",
+      "is spoken",
+      "spoke",
+      "is speaking"
+     ],
+     "a": 1,
+     "x": "일반 사람들이 쓰는 언어 → is spoken",
+     "id": "g16d6"
+    },
+    {
+     "t": "o",
+     "ko": "그 문은 매일 밤 잠긴다.",
+     "a": "The door is locked every night",
+     "x": "현재 수동태",
+     "id": "g16d7"
+    }
+   ]
+  },
+  {
+   "id": "g17",
+   "level": "중3",
+   "title": "관계대명사 (who / which / that)",
+   "concept": "• 관계대명사: 두 문장을 이어 주며, 앞의 명사(선행사)를 뒤에서 꾸며요\n• 주격: 선행사가 사람 → who, 사물·동물 → which, 둘 다 → that\n  - I have a friend who lives in Canada.\n  - 주격 관계대명사 뒤 동사는 선행사에 수를 맞춰요 (a friend who lives)\n• 목적격: who(m) / which / that — 생략 가능\n  - This is the book (which) I bought yesterday.\n• 소유격: whose + 명사 — I know a girl whose father is a pilot.\n• that을 주로 쓰는 경우: 선행사에 최상급·서수·all·every·the only 등이 있을 때 (특히 사물)",
+   "examples": [
+    {
+     "en": "I have a friend who lives in Canada.",
+     "ko": "나에게는 캐나다에 사는 친구가 있다."
+    },
+    {
+     "en": "This is the bag which I lost yesterday.",
+     "ko": "이것이 내가 어제 잃어버린 가방이다."
+    },
+    {
+     "en": "She is the girl whose brother is a singer.",
+     "ko": "그녀는 오빠가 가수인 소녀이다."
+    },
+    {
+     "en": "He is the best player that I have ever seen.",
+     "ko": "그는 내가 본 최고의 선수다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "I know a boy ___ can speak French.",
+     "o": [
+      "who",
+      "which",
+      "whose",
+      "what"
+     ],
+     "a": 0,
+     "x": "선행사 사람 + 주격 → who",
+     "id": "g17b1"
+    },
+    {
+     "t": "c",
+     "q": "This is the phone ___ I bought.",
+     "o": [
+      "who",
+      "which",
+      "whose",
+      "whom"
+     ],
+     "a": 1,
+     "x": "선행사 사물 → which",
+     "id": "g17b2"
+    },
+    {
+     "t": "c",
+     "q": "I have a dog ___ tail is very long.",
+     "o": [
+      "who",
+      "which",
+      "whose",
+      "that"
+     ],
+     "a": 2,
+     "x": "소유격 → whose + 명사",
+     "id": "g17b3"
+    },
+    {
+     "t": "c",
+     "q": "The man who ___ next door is a doctor.",
+     "o": [
+      "live",
+      "lives",
+      "living",
+      "to live"
+     ],
+     "a": 1,
+     "x": "선행사 The man(단수) → lives",
+     "id": "g17b4"
+    },
+    {
+     "t": "o",
+     "ko": "나는 이 산을 오르는 사람들을 안다.",
+     "a": "I know the people who climb this mountain",
+     "x": "사람 선행사 + who",
+     "id": "g17b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "관계대명사를 생략할 수 있는 문장은?",
+     "o": [
+      "She is the girl who won the prize.",
+      "This is the cake that my mom made.",
+      "I have a cat which sleeps all day.",
+      "He is a man whose car is red."
+     ],
+     "a": 1,
+     "x": "목적격 관계대명사는 생략 가능",
+     "id": "g17d1"
+    },
+    {
+     "t": "c",
+     "q": "He is the first student ___ came to school today.",
+     "o": [
+      "what",
+      "whose",
+      "that",
+      "whom"
+     ],
+     "a": 2,
+     "x": "서수(the first)가 있으면 that을 주로 씀",
+     "id": "g17d2"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "The movie which I saw was great.",
+      "I met a woman who is a lawyer.",
+      "Look at the house who has a red roof.",
+      "Tell me the story that you heard."
+     ],
+     "a": 2,
+     "x": "사물 선행사 → which/that",
+     "id": "g17d3"
+    },
+    {
+     "t": "b",
+     "q": "The girl ___ is singing on the stage is my sister. (사람, 주격)",
+     "a": [
+      "who",
+      "that"
+     ],
+     "x": "who 또는 that",
+     "id": "g17d4"
+    },
+    {
+     "t": "c",
+     "q": "Everything ___ he said was true.",
+     "o": [
+      "who",
+      "that",
+      "what",
+      "whose"
+     ],
+     "a": 1,
+     "x": "everything → that",
+     "id": "g17d5"
+    },
+    {
+     "t": "c",
+     "q": "I have a friend ___ mother is a teacher.",
+     "o": [
+      "who",
+      "which",
+      "whose",
+      "that"
+     ],
+     "a": 2,
+     "x": "friend's mother → whose",
+     "id": "g17d6"
+    },
+    {
+     "t": "o",
+     "ko": "이것은 내가 가장 좋아하는 노래이다.",
+     "a": "This is the song that I like the best",
+     "x": "목적격 관계대명사 that",
+     "id": "g17d7"
+    }
+   ]
+  },
+  {
+   "id": "g18",
+   "level": "중3",
+   "title": "관계대명사 what · 관계부사",
+   "concept": "• what = the thing(s) which: '~하는 것' — 선행사를 포함해서 앞에 명사가 없어요\n  - What I want is a new bike. / Show me what you have.\n• 관계부사: 선행사가 장소·시간·이유·방법일 때\n  - where(장소): This is the town where I was born.\n  - when(시간): I remember the day when we first met.\n  - why(이유): Tell me the reason why you were late.\n  - how(방법): This is how I solved it. (the way와 how는 함께 쓰지 않음)\n• 관계부사 = 전치사 + which: the town where = the town in which",
+   "examples": [
+    {
+     "en": "What I need now is sleep.",
+     "ko": "지금 내게 필요한 것은 잠이다."
+    },
+    {
+     "en": "This is the house where my grandparents live.",
+     "ko": "이곳이 조부모님이 사시는 집이다."
+    },
+    {
+     "en": "I can't forget the day when I won the prize.",
+     "ko": "나는 상을 탄 그날을 잊을 수 없다."
+    },
+    {
+     "en": "That's why I love this city.",
+     "ko": "그것이 내가 이 도시를 사랑하는 이유다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "___ he said surprised everyone.",
+     "o": [
+      "That",
+      "What",
+      "Which",
+      "Who"
+     ],
+     "a": 1,
+     "x": "선행사 없음 + ~하는 것 → What",
+     "id": "g18b1"
+    },
+    {
+     "t": "c",
+     "q": "This is the park ___ I often jog.",
+     "o": [
+      "when",
+      "where",
+      "why",
+      "which"
+     ],
+     "a": 1,
+     "x": "장소 → where",
+     "id": "g18b2"
+    },
+    {
+     "t": "c",
+     "q": "Do you remember the year ___ you entered school?",
+     "o": [
+      "when",
+      "where",
+      "why",
+      "what"
+     ],
+     "a": 0,
+     "x": "시간 → when",
+     "id": "g18b3"
+    },
+    {
+     "t": "c",
+     "q": "Tell me the reason ___ you are angry.",
+     "o": [
+      "when",
+      "where",
+      "why",
+      "how"
+     ],
+     "a": 2,
+     "x": "이유 → why",
+     "id": "g18b4"
+    },
+    {
+     "t": "o",
+     "ko": "나는 네가 원하는 것을 안다.",
+     "a": "I know what you want",
+     "x": "what = ~하는 것",
+     "id": "g18b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "This is how I made it.",
+      "This is the way I made it.",
+      "This is the way how I made it.",
+      "What you need is rest."
+     ],
+     "a": 2,
+     "x": "the way와 how는 함께 못 씀",
+     "id": "g18d1"
+    },
+    {
+     "t": "c",
+     "q": "This is the room ___ I sleep. (= in which)",
+     "o": [
+      "which",
+      "where",
+      "when",
+      "what"
+     ],
+     "a": 1,
+     "x": "in which = where",
+     "id": "g18d2"
+    },
+    {
+     "t": "c",
+     "q": "I can't believe ___ I saw.",
+     "o": [
+      "that",
+      "which",
+      "what",
+      "who"
+     ],
+     "a": 2,
+     "x": "선행사 없음 → what",
+     "id": "g18d3"
+    },
+    {
+     "t": "c",
+     "q": "The restaurant ___ we had dinner was expensive.",
+     "o": [
+      "where",
+      "which",
+      "when",
+      "what"
+     ],
+     "a": 0,
+     "x": "장소 선행사 + 완전한 문장 → where",
+     "id": "g18d4"
+    },
+    {
+     "t": "c",
+     "q": "The restaurant ___ we visited was expensive.",
+     "o": [
+      "where",
+      "which",
+      "when",
+      "what"
+     ],
+     "a": 1,
+     "x": "visited의 목적어가 빠짐 → which",
+     "id": "g18d5"
+    },
+    {
+     "t": "b",
+     "q": "___ is important is your health. (~하는 것)",
+     "a": [
+      "what"
+     ],
+     "x": "What is important = 중요한 것",
+     "id": "g18d6"
+    },
+    {
+     "t": "o",
+     "ko": "이곳이 그 사고가 일어난 장소다.",
+     "a": "This is the place where the accident happened",
+     "x": "장소 + where",
+     "id": "g18d7"
+    }
+   ]
+  },
+  {
+   "id": "g19",
+   "level": "중3",
+   "title": "분사 (현재분사 · 과거분사)",
+   "concept": "• 현재분사(-ing): 능동·진행 '~하는, ~하고 있는' — a sleeping baby\n• 과거분사(p.p.): 수동·완료 '~된, ~당한' — a broken window, fallen leaves\n• 분사가 다른 말과 함께 길어지면 명사 뒤에서 꾸며요\n  - The boy playing the guitar is my brother.\n  - This is a car made in Korea.\n• 감정 분사: 감정을 일으키면 -ing, 감정을 느끼면 p.p.\n  - The movie was boring. (지루하게 하는) / I was bored. (지루함을 느낀)\n  - exciting/excited, interesting/interested, surprising/surprised, tiring/tired",
+   "examples": [
+    {
+     "en": "Look at the smiling girl.",
+     "ko": "웃고 있는 소녀를 봐."
+    },
+    {
+     "en": "I found a broken chair in the garage.",
+     "ko": "나는 차고에서 부서진 의자를 발견했다."
+    },
+    {
+     "en": "The man standing by the door is my uncle.",
+     "ko": "문 옆에 서 있는 남자는 우리 삼촌이다."
+    },
+    {
+     "en": "The game was exciting, so we were excited.",
+     "ko": "경기가 흥미진진해서 우리는 신이 났다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "Don't wake up the ___ baby.",
+     "o": [
+      "sleep",
+      "sleeping",
+      "slept",
+      "sleeps"
+     ],
+     "a": 1,
+     "x": "자고 있는 → sleeping",
+     "id": "g19b1"
+    },
+    {
+     "t": "c",
+     "q": "He fixed the ___ window.",
+     "o": [
+      "breaking",
+      "broke",
+      "broken",
+      "break"
+     ],
+     "a": 2,
+     "x": "깨진(수동) → broken",
+     "id": "g19b2"
+    },
+    {
+     "t": "c",
+     "q": "The story was very ___.",
+     "o": [
+      "interesting",
+      "interested",
+      "interest",
+      "interests"
+     ],
+     "a": 0,
+     "x": "이야기가 흥미를 일으킴 → interesting",
+     "id": "g19b3"
+    },
+    {
+     "t": "c",
+     "q": "I am ___ in history.",
+     "o": [
+      "interesting",
+      "interested",
+      "interest",
+      "to interest"
+     ],
+     "a": 1,
+     "x": "내가 흥미를 느낌 → interested",
+     "id": "g19b4"
+    },
+    {
+     "t": "o",
+     "ko": "그 웃고 있는 소녀는 내 여동생이다.",
+     "a": "The smiling girl is my sister",
+     "x": "현재분사가 명사 앞에서 꾸밈",
+     "id": "g19b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "The girl ___ a red hat is my cousin.",
+     "o": [
+      "wear",
+      "wearing",
+      "worn",
+      "wears"
+     ],
+     "a": 1,
+     "x": "모자를 쓰고 있는(능동) → wearing",
+     "id": "g19d1"
+    },
+    {
+     "t": "c",
+     "q": "I bought a watch ___ in Switzerland.",
+     "o": [
+      "making",
+      "made",
+      "make",
+      "makes"
+     ],
+     "a": 1,
+     "x": "만들어진(수동) → made",
+     "id": "g19d2"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "I was surprised at the news.",
+      "The news was surprising.",
+      "She felt boring in class.",
+      "He is a tired runner."
+     ],
+     "a": 2,
+     "x": "그녀가 지루함을 느낌 → bored",
+     "id": "g19d3"
+    },
+    {
+     "t": "b",
+     "q": "There were many ___ (fall) leaves on the ground.",
+     "a": [
+      "fallen"
+     ],
+     "x": "떨어진(완료) → fallen",
+     "id": "g19d4"
+    },
+    {
+     "t": "c",
+     "q": "The long trip made me ___.",
+     "o": [
+      "tiring",
+      "tired",
+      "tire",
+      "tires"
+     ],
+     "a": 1,
+     "x": "내가 피곤함을 느낌 → tired",
+     "id": "g19d5"
+    },
+    {
+     "t": "c",
+     "q": "Who is the man ___ to your mom?",
+     "o": [
+      "talk",
+      "talking",
+      "talked",
+      "talks"
+     ],
+     "a": 1,
+     "x": "이야기하고 있는 → talking",
+     "id": "g19d6"
+    },
+    {
+     "t": "o",
+     "ko": "나는 영어로 쓰인 책을 읽었다.",
+     "a": "I read a book written in English",
+     "x": "과거분사 구가 뒤에서 꾸밈",
+     "id": "g19d7"
+    }
+   ]
+  },
+  {
+   "id": "g20",
+   "level": "중3",
+   "title": "가정법 과거",
+   "concept": "• 현재 사실과 반대되거나 일어날 가능성이 낮은 일을 가정할 때\n• 형태: If + 주어 + 과거동사, 주어 + would/could/might + 동사원형\n  - If I had wings, I could fly. (실제로는 날개가 없음)\n  - be동사는 주어와 상관없이 were: If I were you, I would take the bus.\n• I wish + 주어 + 과거동사: ~라면 좋을 텐데 (현재 이룰 수 없는 소망)\n  - I wish I had a sister.\n• as if + 과거동사: 마치 ~인 것처럼 — He talks as if he knew everything.\n• 조건문(단순 조건)과 구별: If it rains tomorrow, I will stay home. (가능성이 있는 일)",
+   "examples": [
+    {
+     "en": "If I had more time, I would learn the guitar.",
+     "ko": "시간이 더 있다면 기타를 배울 텐데."
+    },
+    {
+     "en": "If I were you, I wouldn't do that.",
+     "ko": "내가 너라면 그렇게 하지 않을 거야."
+    },
+    {
+     "en": "I wish I could speak English fluently.",
+     "ko": "영어를 유창하게 말할 수 있으면 좋을 텐데."
+    },
+    {
+     "en": "She acts as if she were a queen.",
+     "ko": "그녀는 마치 여왕인 것처럼 행동한다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "If I ___ rich, I would buy a big house.",
+     "o": [
+      "am",
+      "were",
+      "will be",
+      "be"
+     ],
+     "a": 1,
+     "x": "가정법 과거 → were",
+     "id": "g20b1"
+    },
+    {
+     "t": "c",
+     "q": "If I had a car, I ___ drive to school.",
+     "o": [
+      "will",
+      "would",
+      "am",
+      "do"
+     ],
+     "a": 1,
+     "x": "주절 → would + 동사원형",
+     "id": "g20b2"
+    },
+    {
+     "t": "c",
+     "q": "I wish I ___ taller.",
+     "o": [
+      "am",
+      "were",
+      "will be",
+      "been"
+     ],
+     "a": 1,
+     "x": "I wish + 과거(be → were)",
+     "id": "g20b3"
+    },
+    {
+     "t": "b",
+     "q": "If he ___ (know) her number, he would call her.",
+     "a": [
+      "knew"
+     ],
+     "x": "if절 → 과거동사",
+     "id": "g20b4"
+    },
+    {
+     "t": "o",
+     "ko": "내가 새라면 너에게 날아갈 텐데.",
+     "a": "If I were a bird, I would fly to you",
+     "x": "If + 주어 + were, 주어 + would + 동사원형",
+     "id": "g20b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "As I don't have a pet, I feel lonely. = If I ___ a pet, I wouldn't feel lonely.",
+     "o": [
+      "have",
+      "had",
+      "will have",
+      "having"
+     ],
+     "a": 1,
+     "x": "현재 사실 반대 → 과거동사",
+     "id": "g20d1"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "If I were you, I would study harder.",
+      "I wish I knew the answer.",
+      "If I have wings, I would fly.",
+      "He talks as if he were rich."
+     ],
+     "a": 2,
+     "x": "가정법 → If I had wings",
+     "id": "g20d2"
+    },
+    {
+     "t": "c",
+     "q": "If it ___ tomorrow, we will cancel the picnic.",
+     "o": [
+      "rains",
+      "rained",
+      "would rain",
+      "were rain"
+     ],
+     "a": 0,
+     "x": "가능성 있는 단순 조건 → 현재시제",
+     "id": "g20d3"
+    },
+    {
+     "t": "c",
+     "q": "He speaks as if he ___ an expert.",
+     "o": [
+      "is",
+      "were",
+      "be",
+      "being"
+     ],
+     "a": 1,
+     "x": "as if + 가정법 과거",
+     "id": "g20d4"
+    },
+    {
+     "t": "b",
+     "q": "I wish I ___ (can) fly.",
+     "a": [
+      "could"
+     ],
+     "x": "wish + 과거(can → could)",
+     "id": "g20d5"
+    },
+    {
+     "t": "c",
+     "q": "If you ___ harder, you could pass the test.",
+     "o": [
+      "study",
+      "studied",
+      "will study",
+      "studying"
+     ],
+     "a": 1,
+     "x": "가정법 과거",
+     "id": "g20d6"
+    },
+    {
+     "t": "o",
+     "ko": "나에게 더 많은 친구가 있으면 좋을 텐데.",
+     "a": "I wish I had more friends",
+     "x": "I wish + 과거동사",
+     "id": "g20d7"
+    }
+   ]
+  },
+  {
+   "id": "g21",
+   "level": "중3",
+   "title": "간접의문문",
+   "concept": "• 의문문이 다른 문장 속에 들어가면 '의문사 + 주어 + 동사' 순서가 돼요\n  - Where is he? → Do you know where he is?\n  - What does she want? → I don't know what she wants. (do/does/did가 사라지고 동사에 시제 반영)\n• 의문사가 없는 의문문은 if / whether(~인지 아닌지)\n  - Is it true? → I wonder if it is true.\n• 의문사가 주어면 순서 그대로: Who broke it? → Tell me who broke it.\n• think, believe, guess 등이 있으면 의문사를 맨 앞으로\n  - Do you think? + Who is he? → Who do you think he is?",
+   "examples": [
+    {
+     "en": "Can you tell me where the station is?",
+     "ko": "역이 어디에 있는지 알려 줄 수 있니?"
+    },
+    {
+     "en": "I don't know what time it is.",
+     "ko": "나는 지금 몇 시인지 모른다."
+    },
+    {
+     "en": "I wonder if she likes me.",
+     "ko": "그녀가 나를 좋아하는지 궁금하다."
+    },
+    {
+     "en": "What do you think he wants?",
+     "ko": "너는 그가 무엇을 원한다고 생각하니?"
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "Do you know where ___?",
+     "o": [
+      "is she",
+      "she is",
+      "does she",
+      "she"
+     ],
+     "a": 1,
+     "x": "간접의문문 → 주어 + 동사",
+     "id": "g21b1"
+    },
+    {
+     "t": "c",
+     "q": "I wonder ___ he will come.",
+     "o": [
+      "that",
+      "if",
+      "what",
+      "who"
+     ],
+     "a": 1,
+     "x": "의문사 없는 의문문 → if/whether",
+     "id": "g21b2"
+    },
+    {
+     "t": "c",
+     "q": "Tell me what ___.",
+     "o": [
+      "do you want",
+      "you want",
+      "want you",
+      "does you want"
+     ],
+     "a": 1,
+     "x": "의문사 + 주어 + 동사",
+     "id": "g21b3"
+    },
+    {
+     "t": "b",
+     "q": "I don't know ___ he lives. (어디에)",
+     "a": [
+      "where"
+     ],
+     "x": "의문사 where",
+     "id": "g21b4"
+    },
+    {
+     "t": "o",
+     "ko": "그가 몇 살인지 아니?",
+     "a": "Do you know how old he is",
+     "x": "how old + 주어 + 동사",
+     "id": "g21b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "Can you tell me when the movie ___?",
+     "o": [
+      "does start",
+      "starts",
+      "start",
+      "is start"
+     ],
+     "a": 1,
+     "x": "does가 사라지고 starts",
+     "id": "g21d1"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "I know who he is.",
+      "Tell me why you were late.",
+      "Do you know where does he live?",
+      "I wonder if it's true."
+     ],
+     "a": 2,
+     "x": "간접의문문 → where he lives",
+     "id": "g21d2"
+    },
+    {
+     "t": "c",
+     "q": "___ do you think she is?",
+     "o": [
+      "Who",
+      "If",
+      "Do",
+      "Whether"
+     ],
+     "a": 0,
+     "x": "think가 있으면 의문사를 맨 앞으로",
+     "id": "g21d3"
+    },
+    {
+     "t": "c",
+     "q": "I asked him ___ he was hungry.",
+     "o": [
+      "what",
+      "whether",
+      "where",
+      "who"
+     ],
+     "a": 1,
+     "x": "~인지 아닌지 → whether(if)",
+     "id": "g21d4"
+    },
+    {
+     "t": "b",
+     "q": "Please tell me what ___ (happen) yesterday.",
+     "a": [
+      "happened"
+     ],
+     "x": "의문사 주어 + 동사(과거)",
+     "id": "g21d5"
+    },
+    {
+     "t": "c",
+     "q": "Do you remember what ___ yesterday?",
+     "o": [
+      "did she buy",
+      "she bought",
+      "she buy",
+      "bought she"
+     ],
+     "a": 1,
+     "x": "주어 + 과거동사",
+     "id": "g21d6"
+    },
+    {
+     "t": "o",
+     "ko": "나는 그녀가 왜 울었는지 모른다.",
+     "a": "I do not know why she cried",
+     "x": "why + 주어 + 동사",
+     "id": "g21d7"
+    }
+   ]
+  },
+  {
+   "id": "g22",
+   "level": "중3",
+   "title": "to부정사 심화",
+   "concept": "• 가주어 it: To learn English is fun. → It is fun to learn English.\n  - 의미상 주어: It is easy for me to swim. / It is kind of you to help me. (성격 형용사 → of)\n• too + 형/부 + to부정사: 너무 ~해서 …할 수 없다 = so ~ that + 주어 + can't\n  - He is too young to drive. = He is so young that he can't drive.\n• 형/부 + enough + to부정사: ~할 만큼 충분히 …하다\n  - She is old enough to drive. = She is so old that she can drive.\n• 의문사 + to부정사: what to do, how to swim, where to go, when to start\n• 5형식: want/ask/tell/allow + 목적어 + to부정사",
+   "examples": [
+    {
+     "en": "It is important to eat breakfast.",
+     "ko": "아침을 먹는 것은 중요하다."
+    },
+    {
+     "en": "This box is too heavy to lift.",
+     "ko": "이 상자는 너무 무거워서 들 수 없다."
+    },
+    {
+     "en": "He is tall enough to reach the shelf.",
+     "ko": "그는 선반에 닿을 만큼 충분히 키가 크다."
+    },
+    {
+     "en": "I don't know what to say.",
+     "ko": "나는 무슨 말을 해야 할지 모르겠다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "___ is fun to play soccer.",
+     "o": [
+      "This",
+      "That",
+      "It",
+      "What"
+     ],
+     "a": 2,
+     "x": "가주어 It",
+     "id": "g22b1"
+    },
+    {
+     "t": "c",
+     "q": "It is difficult ___ me to solve this problem.",
+     "o": [
+      "of",
+      "for",
+      "to",
+      "with"
+     ],
+     "a": 1,
+     "x": "일반 형용사 → for + 의미상 주어",
+     "id": "g22b2"
+    },
+    {
+     "t": "c",
+     "q": "It was nice ___ you to help me.",
+     "o": [
+      "of",
+      "for",
+      "to",
+      "by"
+     ],
+     "a": 0,
+     "x": "성격 형용사(nice, kind) → of",
+     "id": "g22b3"
+    },
+    {
+     "t": "c",
+     "q": "She is ___ tired to walk.",
+     "o": [
+      "so",
+      "too",
+      "enough",
+      "very"
+     ],
+     "a": 1,
+     "x": "too ~ to: 너무 ~해서 …할 수 없다",
+     "id": "g22b4"
+    },
+    {
+     "t": "o",
+     "ko": "나는 어디로 가야 할지 모르겠다.",
+     "a": "I do not know where to go",
+     "x": "의문사 + to부정사",
+     "id": "g22b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "He is strong ___ to carry the box.",
+     "o": [
+      "too",
+      "so",
+      "enough",
+      "very"
+     ],
+     "a": 2,
+     "x": "형용사 + enough + to",
+     "id": "g22d1"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "It is easy to use this app.",
+      "She is enough old to vote.",
+      "Tell me how to cook it.",
+      "He was too sick to go out."
+     ],
+     "a": 1,
+     "x": "enough는 형용사 뒤 → old enough",
+     "id": "g22d2"
+    },
+    {
+     "t": "c",
+     "q": "He is too young to watch the movie. = He is so young that he ___ watch the movie.",
+     "o": [
+      "can",
+      "can't",
+      "could",
+      "must"
+     ],
+     "a": 1,
+     "x": "too ~ to = so ~ that … can't",
+     "id": "g22d3"
+    },
+    {
+     "t": "b",
+     "q": "Can you show me ___ to use this machine? (어떻게)",
+     "a": [
+      "how"
+     ],
+     "x": "how to + 동사원형",
+     "id": "g22d4"
+    },
+    {
+     "t": "c",
+     "q": "My parents allowed me ___ the party.",
+     "o": [
+      "go to",
+      "to go to",
+      "going to",
+      "went to"
+     ],
+     "a": 1,
+     "x": "allow + 목적어 + to부정사",
+     "id": "g22d5"
+    },
+    {
+     "t": "c",
+     "q": "It is necessary ___ you to wear a helmet.",
+     "o": [
+      "of",
+      "for",
+      "to",
+      "that"
+     ],
+     "a": 1,
+     "x": "necessary → for",
+     "id": "g22d6"
+    },
+    {
+     "t": "o",
+     "ko": "이 문제는 내가 풀기에 너무 어렵다.",
+     "a": "This problem is too difficult for me to solve",
+     "x": "too + 형용사 + for 의미상 주어 + to부정사",
+     "id": "g22d7"
+    }
+   ]
+  },
+  {
+   "id": "g23",
+   "level": "중3",
+   "title": "수동태 심화",
+   "concept": "• 조동사가 있는 수동태: 조동사 + be + p.p.\n  - The work must be done today. / It can be seen from here.\n• 진행형 수동태: be being p.p. — The road is being repaired.\n• 완료형 수동태: have/has been p.p. — The bridge has been built.\n• 4형식의 수동태: 사람 주어, 사물 주어 둘 다 가능\n  - He gave me a book. → I was given a book. / A book was given to me.\n• by 이외의 전치사를 쓰는 수동태\n  - be interested in, be covered with, be filled with, be made of(재료 그대로), be made from(재료 변형), be known to, be surprised at",
+   "examples": [
+    {
+     "en": "This problem can be solved easily.",
+     "ko": "이 문제는 쉽게 풀릴 수 있다."
+    },
+    {
+     "en": "The house is being painted now.",
+     "ko": "그 집은 지금 페인트칠되고 있다."
+    },
+    {
+     "en": "The mountain was covered with snow.",
+     "ko": "산은 눈으로 덮여 있었다."
+    },
+    {
+     "en": "I was given a second chance.",
+     "ko": "나는 두 번째 기회를 받았다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "The homework must ___ by tomorrow.",
+     "o": [
+      "finish",
+      "be finished",
+      "finished",
+      "is finished"
+     ],
+     "a": 1,
+     "x": "조동사 + be + p.p.",
+     "id": "g23b1"
+    },
+    {
+     "t": "c",
+     "q": "The box was filled ___ toys.",
+     "o": [
+      "by",
+      "with",
+      "of",
+      "in"
+     ],
+     "a": 1,
+     "x": "be filled with",
+     "id": "g23b2"
+    },
+    {
+     "t": "c",
+     "q": "She is interested ___ music.",
+     "o": [
+      "at",
+      "with",
+      "in",
+      "by"
+     ],
+     "a": 2,
+     "x": "be interested in",
+     "id": "g23b3"
+    },
+    {
+     "t": "c",
+     "q": "This table is made ___ wood.",
+     "o": [
+      "from",
+      "of",
+      "in",
+      "with"
+     ],
+     "a": 1,
+     "x": "재료가 그대로 보임 → made of",
+     "id": "g23b4"
+    },
+    {
+     "t": "o",
+     "ko": "그 규칙은 지켜져야 한다.",
+     "a": "The rule should be followed",
+     "x": "조동사 + be + p.p.",
+     "id": "g23b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "Cheese is made ___ milk.",
+     "o": [
+      "of",
+      "from",
+      "by",
+      "with"
+     ],
+     "a": 1,
+     "x": "재료가 변형됨 → made from",
+     "id": "g23d1"
+    },
+    {
+     "t": "c",
+     "q": "The road ___ now.",
+     "o": [
+      "is repaired",
+      "is being repaired",
+      "was repair",
+      "repairs"
+     ],
+     "a": 1,
+     "x": "진행형 수동 → is being p.p.",
+     "id": "g23d2"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "The singer is known to everyone.",
+      "The letter will be sent today.",
+      "The desk is covered by dust.",
+      "The bridge has been repaired twice."
+     ],
+     "a": 2,
+     "x": "be covered with",
+     "id": "g23d3"
+    },
+    {
+     "t": "b",
+     "q": "The window can ___ seen from the street.",
+     "a": [
+      "be"
+     ],
+     "x": "can be + p.p.",
+     "id": "g23d4"
+    },
+    {
+     "t": "c",
+     "q": "He gave her a ring. → A ring ___ to her.",
+     "o": [
+      "was given",
+      "gave",
+      "is give",
+      "has give"
+     ],
+     "a": 0,
+     "x": "과거 수동 → was given",
+     "id": "g23d5"
+    },
+    {
+     "t": "c",
+     "q": "I was surprised ___ the news.",
+     "o": [
+      "at",
+      "in",
+      "of",
+      "to"
+     ],
+     "a": 0,
+     "x": "be surprised at",
+     "id": "g23d6"
+    },
+    {
+     "t": "o",
+     "ko": "그 경기는 내일 열릴 것이다.",
+     "a": "The game will be held tomorrow",
+     "x": "will be + p.p.",
+     "id": "g23d7"
+    }
+   ]
+  },
+  {
+   "id": "g24",
+   "level": "중3",
+   "title": "비교 표현 심화",
+   "concept": "• the + 비교급, the + 비교급: ~할수록 더 …하다\n  - The more you practice, the better you get.\n• 비교급 + and + 비교급: 점점 더 ~한 — It's getting colder and colder.\n• 배수 비교: 배수 + as ~ as — This room is three times as large as mine.\n• 최상급 의미 표현\n  - No other + 단수명사 + 비교급 than: No other student is taller than Tom.\n  - 비교급 + than any other + 단수명사: Tom is taller than any other student.\n• as ~ as possible = as ~ as + 주어 + can: 가능한 한 ~하게\n• one of the + 최상급 + 복수명사: 가장 ~한 것 중 하나",
+   "examples": [
+    {
+     "en": "The harder you study, the higher your score will be.",
+     "ko": "공부를 열심히 할수록 점수가 더 높아질 것이다."
+    },
+    {
+     "en": "The weather is getting warmer and warmer.",
+     "ko": "날씨가 점점 더 따뜻해지고 있다."
+    },
+    {
+     "en": "Please come as soon as possible.",
+     "ko": "가능한 한 빨리 와 주세요."
+    },
+    {
+     "en": "She is one of the best singers in Korea.",
+     "ko": "그녀는 한국에서 가장 뛰어난 가수 중 한 명이다."
+    }
+   ],
+   "basic": [
+    {
+     "t": "c",
+     "q": "The more you read, the ___ you learn.",
+     "o": [
+      "much",
+      "more",
+      "most",
+      "many"
+     ],
+     "a": 1,
+     "x": "the 비교급, the 비교급",
+     "id": "g24b1"
+    },
+    {
+     "t": "c",
+     "q": "It is getting ___ and ___.",
+     "o": [
+      "dark / dark",
+      "darker / darker",
+      "darkest / darkest",
+      "more / dark"
+     ],
+     "a": 1,
+     "x": "비교급 and 비교급",
+     "id": "g24b2"
+    },
+    {
+     "t": "c",
+     "q": "This box is twice as ___ as that one.",
+     "o": [
+      "heavy",
+      "heavier",
+      "heaviest",
+      "more heavy"
+     ],
+     "a": 0,
+     "x": "배수 + as + 원급 + as",
+     "id": "g24b3"
+    },
+    {
+     "t": "c",
+     "q": "He is one of the most famous ___ in the world.",
+     "o": [
+      "actor",
+      "actors",
+      "actress",
+      "acting"
+     ],
+     "a": 1,
+     "x": "one of the + 최상급 + 복수명사",
+     "id": "g24b4"
+    },
+    {
+     "t": "o",
+     "ko": "가능한 한 빨리 뛰어라.",
+     "a": "Run as fast as possible",
+     "x": "as ~ as possible",
+     "id": "g24b5"
+    }
+   ],
+   "drill": [
+    {
+     "t": "c",
+     "q": "Mina is taller than any other ___ in her class.",
+     "o": [
+      "girl",
+      "girls",
+      "girl's",
+      "the girl"
+     ],
+     "a": 0,
+     "x": "any other + 단수명사",
+     "id": "g24d1"
+    },
+    {
+     "t": "c",
+     "q": "No other mountain in Korea is ___ than Mt. Halla.",
+     "o": [
+      "high",
+      "higher",
+      "highest",
+      "the highest"
+     ],
+     "a": 1,
+     "x": "No other ~ 비교급 than",
+     "id": "g24d2"
+    },
+    {
+     "t": "c",
+     "q": "다음 중 틀린 문장은?",
+     "o": [
+      "The sooner, the better.",
+      "It's getting hotter and hotter.",
+      "He is one of the best player.",
+      "Speak as clearly as you can."
+     ],
+     "a": 2,
+     "x": "one of the best players (복수)",
+     "id": "g24d3"
+    },
+    {
+     "t": "c",
+     "q": "Please answer as quickly as ___.",
+     "o": [
+      "possibly",
+      "possible",
+      "can",
+      "you"
+     ],
+     "a": 1,
+     "x": "as ~ as possible",
+     "id": "g24d4"
+    },
+    {
+     "t": "b",
+     "q": "The older he got, the ___ (wise) he became.",
+     "a": [
+      "wiser"
+     ],
+     "x": "the 비교급, the 비교급",
+     "id": "g24d5"
+    },
+    {
+     "t": "c",
+     "q": "My house is three times ___ yours.",
+     "o": [
+      "as big as",
+      "bigger",
+      "as bigger as",
+      "the biggest"
+     ],
+     "a": 0,
+     "x": "배수 + as ~ as",
+     "id": "g24d6"
+    },
+    {
+     "t": "o",
+     "ko": "더 많이 웃을수록 더 행복해진다.",
+     "a": "The more you smile, the happier you become",
+     "x": "the 비교급 ~, the 비교급 …",
+     "id": "g24d7"
+    }
+   ]
+  }
+ ]
+}
