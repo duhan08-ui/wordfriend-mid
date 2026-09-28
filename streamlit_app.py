@@ -121,6 +121,7 @@ def validate_grammar(g):
                 errs.append(f"{w}: 완성 해석 없음")
             if not [y for y in (x.get("wrong") or []) if str(y).strip()]:
                 errs.append(f"{w}: 틀린 해석이 최소 1개 필요해요")
+            errs += _detail_errs(x, w)
     return errs
 
 
@@ -140,6 +141,21 @@ def load_reading():
 
 def _chunks(s):
     return [c.strip() for c in str(s).split(" / ") if c.strip()]
+
+
+def _detail_errs(x, where):
+    """자세히 보기 자료(w/ord/why/wr) 검사 — 없으면 통과(앱이 해당 칸을 건너뜀)"""
+    errs = []
+    n = len(_chunks(x.get("en", "")))
+    o = x.get("ord")
+    if o is not None and (not isinstance(o, list) or sorted(o) != list(range(n))):
+        errs.append(f"{where}: 해석 순서(ord)는 0~{n - 1} 번호를 한 번씩 써야 해요")
+    w = x.get("w")
+    if w is not None and (not isinstance(w, list) or not all(isinstance(p, list) and len(p) == 2 for p in w)):
+        errs.append(f"{where}: 단어 뜻(w) 형식 확인")
+    if x.get("wr") is not None and len(x.get("wr") or []) > len(x.get("wrong") or []):
+        errs.append(f"{where}: 틀린 이유(wr)가 틀린 해석보다 많아요")
+    return errs
 
 
 def validate_reading(d):
@@ -185,6 +201,7 @@ def validate_reading(d):
                 errs.append(f"{pid} {i + 1}번 문장: 덩어리 수가 달라요 (영어 {len(e)} / 우리말 {len(k)})")
             if not str(s2.get("full", "")).strip():
                 errs.append(f"{pid} {i + 1}번 문장: 완성 해석 없음")
+            errs += _detail_errs(s2, f"{pid} {i + 1}번 문장")
         for i, q in enumerate(p_.get("qs") or []):
             o = q.get("o") or []
             if not str(q.get("q", "")).strip() or len(o) < 2 or not all(str(x).strip() for x in o) \
@@ -729,6 +746,11 @@ def page_grammar_admin():
         s_ok = _chunk_check(s_en, s_ko)
         s_full = st.text_input("완성 해석", key=f"sfu_{u['id']}")
         s_wrong = st.text_area("틀린 해석 (한 줄에 하나, 1~3개 — 헷갈리지만 분명히 틀린 해석)", key=f"swr_{u['id']}")
+        st.caption("아래는 선택 — 채우면 앱에서 '단어 하나씩 · 우리말 순서 · 왜 이렇게 읽나요 · 틀린 이유'가 보여요")
+        s_words = st.text_input("단어 뜻 (순서대로, 쉼표로: I=나는, lost=잃어버렸다, …)", key=f"sww_{u['id']}")
+        s_ord = st.text_input("해석 순서 (덩어리 번호, 1부터: 예 1 5 4 3 2)", key=f"sor_{u['id']}")
+        s_why = st.text_area("왜 이렇게 읽나요? (1~3문장)", key=f"swy_{u['id']}", height=80)
+        s_wr = st.text_area("틀린 이유 (틀린 해석과 같은 순서로 한 줄씩)", key=f"swx_{u['id']}", height=80)
 
     type_names = {"c": "고르기", "b": "빈칸", "o": "배열"}
     to_delete = []
@@ -793,8 +815,23 @@ def page_grammar_admin():
             if not s_ok:
                 st.error("추가할 예문의 덩어리 수를 맞춰 주세요")
                 return
-            sents.append({"en": s_en.strip(), "ko": s_ko.strip(), "full": s_full.strip(),
-                          "wrong": [w.strip() for w in s_wrong.splitlines() if w.strip()][:3]})
+            ns = {"en": s_en.strip(), "ko": s_ko.strip(), "full": s_full.strip(),
+                  "wrong": [w.strip() for w in s_wrong.splitlines() if w.strip()][:3]}
+            pairs = [t.split("=", 1) for t in s_words.split(",") if "=" in t]
+            if pairs:
+                ns["w"] = [[a.strip(), b.strip()] for a, b in pairs if a.strip()]
+            if s_ord.strip():
+                try:
+                    ns["ord"] = [int(t) - 1 for t in s_ord.replace(",", " ").split()]
+                except ValueError:
+                    st.error("해석 순서는 숫자만 적어 주세요 (예: 1 5 4 3 2)")
+                    return
+            if s_why.strip():
+                ns["why"] = s_why.strip()
+            wr = [t.strip() for t in s_wr.splitlines() if t.strip()]
+            if wr:
+                ns["wr"] = wr[:len(ns["wrong"])]
+            sents.append(ns)
         u2["sents"] = sents
         for sec, i in sorted(to_delete, key=lambda t: -t[1]):
             del u2[sec][i]
@@ -904,7 +941,13 @@ def page_reading_admin():
                 bad.append(f"{n}번 줄: 덩어리 수가 달라요 (영어 {len(_chunks(en))} / 우리말 {len(_chunks(ko))})")
             if not full:
                 bad.append(f"{n}번 줄: 완성 해석이 비어 있어요")
-            sents.append({"en": en, "ko": ko, "full": full})
+            prev = next((x for x in (p_.get("sents") or []) if x.get("en") == en and x.get("ko") == ko), None)
+            item = {"en": en, "ko": ko, "full": full}
+            if prev:   # 영어·덩어리가 그대로면 자세히 보기 자료(단어 뜻·해석 순서·설명) 유지
+                for key in ("w", "ord", "why"):
+                    if key in prev:
+                        item[key] = prev[key]
+            sents.append(item)
         if bad:
             st.warning("\n".join(bad[:8]))
         elif sents:
