@@ -1,0 +1,1927 @@
+{
+ "version": 1,
+ "sets": [
+  {
+   "id": "s01",
+   "level": "중1",
+   "title": "주어 + 동사 찾기",
+   "tip": "문장의 뼈대는 '누가(주어) / 어떻게 한다(동사)'. 먼저 동사를 찾고, 그 앞을 주어로 묶어요.",
+   "items": [
+    {
+     "en": "My little brother / plays games / after dinner",
+     "ko": "내 남동생은 / 게임을 한다 / 저녁 식사 후에",
+     "full": "내 남동생은 저녁 식사 후에 게임을 한다.",
+     "wrong": [
+      "나는 저녁 식사 후에 남동생과 게임을 한다.",
+      "내 남동생은 저녁 식사 전에 게임을 했다."
+     ]
+    },
+    {
+     "en": "The students in my class / are / very friendly",
+     "ko": "우리 반 학생들은 / ~이다 / 매우 친절한",
+     "full": "우리 반 학생들은 매우 친절하다.",
+     "wrong": [
+      "우리 반에 있는 친절한 학생은 한 명이다.",
+      "나는 우리 반 학생들에게 매우 친절하다."
+     ]
+    },
+    {
+     "en": "She / doesn't drink / coffee / in the morning",
+     "ko": "그녀는 / 마시지 않는다 / 커피를 / 아침에",
+     "full": "그녀는 아침에 커피를 마시지 않는다.",
+     "wrong": [
+      "그녀는 아침에만 커피를 마신다.",
+      "그녀는 아침에 커피를 마시지 않았다."
+     ]
+    },
+    {
+     "en": "Many people / visit / this museum / every year",
+     "ko": "많은 사람들이 / 방문한다 / 이 박물관을 / 매년",
+     "full": "많은 사람들이 매년 이 박물관을 방문한다.",
+     "wrong": [
+      "이 박물관은 매년 많은 사람들을 초대한다.",
+      "많은 사람들이 올해 이 박물관을 방문했다."
+     ]
+    },
+    {
+     "en": "The girl with long hair / is / my cousin",
+     "ko": "긴 머리를 가진 그 소녀는 / ~이다 / 내 사촌",
+     "full": "긴 머리의 그 소녀는 내 사촌이다.",
+     "wrong": [
+      "내 사촌은 긴 머리를 가진 소녀를 좋아한다.",
+      "그 소녀는 내 사촌의 긴 머리를 좋아한다."
+     ]
+    },
+    {
+     "en": "Do you / walk to school / every day?",
+     "ko": "너는 ~하니 / 학교에 걸어가다 / 매일",
+     "full": "너는 매일 학교에 걸어가니?",
+     "wrong": [
+      "너는 매일 학교에서 걷니?",
+      "너는 오늘 학교에 걸어갔니?"
+     ]
+    },
+    {
+     "en": "My parents / work / at a hospital / near our house",
+     "ko": "우리 부모님은 / 일하신다 / 병원에서 / 우리 집 근처의",
+     "full": "우리 부모님은 우리 집 근처 병원에서 일하신다.",
+     "wrong": [
+      "우리 부모님은 병원 근처에 있는 집에서 일하신다.",
+      "우리 부모님은 우리 집 근처 병원에 입원해 계신다."
+     ]
+    },
+    {
+     "en": "Reading books / is / my favorite hobby",
+     "ko": "책을 읽는 것은 / ~이다 / 내가 가장 좋아하는 취미",
+     "full": "책 읽기는 내가 가장 좋아하는 취미이다.",
+     "wrong": [
+      "나는 취미로 좋아하는 책을 읽는다.",
+      "내가 가장 좋아하는 책은 취미에 관한 책이다."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "level": "중1",
+   "title": "시제 읽기 (진행 · 과거 · 미래)",
+   "tip": "동사 모양으로 '언제'를 먼저 확인해요: is -ing(지금 하는 중), -ed/불규칙(과거), will·be going to(미래).",
+   "items": [
+    {
+     "en": "We / are practicing / for the school festival",
+     "ko": "우리는 / 연습하고 있다 / 학교 축제를 위해",
+     "full": "우리는 학교 축제를 위해 연습하고 있다.",
+     "wrong": [
+      "우리는 학교 축제를 위해 연습했다.",
+      "우리는 학교 축제에서 연습할 것이다."
+     ]
+    },
+    {
+     "en": "I / lost / my umbrella / on the bus / yesterday",
+     "ko": "나는 / 잃어버렸다 / 내 우산을 / 버스에서 / 어제",
+     "full": "나는 어제 버스에서 우산을 잃어버렸다.",
+     "wrong": [
+      "나는 어제 버스에서 우산을 찾았다.",
+      "나는 내일 버스에서 우산을 잃어버릴 것이다."
+     ]
+    },
+    {
+     "en": "It / will be / sunny and warm / this weekend",
+     "ko": "(날씨가) / ~일 것이다 / 맑고 따뜻한 / 이번 주말에",
+     "full": "이번 주말에는 맑고 따뜻할 것이다.",
+     "wrong": [
+      "지난 주말에는 맑고 따뜻했다.",
+      "이번 주말에는 맑지만 추울 것이다."
+     ]
+    },
+    {
+     "en": "She / was talking / on the phone / when I came in",
+     "ko": "그녀는 / 이야기하고 있었다 / 전화로 / 내가 들어왔을 때",
+     "full": "내가 들어왔을 때 그녀는 전화 통화를 하고 있었다.",
+     "wrong": [
+      "그녀가 들어왔을 때 나는 전화 통화를 하고 있었다.",
+      "내가 들어오자 그녀는 전화를 끊었다."
+     ]
+    },
+    {
+     "en": "They / are going to move / to a new city / next month",
+     "ko": "그들은 / 이사할 예정이다 / 새 도시로 / 다음 달에",
+     "full": "그들은 다음 달에 새 도시로 이사할 예정이다.",
+     "wrong": [
+      "그들은 지난달에 새 도시로 이사했다.",
+      "그들은 새 도시에서 다음 달에 돌아올 것이다."
+     ]
+    },
+    {
+     "en": "I / didn't sleep well / last night",
+     "ko": "나는 / 잘 자지 못했다 / 어젯밤에",
+     "full": "나는 어젯밤에 잠을 잘 못 잤다.",
+     "wrong": [
+      "나는 어젯밤에 잠을 잘 잤다.",
+      "나는 오늘 밤 잠을 잘 못 잘 것이다."
+     ]
+    },
+    {
+     "en": "What / are you going to do / after school?",
+     "ko": "무엇을 / 너는 할 예정이니 / 방과 후에",
+     "full": "너는 방과 후에 무엇을 할 거니?",
+     "wrong": [
+      "너는 방과 후에 무엇을 했니?",
+      "너는 방과 후에 보통 무엇을 하니?"
+     ]
+    },
+    {
+     "en": "The baby / stopped crying / and fell asleep",
+     "ko": "그 아기는 / 우는 것을 멈췄다 / 그리고 잠들었다",
+     "full": "아기는 울음을 그치고 잠이 들었다.",
+     "wrong": [
+      "아기는 잠에서 깨서 울기 시작했다.",
+      "아기는 울다가 잠깐 멈췄다."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "level": "중1",
+   "title": "조동사 문장",
+   "tip": "조동사(can, must, should, may)는 동사 앞에서 '가능·의무·충고·추측'의 뜻을 더해요.",
+   "items": [
+    {
+     "en": "You / should wear / a helmet / when you ride a bike",
+     "ko": "너는 / 써야 한다(쓰는 게 좋다) / 헬멧을 / 자전거를 탈 때",
+     "full": "자전거를 탈 때는 헬멧을 써야 한다.",
+     "wrong": [
+      "자전거를 탈 때 헬멧을 쓸 수 있다.",
+      "헬멧을 쓰면 자전거를 탈 수 없다."
+     ]
+    },
+    {
+     "en": "Students / must not use / their phones / during class",
+     "ko": "학생들은 / 사용하면 안 된다 / 휴대전화를 / 수업 중에",
+     "full": "학생들은 수업 중에 휴대전화를 사용하면 안 된다.",
+     "wrong": [
+      "학생들은 수업 중에 휴대전화를 사용해야 한다.",
+      "학생들은 수업 중에 휴대전화를 사용할 필요가 없다."
+     ]
+    },
+    {
+     "en": "I / can't find / my glasses / anywhere",
+     "ko": "나는 / 찾을 수 없다 / 내 안경을 / 어디에서도",
+     "full": "나는 어디에서도 안경을 찾을 수 없다.",
+     "wrong": [
+      "나는 안경 없이는 아무것도 찾을 수 없다.",
+      "나는 어디에서나 안경을 찾을 수 있다."
+     ]
+    },
+    {
+     "en": "It / may snow / tonight",
+     "ko": "(날씨가) / 눈이 올지도 모른다 / 오늘 밤",
+     "full": "오늘 밤 눈이 올지도 모른다.",
+     "wrong": [
+      "오늘 밤 반드시 눈이 온다.",
+      "어젯밤 눈이 왔을지도 모른다."
+     ]
+    },
+    {
+     "en": "You / don't have to bring / your lunch / tomorrow",
+     "ko": "너는 / 가져올 필요가 없다 / 점심을 / 내일",
+     "full": "내일은 점심을 가져올 필요가 없다.",
+     "wrong": [
+      "내일은 점심을 가져오면 안 된다.",
+      "내일은 점심을 꼭 가져와야 한다."
+     ]
+    },
+    {
+     "en": "Can I / borrow / your notebook / for a minute?",
+     "ko": "내가 ~해도 될까 / 빌리다 / 네 공책을 / 잠깐",
+     "full": "네 공책 잠깐 빌려도 될까?",
+     "wrong": [
+      "내 공책을 잠깐 빌려줄래?",
+      "내가 네 공책을 잠깐 빌려줄까?"
+     ]
+    },
+    {
+     "en": "We / had to wait / for an hour / in the rain",
+     "ko": "우리는 / 기다려야 했다 / 한 시간 동안 / 빗속에서",
+     "full": "우리는 빗속에서 한 시간 동안 기다려야 했다.",
+     "wrong": [
+      "우리는 비가 그치기를 한 시간 동안 기다렸다.",
+      "우리는 빗속에서 한 시간 동안 기다릴 것이다."
+     ]
+    },
+    {
+     "en": "He / must be / very tired / after the long trip",
+     "ko": "그는 / ~임에 틀림없다 / 매우 피곤한 / 긴 여행 후에",
+     "full": "긴 여행 후라서 그는 매우 피곤한 게 틀림없다.",
+     "wrong": [
+      "그는 긴 여행 후에 피곤하면 안 된다.",
+      "그는 긴 여행을 하기 전에 매우 피곤했다."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "level": "중1",
+   "title": "꾸미는 말 (전치사구 · There is)",
+   "tip": "명사 뒤의 '전치사 + 명사'는 앞 명사를 꾸미거나 장소·시간을 알려 줘요. There is/are는 '~이 있다'.",
+   "items": [
+    {
+     "en": "There are / three bakeries / on this street",
+     "ko": "~이 있다 / 빵집 세 곳이 / 이 거리에",
+     "full": "이 거리에는 빵집이 세 곳 있다.",
+     "wrong": [
+      "이 거리에는 빵집이 하나도 없다.",
+      "이 거리의 빵집에는 빵이 세 개 있다."
+     ]
+    },
+    {
+     "en": "The key / on the table / is / mine",
+     "ko": "그 열쇠는 / 탁자 위에 있는 / ~이다 / 내 것",
+     "full": "탁자 위에 있는 열쇠는 내 것이다.",
+     "wrong": [
+      "내 열쇠는 탁자 아래에 있다.",
+      "탁자 위의 열쇠는 내 것이 아니다."
+     ]
+    },
+    {
+     "en": "A boy / in a red cap / is waving / at us",
+     "ko": "한 소년이 / 빨간 모자를 쓴 / 손을 흔들고 있다 / 우리에게",
+     "full": "빨간 모자를 쓴 소년이 우리에게 손을 흔들고 있다.",
+     "wrong": [
+      "우리는 빨간 모자를 쓴 소년에게 손을 흔들고 있다.",
+      "한 소년이 빨간 모자를 흔들고 있다."
+     ]
+    },
+    {
+     "en": "Is there / a convenience store / near here?",
+     "ko": "~이 있니 / 편의점이 / 이 근처에",
+     "full": "이 근처에 편의점이 있나요?",
+     "wrong": [
+      "이 편의점은 여기서 가깝나요?",
+      "이 근처 편의점은 어디에 있나요?"
+     ]
+    },
+    {
+     "en": "The picture / on the wall / was painted / by my grandfather",
+     "ko": "그 그림은 / 벽에 걸린 / 그려졌다 / 할아버지에 의해",
+     "full": "벽에 걸린 그림은 할아버지께서 그리신 것이다.",
+     "wrong": [
+      "할아버지께서 벽에 그림을 걸어 두셨다.",
+      "벽에 걸린 그림은 할아버지를 그린 것이다."
+     ]
+    },
+    {
+     "en": "I / put / my books / under the desk",
+     "ko": "나는 / 두었다 / 내 책들을 / 책상 아래에",
+     "full": "나는 책을 책상 아래에 두었다.",
+     "wrong": [
+      "나는 책상 위에 책을 두었다.",
+      "내 책들은 책상 아래에서 발견되었다."
+     ]
+    },
+    {
+     "en": "There was / a big tree / in front of my old house",
+     "ko": "~이 있었다 / 큰 나무가 / 우리 옛집 앞에",
+     "full": "우리 옛집 앞에는 큰 나무가 있었다.",
+     "wrong": [
+      "우리 옛집 뒤에는 큰 나무가 있다.",
+      "큰 나무 앞에 우리 옛집이 있었다."
+     ]
+    },
+    {
+     "en": "The man / next to my father / is / our new neighbor",
+     "ko": "그 남자는 / 우리 아버지 옆에 있는 / ~이다 / 우리의 새 이웃",
+     "full": "우리 아버지 옆에 있는 남자가 우리의 새 이웃이다.",
+     "wrong": [
+      "우리 아버지는 새 이웃 옆에 살고 계신다.",
+      "새 이웃은 우리 아버지를 좋아한다."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "level": "중2",
+   "title": "to부정사 덩어리",
+   "tip": "to + 동사원형 덩어리가 '~하는 것(명사) / ~할(형용사) / ~하기 위해·~해서(부사)' 중 무엇인지 앞뒤를 보고 정해요.",
+   "items": [
+    {
+     "en": "I / decided / to join / the school band",
+     "ko": "나는 / 결심했다 / 가입하기로 / 학교 밴드에",
+     "full": "나는 학교 밴드에 가입하기로 결심했다.",
+     "wrong": [
+      "나는 학교 밴드에 가입하기 위해 연습했다.",
+      "학교 밴드는 나를 받아 주기로 결정했다."
+     ]
+    },
+    {
+     "en": "She / went to the library / to return / some books",
+     "ko": "그녀는 / 도서관에 갔다 / 반납하기 위해 / 책 몇 권을",
+     "full": "그녀는 책 몇 권을 반납하러 도서관에 갔다.",
+     "wrong": [
+      "그녀는 도서관에서 책 몇 권을 빌렸다.",
+      "그녀는 도서관에 가서 책을 반납하는 것을 잊었다."
+     ]
+    },
+    {
+     "en": "I / have / a lot of homework / to finish / tonight",
+     "ko": "나는 / 있다 / 많은 숙제가 / 끝내야 할 / 오늘 밤",
+     "full": "나는 오늘 밤 끝내야 할 숙제가 많다.",
+     "wrong": [
+      "나는 오늘 밤 숙제를 많이 끝냈다.",
+      "나는 숙제를 끝내기 위해 오늘 밤을 새울 것이다."
+     ]
+    },
+    {
+     "en": "We / were happy / to hear / the good news",
+     "ko": "우리는 / 기뻤다 / 듣게 되어 / 그 좋은 소식을",
+     "full": "우리는 그 좋은 소식을 듣고 기뻤다.",
+     "wrong": [
+      "우리는 좋은 소식을 듣기 위해 기다렸다.",
+      "우리는 기뻐서 좋은 소식을 전했다."
+     ]
+    },
+    {
+     "en": "My goal / is / to read / 30 books / this year",
+     "ko": "나의 목표는 / ~이다 / 읽는 것 / 책 30권을 / 올해",
+     "full": "나의 올해 목표는 책 30권을 읽는 것이다.",
+     "wrong": [
+      "나는 올해 책 30권을 읽었다.",
+      "나는 목표에 관한 책 30권을 읽을 것이다."
+     ]
+    },
+    {
+     "en": "It / is not easy / to learn / a new language",
+     "ko": "(가주어) / 쉽지 않다 / 배우는 것은 / 새로운 언어를",
+     "full": "새로운 언어를 배우는 것은 쉽지 않다.",
+     "wrong": [
+      "새로운 언어는 배우기 쉽다.",
+      "쉬운 언어를 배우는 것은 새롭지 않다."
+     ]
+    },
+    {
+     "en": "He / needs / someone / to talk to",
+     "ko": "그는 / 필요하다 / 누군가가 / 이야기할",
+     "full": "그는 이야기할 누군가가 필요하다.",
+     "wrong": [
+      "그는 누군가에게 이야기해야 한다.",
+      "누군가 그와 이야기하고 싶어 한다."
+     ]
+    },
+    {
+     "en": "Please tell me / how to get / to the station",
+     "ko": "나에게 말해 주세요 / 어떻게 가는지 / 역으로",
+     "full": "역에 어떻게 가는지 알려 주세요.",
+     "wrong": [
+      "역에 가서 말해 주세요.",
+      "역에 도착하면 저에게 알려 주세요."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s06",
+   "level": "중2",
+   "title": "동명사 덩어리",
+   "tip": "-ing 덩어리가 문장 앞(주어)이나 동사·전치사 뒤(목적어)에 오면 '~하는 것'으로 읽어요.",
+   "items": [
+    {
+     "en": "Getting enough sleep / is / important / for teenagers",
+     "ko": "충분한 잠을 자는 것은 / ~이다 / 중요한 / 십대들에게",
+     "full": "충분한 잠을 자는 것은 십대들에게 중요하다.",
+     "wrong": [
+      "십대들은 중요한 일 때문에 잠을 충분히 못 잔다.",
+      "충분히 잠을 잔 십대들은 중요하다."
+     ]
+    },
+    {
+     "en": "My sister / enjoys / baking cookies / on weekends",
+     "ko": "내 여동생은 / 즐긴다 / 쿠키 굽는 것을 / 주말마다",
+     "full": "내 여동생은 주말마다 쿠키 굽는 것을 즐긴다.",
+     "wrong": [
+      "내 여동생은 주말에 구운 쿠키를 즐겨 먹는다.",
+      "내 여동생은 주말에 쿠키를 굽기 시작했다."
+     ]
+    },
+    {
+     "en": "Thank you / for helping me / with my project",
+     "ko": "고마워 / 나를 도와줘서 / 내 과제를",
+     "full": "내 과제를 도와줘서 고마워.",
+     "wrong": [
+      "내 과제를 도와줄 수 있니?",
+      "과제를 도와주니 너에게 고마워할게."
+     ]
+    },
+    {
+     "en": "He / is afraid of / speaking / in front of people",
+     "ko": "그는 / ~을 두려워한다 / 말하는 것 / 사람들 앞에서",
+     "full": "그는 사람들 앞에서 말하는 것을 두려워한다.",
+     "wrong": [
+      "사람들은 그의 앞에서 말하는 것을 두려워한다.",
+      "그는 사람들 앞에서 두렵다고 말했다."
+     ]
+    },
+    {
+     "en": "Would you mind / closing / the window?",
+     "ko": "~해 주시겠어요(~하는 것을 꺼리시나요) / 닫는 것 / 창문을",
+     "full": "창문 좀 닫아 주시겠어요?",
+     "wrong": [
+      "창문을 닫아도 될까요? (제가 닫을게요)",
+      "창문을 닫지 말아 주시겠어요?"
+     ]
+    },
+    {
+     "en": "I / finished / cleaning my room / an hour ago",
+     "ko": "나는 / 끝냈다 / 내 방을 청소하는 것을 / 한 시간 전에",
+     "full": "나는 한 시간 전에 방 청소를 끝냈다.",
+     "wrong": [
+      "나는 한 시간 동안 방 청소를 했다.",
+      "나는 한 시간 뒤에 방 청소를 끝낼 것이다."
+     ]
+    },
+    {
+     "en": "She / is good at / solving / math problems",
+     "ko": "그녀는 / ~을 잘한다 / 푸는 것 / 수학 문제를",
+     "full": "그녀는 수학 문제를 잘 푼다.",
+     "wrong": [
+      "그녀는 수학 문제를 푸는 것을 좋아한다.",
+      "그녀에게 수학 문제는 좋은 문제다."
+     ]
+    },
+    {
+     "en": "Instead of / taking the bus, / we / walked home",
+     "ko": "~하는 대신에 / 버스를 타는 것 / 우리는 / 집에 걸어갔다",
+     "full": "우리는 버스를 타는 대신 집까지 걸어갔다.",
+     "wrong": [
+      "우리는 버스를 타고 집에 갔다.",
+      "우리는 걸어가는 대신 버스를 탔다."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s07",
+   "level": "중2",
+   "title": "현재완료 읽기",
+   "tip": "have/has + p.p.는 '과거부터 지금까지'의 연결: ~해 왔다 / ~한 적 있다 / 막 ~했다 / ~해 버렸다.",
+   "items": [
+    {
+     "en": "I / have lived / in this town / since I was born",
+     "ko": "나는 / 살아 왔다 / 이 마을에서 / 태어난 이후로",
+     "full": "나는 태어난 이후로 이 마을에서 살아 왔다.",
+     "wrong": [
+      "나는 이 마을에서 태어났지만 지금은 살지 않는다.",
+      "나는 이 마을로 이사 온 뒤 태어났다."
+     ]
+    },
+    {
+     "en": "Have you ever / eaten / Mexican food?",
+     "ko": "너는 ~해 본 적 있니 / 먹어 보다 / 멕시코 음식을",
+     "full": "너는 멕시코 음식을 먹어 본 적이 있니?",
+     "wrong": [
+      "너는 지금 멕시코 음식을 먹고 있니?",
+      "너는 멕시코 음식을 먹을 거니?"
+     ]
+    },
+    {
+     "en": "The movie / has already started",
+     "ko": "그 영화는 / 이미 시작했다",
+     "full": "영화가 벌써 시작했다.",
+     "wrong": [
+      "영화가 곧 시작할 것이다.",
+      "영화는 아직 시작하지 않았다."
+     ]
+    },
+    {
+     "en": "She / has lost / her wallet / again",
+     "ko": "그녀는 / 잃어버렸다(지금도 없다) / 그녀의 지갑을 / 또",
+     "full": "그녀는 또 지갑을 잃어버렸다.",
+     "wrong": [
+      "그녀는 잃어버린 지갑을 다시 찾았다.",
+      "그녀는 지갑을 잃어버린 적이 한 번도 없다."
+     ]
+    },
+    {
+     "en": "We / haven't seen / each other / for two years",
+     "ko": "우리는 / 보지 못했다 / 서로를 / 2년 동안",
+     "full": "우리는 2년 동안 서로 만나지 못했다.",
+     "wrong": [
+      "우리는 2년 전에 서로 처음 만났다.",
+      "우리는 2년 동안 매일 서로를 만났다."
+     ]
+    },
+    {
+     "en": "I / have just finished / my science report",
+     "ko": "나는 / 막 끝냈다 / 내 과학 보고서를",
+     "full": "나는 과학 보고서를 방금 끝냈다.",
+     "wrong": [
+      "나는 과학 보고서를 이제 막 시작했다.",
+      "나는 과학 보고서를 끝낼 것이다."
+     ]
+    },
+    {
+     "en": "How long / have you known / your best friend?",
+     "ko": "얼마나 오래 / 너는 알아 왔니 / 너의 가장 친한 친구를",
+     "full": "너는 가장 친한 친구를 안 지 얼마나 됐니?",
+     "wrong": [
+      "너는 가장 친한 친구를 언제 처음 만났니?",
+      "너의 가장 친한 친구는 너를 얼마나 잘 아니?"
+     ]
+    },
+    {
+     "en": "He / has never been / on an airplane",
+     "ko": "그는 / 한 번도 ~해 본 적 없다 / 비행기에 타 본",
+     "full": "그는 비행기를 한 번도 타 본 적이 없다.",
+     "wrong": [
+      "그는 비행기를 자주 타 봤다.",
+      "그는 지금 비행기를 타고 있지 않다."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s08",
+   "level": "중2",
+   "title": "접속사로 문장 잇기",
+   "tip": "접속사(when, because, if, that, although) 앞에서 끊고, 두 덩어리의 관계(시간·이유·조건·양보)를 먼저 잡아요.",
+   "items": [
+    {
+     "en": "When I got home, / my dog / ran to me",
+     "ko": "내가 집에 왔을 때 / 우리 개가 / 나에게 달려왔다",
+     "full": "내가 집에 왔을 때 우리 개가 나에게 달려왔다.",
+     "wrong": [
+      "우리 개가 집에 왔을 때 나는 달려갔다.",
+      "내가 개를 데리고 집으로 달려왔다."
+     ]
+    },
+    {
+     "en": "I / stayed home / because I had a cold",
+     "ko": "나는 / 집에 있었다 / 감기에 걸렸기 때문에",
+     "full": "나는 감기에 걸려서 집에 있었다.",
+     "wrong": [
+      "나는 집에 있어서 감기에 걸렸다.",
+      "나는 감기에 걸렸지만 밖에 나갔다."
+     ]
+    },
+    {
+     "en": "If you / leave now, / you / can catch / the last train",
+     "ko": "만약 네가 / 지금 떠나면 / 너는 / 탈 수 있다 / 마지막 기차를",
+     "full": "지금 떠나면 마지막 기차를 탈 수 있어.",
+     "wrong": [
+      "네가 떠나서 마지막 기차를 놓쳤다.",
+      "마지막 기차를 타면 지금 떠날 수 있어."
+     ]
+    },
+    {
+     "en": "I / think / that you / made / the right choice",
+     "ko": "나는 / 생각한다 / 네가 / 했다고 / 올바른 선택을",
+     "full": "나는 네가 올바른 선택을 했다고 생각해.",
+     "wrong": [
+      "너는 내가 올바른 선택을 했다고 생각한다.",
+      "나는 너를 위해 올바른 선택을 할 것이다."
+     ]
+    },
+    {
+     "en": "Although it was late, / she / kept studying",
+     "ko": "비록 늦었지만 / 그녀는 / 계속 공부했다",
+     "full": "늦었는데도 그녀는 계속 공부했다.",
+     "wrong": [
+      "늦었기 때문에 그녀는 공부를 그만두었다.",
+      "그녀는 늦게 공부를 시작했다."
+     ]
+    },
+    {
+     "en": "Wait here / until I come back",
+     "ko": "여기서 기다려 / 내가 돌아올 때까지",
+     "full": "내가 돌아올 때까지 여기서 기다려.",
+     "wrong": [
+      "내가 돌아오면 여기서 기다려.",
+      "여기서 기다리다가 돌아가."
+     ]
+    },
+    {
+     "en": "He / was so tired / that he fell asleep / on the sofa",
+     "ko": "그는 / 너무 피곤해서 / 잠이 들었다 / 소파에서",
+     "full": "그는 너무 피곤해서 소파에서 잠이 들었다.",
+     "wrong": [
+      "그는 소파에서 잠을 자서 피곤하지 않았다.",
+      "그는 피곤했지만 소파에서 잠들지 않았다."
+     ]
+    },
+    {
+     "en": "Do you know / that the Earth / goes around / the Sun?",
+     "ko": "너는 아니 / 지구가 / 돈다는 것을 / 태양 주위를",
+     "full": "너는 지구가 태양 주위를 돈다는 것을 아니?",
+     "wrong": [
+      "태양이 지구 주위를 돈다는 것을 아니?",
+      "너는 지구와 태양이 어떻게 생겼는지 아니?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s09",
+   "level": "중2",
+   "title": "목적어 + 보어 · 수동태",
+   "tip": "동사 뒤 '사람 + 무엇' / '목적어 + 상태'를 덩어리로 보고, be + p.p.는 '~되다/당하다'로 읽어요.",
+   "items": [
+    {
+     "en": "My uncle / gave / me / a watch / for my birthday",
+     "ko": "우리 삼촌이 / 주셨다 / 나에게 / 시계를 / 내 생일 선물로",
+     "full": "삼촌이 내 생일에 시계를 주셨다.",
+     "wrong": [
+      "나는 삼촌 생신에 시계를 드렸다.",
+      "삼촌은 내 생일에 시계를 받으셨다."
+     ]
+    },
+    {
+     "en": "The news / made / everyone / surprised",
+     "ko": "그 소식은 / 만들었다 / 모두를 / 놀란 상태로",
+     "full": "그 소식에 모두가 놀랐다.",
+     "wrong": [
+      "모두가 그 소식을 만들어서 놀랐다.",
+      "그 소식은 놀랍게 만들어졌다."
+     ]
+    },
+    {
+     "en": "Please keep / the door / closed",
+     "ko": "유지해 주세요 / 문을 / 닫힌 상태로",
+     "full": "문을 닫아 두세요.",
+     "wrong": [
+      "문을 계속 열어 두세요.",
+      "닫힌 문을 열어 주세요."
+     ]
+    },
+    {
+     "en": "This bridge / was built / about 100 years ago",
+     "ko": "이 다리는 / 지어졌다 / 약 100년 전에",
+     "full": "이 다리는 약 100년 전에 지어졌다.",
+     "wrong": [
+      "이 다리는 약 100년 동안 지어졌다.",
+      "약 100년 전에 이 다리가 무너졌다."
+     ]
+    },
+    {
+     "en": "The teacher / asked / us / to be quiet",
+     "ko": "선생님은 / 요청하셨다 / 우리에게 / 조용히 하라고",
+     "full": "선생님께서 우리에게 조용히 하라고 하셨다.",
+     "wrong": [
+      "우리는 선생님께 조용히 해 달라고 부탁했다.",
+      "선생님은 우리에게 조용히 물어보셨다."
+     ]
+    },
+    {
+     "en": "English / is spoken / in many countries",
+     "ko": "영어는 / 말해진다(쓰인다) / 많은 나라에서",
+     "full": "영어는 많은 나라에서 쓰인다.",
+     "wrong": [
+      "많은 나라가 영어를 가르친다.",
+      "영어는 많은 나라의 말을 한다."
+     ]
+    },
+    {
+     "en": "We / call / our dog / Choco",
+     "ko": "우리는 / 부른다 / 우리 개를 / 초코라고",
+     "full": "우리는 우리 개를 초코라고 부른다.",
+     "wrong": [
+      "초코는 우리 개를 부른다.",
+      "우리 개는 초코를 좋아한다."
+     ]
+    },
+    {
+     "en": "The window / was broken / by a baseball",
+     "ko": "그 창문은 / 깨졌다 / 야구공에 의해",
+     "full": "창문이 야구공에 맞아 깨졌다.",
+     "wrong": [
+      "창문이 야구공을 깨뜨렸다.",
+      "깨진 창문 옆에 야구공이 있었다."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "level": "중3",
+   "title": "관계대명사 덩어리",
+   "tip": "who/which/that 덩어리는 바로 앞 명사를 뒤에서 꾸며요. 덩어리를 먼저 해석해서 앞 명사에 붙이세요.",
+   "items": [
+    {
+     "en": "I / have a friend / who lives / in Canada",
+     "ko": "나는 / 친구가 있다 / 사는 / 캐나다에",
+     "full": "나에게는 캐나다에 사는 친구가 있다.",
+     "wrong": [
+      "나는 캐나다에서 친구와 함께 산다.",
+      "캐나다에 사는 사람은 모두 내 친구다."
+     ]
+    },
+    {
+     "en": "The book / that you lent me / was / really interesting",
+     "ko": "그 책은 / 네가 나에게 빌려준 / ~였다 / 정말 재미있는",
+     "full": "네가 빌려준 책은 정말 재미있었어.",
+     "wrong": [
+      "내가 너에게 빌려준 책은 정말 재미있었어.",
+      "네가 빌려준 재미있는 책을 잃어버렸어."
+     ]
+    },
+    {
+     "en": "This is / the restaurant / which my family / often visits",
+     "ko": "이곳은 ~이다 / 그 식당 / 우리 가족이 / 자주 방문하는",
+     "full": "이곳이 우리 가족이 자주 가는 식당이다.",
+     "wrong": [
+      "우리 가족은 식당을 자주 운영한다.",
+      "이 식당은 우리 가족을 자주 초대한다."
+     ]
+    },
+    {
+     "en": "The man / who is standing / at the door / is / my coach",
+     "ko": "그 남자는 / 서 있는 / 문 앞에 / ~이다 / 나의 코치",
+     "full": "문 앞에 서 있는 남자가 우리 코치님이다.",
+     "wrong": [
+      "우리 코치님은 문 앞에 서 계시지 않는다.",
+      "문 앞에 서 있는 나는 코치를 기다린다."
+     ]
+    },
+    {
+     "en": "She / is / the girl / whose father / is a pilot",
+     "ko": "그녀는 / ~이다 / 그 소녀 / 그녀의 아버지가 / 조종사인",
+     "full": "그녀가 아버지가 조종사인 그 소녀이다.",
+     "wrong": [
+      "그녀의 아버지는 조종사가 되고 싶어 한다.",
+      "그녀는 조종사의 아버지를 알고 있다."
+     ]
+    },
+    {
+     "en": "Everything / that he said / turned out / to be true",
+     "ko": "모든 것이 / 그가 말한 / 드러났다 / 사실인 것으로",
+     "full": "그가 말한 모든 것이 사실로 밝혀졌다.",
+     "wrong": [
+      "그는 모든 것이 사실이라고 말했다.",
+      "그가 말한 것 중 사실은 하나도 없었다."
+     ]
+    },
+    {
+     "en": "What I need now / is / a long vacation",
+     "ko": "지금 내게 필요한 것은 / ~이다 / 긴 휴가",
+     "full": "지금 내게 필요한 것은 긴 휴가다.",
+     "wrong": [
+      "나는 지금 긴 휴가 중이다.",
+      "긴 휴가 동안 무엇이 필요하니?"
+     ]
+    },
+    {
+     "en": "People / who exercise regularly / tend to / sleep better",
+     "ko": "사람들은 / 규칙적으로 운동하는 / ~하는 경향이 있다 / 잠을 더 잘 자다",
+     "full": "규칙적으로 운동하는 사람들은 잠을 더 잘 자는 경향이 있다.",
+     "wrong": [
+      "잠을 잘 자는 사람들은 규칙적으로 운동해야 한다.",
+      "사람들은 잠을 잘 자기 위해 운동을 시작했다."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "level": "중3",
+   "title": "분사 · 관계부사 덩어리",
+   "tip": "명사 뒤의 -ing / p.p. 덩어리는 '~하는 / ~된'으로 앞 명사를 꾸며요. where/when 덩어리는 장소·시간을 설명해요.",
+   "items": [
+    {
+     "en": "The boy / playing the drums / is / my brother",
+     "ko": "그 소년은 / 드럼을 치고 있는 / ~이다 / 내 남동생",
+     "full": "드럼을 치고 있는 소년이 내 남동생이다.",
+     "wrong": [
+      "내 남동생은 드럼을 치는 소년과 논다.",
+      "그 소년은 내 남동생의 드럼을 치고 있다."
+     ]
+    },
+    {
+     "en": "I / bought / a used bike / made in Italy",
+     "ko": "나는 / 샀다 / 중고 자전거를 / 이탈리아에서 만들어진",
+     "full": "나는 이탈리아산 중고 자전거를 샀다.",
+     "wrong": [
+      "나는 이탈리아에서 자전거를 만들었다.",
+      "나는 이탈리아에서 중고 자전거를 팔았다."
+     ]
+    },
+    {
+     "en": "This is / the village / where my grandmother / was born",
+     "ko": "이곳은 ~이다 / 그 마을 / 우리 할머니께서 / 태어나신",
+     "full": "이곳이 우리 할머니께서 태어나신 마을이다.",
+     "wrong": [
+      "우리 할머니는 이 마을에서 돌아가셨다.",
+      "이 마을에서 우리 할머니를 만났다."
+     ]
+    },
+    {
+     "en": "I / still remember / the day / when we first met",
+     "ko": "나는 / 아직도 기억한다 / 그날을 / 우리가 처음 만난",
+     "full": "나는 우리가 처음 만난 날을 아직도 기억한다.",
+     "wrong": [
+      "나는 처음 만난 날을 잊어버렸다.",
+      "우리는 그날 다시 만나기로 했다."
+     ]
+    },
+    {
+     "en": "The leaves / covered with snow / looked / beautiful",
+     "ko": "그 나뭇잎들은 / 눈으로 덮인 / ~해 보였다 / 아름다운",
+     "full": "눈 덮인 나뭇잎들이 아름다워 보였다.",
+     "wrong": [
+      "아름다운 나뭇잎들이 눈을 덮었다.",
+      "나뭇잎 위의 눈이 곧 녹았다."
+     ]
+    },
+    {
+     "en": "That's / the reason / why I was late",
+     "ko": "그것이 ~이다 / 그 이유 / 내가 늦은",
+     "full": "그게 내가 늦은 이유야.",
+     "wrong": [
+      "그래서 너는 늦으면 안 돼.",
+      "나는 늦은 이유를 모른다."
+     ]
+    },
+    {
+     "en": "There were / many people / waiting / in line",
+     "ko": "~이 있었다 / 많은 사람들이 / 기다리고 있는 / 줄을 서서",
+     "full": "줄을 서서 기다리는 사람들이 많았다.",
+     "wrong": [
+      "사람들은 줄 서는 것을 기다리지 않았다.",
+      "많은 사람들이 줄을 섰다가 떠났다."
+     ]
+    },
+    {
+     "en": "The story / was so boring / that I / fell asleep",
+     "ko": "그 이야기는 / 너무 지루해서 / 나는 / 잠들어 버렸다",
+     "full": "그 이야기가 너무 지루해서 나는 잠들어 버렸다.",
+     "wrong": [
+      "나는 지루해서 이야기를 지어냈다.",
+      "그 이야기는 잠을 깨울 만큼 재미있었다."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "level": "중3",
+   "title": "가정법 · 간접의문문 · 가주어",
+   "tip": "If + 과거동사는 '현재 사실과 반대', 문장 속 의문사 덩어리는 '~인지', It ~ to ...는 뒤의 to 덩어리가 진짜 주어예요.",
+   "items": [
+    {
+     "en": "If I / had more free time, / I / would learn / to play the guitar",
+     "ko": "만약 내가 / 자유 시간이 더 있다면 / 나는 / 배울 텐데 / 기타 치는 것을",
+     "full": "자유 시간이 더 있다면 기타를 배울 텐데.",
+     "wrong": [
+      "자유 시간이 생겨서 기타를 배웠다.",
+      "기타를 배우면 자유 시간이 더 생길 것이다."
+     ]
+    },
+    {
+     "en": "I wish / I could speak / Japanese / fluently",
+     "ko": "~라면 좋을 텐데 / 내가 말할 수 있다면 / 일본어를 / 유창하게",
+     "full": "일본어를 유창하게 말할 수 있으면 좋을 텐데.",
+     "wrong": [
+      "나는 일본어를 유창하게 말한다.",
+      "나는 일본어를 유창하게 말하고 싶지 않다."
+     ]
+    },
+    {
+     "en": "Do you know / where the nearest hospital / is?",
+     "ko": "너는 아니 / 가장 가까운 병원이 어디에 / 있는지",
+     "full": "가장 가까운 병원이 어디 있는지 아니?",
+     "wrong": [
+      "가장 가까운 병원에 가 본 적 있니?",
+      "병원이 가장 가까운 곳에 있니?"
+     ]
+    },
+    {
+     "en": "I / wonder / if she / will come / to the party",
+     "ko": "나는 / 궁금하다 / 그녀가 ~인지 / 올지 / 파티에",
+     "full": "그녀가 파티에 올지 궁금하다.",
+     "wrong": [
+      "그녀가 파티에 오면 나는 기쁠 것이다.",
+      "그녀는 내가 파티에 올지 궁금해한다."
+     ]
+    },
+    {
+     "en": "It / is important / to protect / the environment",
+     "ko": "(가주어) / 중요하다 / 보호하는 것은 / 환경을",
+     "full": "환경을 보호하는 것은 중요하다.",
+     "wrong": [
+      "환경은 우리를 보호하기 때문에 중요하다.",
+      "중요한 환경은 보호받고 있다."
+     ]
+    },
+    {
+     "en": "It / was kind / of you / to help me",
+     "ko": "(가주어) / 친절했다 / 네가 / 나를 도와준 것은",
+     "full": "나를 도와주다니 너 참 친절하구나.",
+     "wrong": [
+      "나는 친절하게 너를 도와주었다.",
+      "너는 친절한 사람을 도와주었다."
+     ]
+    },
+    {
+     "en": "If I / were you, / I / would apologize / first",
+     "ko": "만약 내가 / 너라면 / 나는 / 사과할 텐데 / 먼저",
+     "full": "내가 너라면 먼저 사과하겠어.",
+     "wrong": [
+      "너는 나에게 먼저 사과해야 한다.",
+      "나는 너에게 먼저 사과했다."
+     ]
+    },
+    {
+     "en": "Nobody knows / why the dinosaurs / disappeared / so suddenly",
+     "ko": "아무도 모른다 / 왜 공룡들이 / 사라졌는지 / 그렇게 갑자기",
+     "full": "공룡들이 왜 그렇게 갑자기 사라졌는지는 아무도 모른다.",
+     "wrong": [
+      "아무도 공룡이 사라지는 것을 보지 못했다.",
+      "공룡들은 이유 없이 천천히 사라졌다."
+     ]
+    }
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "id": "r01",
+   "level": "중1",
+   "title": "My New School",
+   "sents": [
+    {
+     "en": "My name is Jiho, / and I am / a first-year student / at Hanbit Middle School.",
+     "ko": "내 이름은 지호이고 / 나는 ~이다 / 1학년 학생 / 한빛중학교의"
+    },
+    {
+     "en": "My school / is not big, / but it has / a beautiful garden.",
+     "ko": "우리 학교는 / 크지 않다 / 하지만 ~이 있다 / 아름다운 정원이"
+    },
+    {
+     "en": "Every morning, / I / walk to school / with my friend Minsu.",
+     "ko": "매일 아침 / 나는 / 학교에 걸어간다 / 내 친구 민수와 함께"
+    },
+    {
+     "en": "My favorite class / is science / because we do / fun experiments.",
+     "ko": "내가 가장 좋아하는 수업은 / 과학이다 / 왜냐하면 우리는 한다 / 재미있는 실험을"
+    },
+    {
+     "en": "After school, / I / play soccer / on the school team.",
+     "ko": "방과 후에 / 나는 / 축구를 한다 / 학교 팀에서"
+    },
+    {
+     "en": "I / am enjoying / my new school life.",
+     "ko": "나는 / 즐기고 있다 / 나의 새 학교생활을"
+    }
+   ],
+   "qs": [
+    {
+     "q": "이 글의 주제로 가장 알맞은 것은?",
+     "o": [
+      "축구 팀 선수 모집",
+      "학교 정원 가꾸는 방법",
+      "과학 실험의 위험성",
+      "지호의 새 학교생활 소개"
+     ],
+     "a": 3,
+     "x": "학교, 친구, 수업, 방과 후 활동 — 새 학교생활 소개"
+    },
+    {
+     "q": "지호에 대한 내용으로 맞는 것은?",
+     "o": [
+      "과학 수업을 가장 좋아한다.",
+      "학교에 버스를 타고 간다.",
+      "3학년 학생이다.",
+      "방과 후에 농구를 한다."
+     ],
+     "a": 0,
+     "x": "My favorite class is science"
+    },
+    {
+     "q": "지호의 학교에 대한 설명으로 맞는 것은?",
+     "o": [
+      "매우 크다.",
+      "정원이 없다.",
+      "크지 않지만 아름다운 정원이 있다.",
+      "집에서 아주 멀다."
+     ],
+     "a": 2,
+     "x": "My school is not big, but it has a beautiful garden."
+    }
+   ],
+   "words": [
+    {
+     "en": "experiment",
+     "ko": "실험"
+    },
+    {
+     "en": "first-year student",
+     "ko": "1학년 학생"
+    },
+    {
+     "en": "garden",
+     "ko": "정원"
+    }
+   ]
+  },
+  {
+   "id": "r02",
+   "level": "중1",
+   "title": "A Busy Saturday",
+   "sents": [
+    {
+     "en": "Last Saturday / was / a very busy day / for me.",
+     "ko": "지난 토요일은 / ~였다 / 매우 바쁜 날 / 나에게"
+    },
+    {
+     "en": "In the morning, / I / helped my mom / clean the house.",
+     "ko": "아침에 / 나는 / 엄마를 도와드렸다 / 집 청소하는 것을"
+    },
+    {
+     "en": "At noon, / I / had lunch / with my grandparents.",
+     "ko": "정오에 / 나는 / 점심을 먹었다 / 조부모님과 함께"
+    },
+    {
+     "en": "In the afternoon, / I / went to the library / to study for a test.",
+     "ko": "오후에 / 나는 / 도서관에 갔다 / 시험공부를 하기 위해"
+    },
+    {
+     "en": "In the evening, / my family / watched a movie / together.",
+     "ko": "저녁에 / 우리 가족은 / 영화를 봤다 / 함께"
+    },
+    {
+     "en": "I / was tired, / but it was / a happy day.",
+     "ko": "나는 / 피곤했다 / 하지만 ~였다 / 행복한 하루"
+    }
+   ],
+   "qs": [
+    {
+     "q": "글쓴이가 오후에 한 일은?",
+     "o": [
+      "집 청소",
+      "도서관에서 시험공부",
+      "조부모님과 점심 식사",
+      "가족과 영화 보기"
+     ],
+     "a": 1,
+     "x": "In the afternoon, I went to the library to study for a test."
+    },
+    {
+     "q": "글쓴이가 지난 토요일에 하지 않은 일은?",
+     "o": [
+      "집 청소 돕기",
+      "친구와 축구하기",
+      "도서관 가기",
+      "영화 보기"
+     ],
+     "a": 1,
+     "x": "축구 이야기는 없음"
+    },
+    {
+     "q": "글쓴이의 기분으로 알맞은 것은?",
+     "o": [
+      "걱정스러웠다",
+      "지루하고 슬펐다",
+      "화가 났다",
+      "피곤했지만 행복했다"
+     ],
+     "a": 3,
+     "x": "I was tired, but it was a happy day."
+    }
+   ],
+   "words": [
+    {
+     "en": "busy",
+     "ko": "바쁜"
+    },
+    {
+     "en": "noon",
+     "ko": "정오"
+    },
+    {
+     "en": "together",
+     "ko": "함께"
+    }
+   ]
+  },
+  {
+   "id": "r03",
+   "level": "중1",
+   "title": "Why Do Cats Sleep So Much?",
+   "sents": [
+    {
+     "en": "Do you have a cat / at home?",
+     "ko": "너는 고양이가 있니 / 집에"
+    },
+    {
+     "en": "Cats / sleep / about 12 to 16 hours / a day.",
+     "ko": "고양이는 / 잔다 / 약 12~16시간을 / 하루에"
+    },
+    {
+     "en": "In the wild, / cats / hunt / small animals / for food.",
+     "ko": "야생에서 / 고양이는 / 사냥한다 / 작은 동물들을 / 먹이로"
+    },
+    {
+     "en": "Hunting / uses / a lot of energy, / so they / need / a lot of rest.",
+     "ko": "사냥은 / 사용한다 / 많은 에너지를 / 그래서 그들은 / 필요하다 / 많은 휴식이"
+    },
+    {
+     "en": "Pet cats / don't have to hunt, / but they / still / sleep a lot.",
+     "ko": "반려 고양이는 / 사냥할 필요가 없다 / 하지만 그들은 / 여전히 / 잠을 많이 잔다"
+    },
+    {
+     "en": "So / if your cat / sleeps all day, / don't worry!",
+     "ko": "그러니 / 만약 너의 고양이가 / 하루 종일 잔다면 / 걱정하지 마!"
+    }
+   ],
+   "qs": [
+    {
+     "q": "이 글의 주제로 가장 알맞은 것은?",
+     "o": [
+      "고양이가 잠을 많이 자는 이유",
+      "고양이를 훈련시키는 방법",
+      "야생 동물의 먹이",
+      "반려동물 고르는 법"
+     ],
+     "a": 0,
+     "x": "제목과 내용 모두 고양이의 긴 잠"
+    },
+    {
+     "q": "고양이가 하루에 자는 시간은?",
+     "o": [
+      "약 6~8시간",
+      "약 10시간",
+      "약 20시간 이상",
+      "약 12~16시간"
+     ],
+     "a": 3,
+     "x": "about 12 to 16 hours a day"
+    },
+    {
+     "q": "야생 고양이가 휴식이 많이 필요한 이유는?",
+     "o": [
+      "먹이가 부족해서",
+      "날씨가 추워서",
+      "사냥에 에너지를 많이 써서",
+      "나이가 많아서"
+     ],
+     "a": 2,
+     "x": "Hunting uses a lot of energy, so they need a lot of rest."
+    }
+   ],
+   "words": [
+    {
+     "en": "in the wild",
+     "ko": "야생에서"
+    },
+    {
+     "en": "hunt",
+     "ko": "사냥하다"
+    },
+    {
+     "en": "rest",
+     "ko": "휴식"
+    }
+   ]
+  },
+  {
+   "id": "r04",
+   "level": "중1",
+   "title": "The Class Picnic",
+   "sents": [
+    {
+     "en": "Our class / is going to go / on a picnic / next Friday.",
+     "ko": "우리 반은 / 갈 예정이다 / 소풍을 / 다음 주 금요일에"
+    },
+    {
+     "en": "We / will meet / at the school gate / at 9 a.m.",
+     "ko": "우리는 / 만날 것이다 / 학교 정문에서 / 오전 9시에"
+    },
+    {
+     "en": "Please bring / your lunch, / water, / and a hat.",
+     "ko": "가져오세요 / 점심 / 물 / 그리고 모자를"
+    },
+    {
+     "en": "You / don't have to bring / snacks.",
+     "ko": "여러분은 / 가져올 필요 없어요 / 간식은"
+    },
+    {
+     "en": "The school / will give / everyone / fruit and juice.",
+     "ko": "학교가 / 줄 거예요 / 모두에게 / 과일과 주스를"
+    },
+    {
+     "en": "If it rains, / the picnic / will be moved / to the following week.",
+     "ko": "만약 비가 오면 / 소풍은 / 옮겨질 거예요 / 다음 주로"
+    }
+   ],
+   "qs": [
+    {
+     "q": "이 글의 목적으로 알맞은 것은?",
+     "o": [
+      "소풍 안내",
+      "소풍 후기",
+      "날씨 예보",
+      "학교 규칙 소개"
+     ],
+     "a": 0,
+     "x": "소풍 날짜·장소·준비물 안내문"
+    },
+    {
+     "q": "준비물이 아닌 것은?",
+     "o": [
+      "간식",
+      "물",
+      "모자",
+      "점심"
+     ],
+     "a": 0,
+     "x": "You don't have to bring snacks."
+    },
+    {
+     "q": "비가 오면 어떻게 되는가?",
+     "o": [
+      "교실에서 수업한다",
+      "소풍이 취소된다",
+      "소풍이 다음 주로 미뤄진다",
+      "우비를 가져와야 한다"
+     ],
+     "a": 2,
+     "x": "the picnic will be moved to the following week"
+    }
+   ],
+   "words": [
+    {
+     "en": "gate",
+     "ko": "문, 대문 (school gate: 교문)"
+    },
+    {
+     "en": "snack",
+     "ko": "간식"
+    },
+    {
+     "en": "be moved",
+     "ko": "옮겨지다"
+    }
+   ]
+  },
+  {
+   "id": "r05",
+   "level": "중2",
+   "title": "Plastic in the Ocean",
+   "sents": [
+    {
+     "en": "Every year, / millions of tons of plastic / end up / in the ocean.",
+     "ko": "매년 / 수백만 톤의 플라스틱이 / 결국 가게 된다 / 바다로"
+    },
+    {
+     "en": "Sea animals / often / mistake plastic / for food.",
+     "ko": "바다 동물들은 / 종종 / 플라스틱을 착각한다 / 먹이로"
+    },
+    {
+     "en": "For example, / sea turtles / eat plastic bags / because the bags look like jellyfish.",
+     "ko": "예를 들어 / 바다거북은 / 비닐봉지를 먹는다 / 그 봉지들이 해파리처럼 보이기 때문에"
+    },
+    {
+     "en": "Eating plastic / can make / these animals / very sick.",
+     "ko": "플라스틱을 먹는 것은 / 만들 수 있다 / 이 동물들을 / 매우 아프게"
+    },
+    {
+     "en": "To solve this problem, / we / should use / less plastic.",
+     "ko": "이 문제를 해결하기 위해 / 우리는 / 사용해야 한다 / 플라스틱을 덜"
+    },
+    {
+     "en": "Bringing your own bag / when you shop / is / a good way to start.",
+     "ko": "자신의 가방을 가져가는 것은 / 장을 볼 때 / ~이다 / 시작하기 좋은 방법"
+    }
+   ],
+   "qs": [
+    {
+     "q": "이 글의 주제로 가장 알맞은 것은?",
+     "o": [
+      "해파리의 특징",
+      "바다거북의 생활",
+      "바다 플라스틱 문제와 해결 방법",
+      "장보기 요령"
+     ],
+     "a": 2,
+     "x": "플라스틱이 바다 동물에게 주는 피해 + 줄이는 방법"
+    },
+    {
+     "q": "바다거북이 비닐봉지를 먹는 이유는?",
+     "o": [
+      "배가 너무 고파서",
+      "새끼에게 주려고",
+      "맛있어서",
+      "해파리처럼 보여서"
+     ],
+     "a": 3,
+     "x": "because the bags look like jellyfish"
+    },
+    {
+     "q": "글에서 제안한 해결 방법은?",
+     "o": [
+      "플라스틱 사용 줄이기와 장바구니 사용",
+      "바다 청소 봉사",
+      "바다거북 보호 구역 만들기",
+      "플라스틱 재활용 공장 짓기"
+     ],
+     "a": 0,
+     "x": "use less plastic / Bringing your own bag"
+    }
+   ],
+   "words": [
+    {
+     "en": "end up",
+     "ko": "결국 ~하게 되다"
+    },
+    {
+     "en": "mistake A for B",
+     "ko": "A를 B로 착각하다"
+    },
+    {
+     "en": "jellyfish",
+     "ko": "해파리"
+    }
+   ]
+  },
+  {
+   "id": "r06",
+   "level": "중2",
+   "title": "The Power of Habits",
+   "sents": [
+    {
+     "en": "Have you ever tried / to change a habit?",
+     "ko": "너는 ~해 본 적 있니 / 습관을 바꾸려고"
+    },
+    {
+     "en": "It / is not easy / to stop doing something / you do every day.",
+     "ko": "(가주어) / 쉽지 않다 / 어떤 일을 멈추는 것은 / 네가 매일 하는"
+    },
+    {
+     "en": "Scientists say / that it takes / about two months / to build a new habit.",
+     "ko": "과학자들은 말한다 / 걸린다고 / 약 두 달이 / 새 습관을 만드는 데"
+    },
+    {
+     "en": "The key / is / to start small.",
+     "ko": "핵심은 / ~이다 / 작게 시작하는 것"
+    },
+    {
+     "en": "If you want / to read more, / start by reading / just one page / a day.",
+     "ko": "만약 네가 원한다면 / 더 많이 읽기를 / 읽는 것으로 시작해 / 딱 한 페이지를 / 하루에"
+    },
+    {
+     "en": "Small steps / can lead to / big changes.",
+     "ko": "작은 걸음이 / ~로 이어질 수 있다 / 큰 변화로"
+    }
+   ],
+   "qs": [
+    {
+     "q": "글쓴이가 말하는 습관 만들기의 핵심은?",
+     "o": [
+      "과학자에게 묻기",
+      "하루에 많이 하기",
+      "친구와 함께하기",
+      "작게 시작하기"
+     ],
+     "a": 3,
+     "x": "The key is to start small."
+    },
+    {
+     "q": "새 습관을 만드는 데 걸리는 기간은?",
+     "o": [
+      "약 1주",
+      "약 2주",
+      "약 2달",
+      "약 1년"
+     ],
+     "a": 2,
+     "x": "about two months"
+    },
+    {
+     "q": "글의 마지막 문장이 뜻하는 것은?",
+     "o": [
+      "변화는 불가능하다.",
+      "큰 변화는 한 번에 온다.",
+      "걷기 운동이 중요하다.",
+      "작은 실천이 큰 변화를 만든다."
+     ],
+     "a": 3,
+     "x": "Small steps can lead to big changes."
+    }
+   ],
+   "words": [
+    {
+     "en": "habit",
+     "ko": "습관"
+    },
+    {
+     "en": "key",
+     "ko": "핵심, 열쇠"
+    },
+    {
+     "en": "lead to",
+     "ko": "~로 이어지다"
+    }
+   ]
+  },
+  {
+   "id": "r07",
+   "level": "중2",
+   "title": "A Letter to My Future Self",
+   "sents": [
+    {
+     "en": "Dear Future Me,",
+     "ko": "미래의 나에게,"
+    },
+    {
+     "en": "Right now, / I am thirteen / and I / have just started / middle school.",
+     "ko": "지금 / 나는 열세 살이고 / 나는 / 막 시작했어 / 중학교를"
+    },
+    {
+     "en": "I / want to be / a game designer / because I love / creating stories.",
+     "ko": "나는 / 되고 싶어 / 게임 디자이너가 / 왜냐하면 나는 좋아하니까 / 이야기를 만드는 것을"
+    },
+    {
+     "en": "I hope / that you / are still / chasing that dream.",
+     "ko": "나는 바라 / 네가 / 여전히 / 그 꿈을 좇고 있기를"
+    },
+    {
+     "en": "If things / get hard, / remember / how excited I am / today.",
+     "ko": "만약 일이 / 힘들어지면 / 기억해 / 내가 얼마나 신나 있는지 / 오늘"
+    },
+    {
+     "en": "Love, / Me (at 13)",
+     "ko": "사랑을 담아 / 열세 살의 내가"
+    }
+   ],
+   "qs": [
+    {
+     "q": "이 글의 종류로 알맞은 것은?",
+     "o": [
+      "게임 설명서",
+      "미래의 자신에게 쓴 편지",
+      "학교 신문 기사",
+      "여행 일기"
+     ],
+     "a": 1,
+     "x": "Dear Future Me"
+    },
+    {
+     "q": "글쓴이의 꿈은?",
+     "o": [
+      "작가",
+      "과학자",
+      "선생님",
+      "게임 디자이너"
+     ],
+     "a": 3,
+     "x": "I want to be a game designer"
+    },
+    {
+     "q": "글쓴이가 미래의 자신에게 바라는 것은?",
+     "o": [
+      "부자가 되는 것",
+      "여전히 꿈을 좇고 있는 것",
+      "게임을 그만두는 것",
+      "외국에 사는 것"
+     ],
+     "a": 1,
+     "x": "I hope that you are still chasing that dream."
+    }
+   ],
+   "words": [
+    {
+     "en": "chase",
+     "ko": "좇다, 쫓다"
+    },
+    {
+     "en": "designer",
+     "ko": "디자이너"
+    },
+    {
+     "en": "excited",
+     "ko": "신이 난"
+    }
+   ]
+  },
+  {
+   "id": "r08",
+   "level": "중2",
+   "title": "Why Do We Yawn?",
+   "sents": [
+    {
+     "en": "Everyone / yawns, / but scientists / still don't know / exactly why.",
+     "ko": "모두가 / 하품을 한다 / 하지만 과학자들은 / 아직 모른다 / 정확히 왜 그런지"
+    },
+    {
+     "en": "One idea / is / that yawning / cools down / the brain.",
+     "ko": "한 가지 생각은 / ~이다 / 하품이 / 식혀 준다는 것 / 뇌를"
+    },
+    {
+     "en": "When your brain / gets too warm, / a yawn / brings in / cool air.",
+     "ko": "뇌가 / 너무 따뜻해지면 / 하품이 / 들여온다 / 차가운 공기를"
+    },
+    {
+     "en": "Yawning / is also / contagious.",
+     "ko": "하품은 / 또한 / 전염된다"
+    },
+    {
+     "en": "If you see / someone yawn, / you / will probably yawn / too.",
+     "ko": "만약 네가 보면 / 누군가 하품하는 것을 / 너는 / 아마 하품할 것이다 / 역시"
+    },
+    {
+     "en": "Did you yawn / while reading this?",
+     "ko": "너는 하품했니 / 이 글을 읽는 동안"
+    }
+   ],
+   "qs": [
+    {
+     "q": "이 글의 내용과 일치하는 것은?",
+     "o": [
+      "과학자들은 하품의 이유를 정확히 안다.",
+      "하품은 다른 사람에게 옮지 않는다.",
+      "하품은 뇌를 식혀 준다는 주장이 있다.",
+      "하품은 따뜻한 공기를 들여온다."
+     ],
+     "a": 2,
+     "x": "One idea is that yawning cools down the brain."
+    },
+    {
+     "q": "contagious의 뜻으로 알맞은 것은?",
+     "o": [
+      "위험한",
+      "전염되는",
+      "조용한",
+      "건강한"
+     ],
+     "a": 1,
+     "x": "다른 사람이 하품하면 따라 하게 되는 것 → 전염되는"
+    },
+    {
+     "q": "마지막 문장의 의도로 알맞은 것은?",
+     "o": [
+      "잠을 자라고 권하기",
+      "글이 지루하다고 사과하기",
+      "읽는 사람도 하품이 전염됐는지 재미있게 묻기",
+      "과학자에게 질문하기"
+     ],
+     "a": 2,
+     "x": "하품의 전염성을 독자에게 확인하는 재미있는 질문"
+    }
+   ],
+   "words": [
+    {
+     "en": "yawn",
+     "ko": "하품하다"
+    },
+    {
+     "en": "cool down",
+     "ko": "식히다"
+    },
+    {
+     "en": "contagious",
+     "ko": "전염되는"
+    }
+   ]
+  },
+  {
+   "id": "r09",
+   "level": "중3",
+   "title": "The Girl Who Planted Trees",
+   "sents": [
+    {
+     "en": "There was once / a girl / who lived / in a small, dry village.",
+     "ko": "옛날에 ~이 있었다 / 한 소녀가 / 살았던 / 작고 메마른 마을에"
+    },
+    {
+     "en": "The land around her village / had / almost no trees.",
+     "ko": "그녀의 마을 주변 땅에는 / ~이 거의 없었다 / 나무가"
+    },
+    {
+     "en": "Every week, / she / planted a tree / that she had grown / from a seed.",
+     "ko": "매주 / 그녀는 / 나무를 심었다 / 그녀가 길러 온 / 씨앗에서부터"
+    },
+    {
+     "en": "People / who saw her / laughed / and said / it was useless.",
+     "ko": "사람들은 / 그녀를 본 / 웃었다 / 그리고 말했다 / 그것이 쓸모없다고"
+    },
+    {
+     "en": "Twenty years later, / the dry land / had become / a green forest.",
+     "ko": "20년 후 / 그 메마른 땅은 / 되어 있었다 / 푸른 숲이"
+    },
+    {
+     "en": "The villagers / finally understood / what one person / could do.",
+     "ko": "마을 사람들은 / 마침내 이해했다 / 한 사람이 무엇을 / 할 수 있는지"
+    }
+   ],
+   "qs": [
+    {
+     "q": "이 글이 전하려는 교훈으로 가장 알맞은 것은?",
+     "o": [
+      "한 사람의 꾸준한 노력이 큰 변화를 만든다.",
+      "남의 말을 잘 들어야 한다.",
+      "나무는 빨리 자란다.",
+      "마을을 떠나야 성공한다."
+     ],
+     "a": 0,
+     "x": "20년간 나무를 심어 숲을 만든 이야기"
+    },
+    {
+     "q": "사람들이 처음에 소녀를 보고 한 행동은?",
+     "o": [
+      "도와주었다",
+      "비웃었다",
+      "칭찬했다",
+      "따라 했다"
+     ],
+     "a": 1,
+     "x": "People who saw her laughed and said it was useless."
+    },
+    {
+     "q": "밑줄 친 what one person could do가 뜻하는 것은?",
+     "o": [
+      "한 사람이 싫어하는 일",
+      "한 사람이 해야 하는 일",
+      "한 사람이 이룰 수 있는 일",
+      "한 사람이 잊어버린 일"
+     ],
+     "a": 2,
+     "x": "간접의문문: 한 사람이 무엇을 할 수 있는지"
+    }
+   ],
+   "words": [
+    {
+     "en": "plant",
+     "ko": "심다"
+    },
+    {
+     "en": "useless",
+     "ko": "쓸모없는"
+    },
+    {
+     "en": "villager",
+     "ko": "마을 사람"
+    }
+   ]
+  },
+  {
+   "id": "r10",
+   "level": "중3",
+   "title": "Smartphones and Sleep",
+   "sents": [
+    {
+     "en": "Many teenagers / use their smartphones / right before going to bed.",
+     "ko": "많은 십대들이 / 스마트폰을 사용한다 / 잠자리에 들기 직전에"
+    },
+    {
+     "en": "However, / the blue light / coming from the screen / can make it harder / to fall asleep.",
+     "ko": "하지만 / 블루라이트가 / 화면에서 나오는 / 더 어렵게 만들 수 있다 / 잠드는 것을"
+    },
+    {
+     "en": "This light / tells your brain / that it is still daytime.",
+     "ko": "이 빛은 / 너의 뇌에게 말한다 / 아직 낮이라고"
+    },
+    {
+     "en": "As a result, / you / may feel tired / the next morning.",
+     "ko": "그 결과 / 너는 / 피곤함을 느낄 수 있다 / 다음 날 아침에"
+    },
+    {
+     "en": "Experts suggest / putting your phone away / an hour before bedtime.",
+     "ko": "전문가들은 제안한다 / 휴대전화를 치워 두라고 / 잠자기 한 시간 전에"
+    },
+    {
+     "en": "If you do this, / you will sleep better / and feel more energetic.",
+     "ko": "이렇게 하면 / 너는 더 잘 잘 것이다 / 그리고 더 활기를 느낄 것이다"
+    }
+   ],
+   "qs": [
+    {
+     "q": "블루라이트가 잠을 방해하는 이유는?",
+     "o": [
+      "배가 고파져서",
+      "눈이 아파서",
+      "소리가 커서",
+      "뇌에게 아직 낮이라고 알려서"
+     ],
+     "a": 3,
+     "x": "This light tells your brain that it is still daytime."
+    },
+    {
+     "q": "전문가들의 조언은?",
+     "o": [
+      "잠들기 1시간 전에 휴대전화 치우기",
+      "밝은 화면으로 보기",
+      "아침에 휴대전화 끄기",
+      "잠자기 직전 운동하기"
+     ],
+     "a": 0,
+     "x": "putting your phone away an hour before bedtime"
+    },
+    {
+     "q": "밑줄 친 it(가목적어)이 가리키는 진짜 목적어는? (make it harder to fall asleep)",
+     "o": [
+      "the blue light",
+      "to fall asleep",
+      "the screen",
+      "your brain"
+     ],
+     "a": 1,
+     "x": "it = 가목적어, 진목적어 = to fall asleep (잠드는 것)"
+    }
+   ],
+   "words": [
+    {
+     "en": "teenager",
+     "ko": "십대"
+    },
+    {
+     "en": "put away",
+     "ko": "치우다"
+    },
+    {
+     "en": "energetic",
+     "ko": "활기찬"
+    }
+   ]
+  },
+  {
+   "id": "r11",
+   "level": "중3",
+   "title": "If Animals Could Talk",
+   "sents": [
+    {
+     "en": "Have you ever wondered / what your pet / would say / if it could talk?",
+     "ko": "~을 궁금해한 적 있니 / 너의 반려동물이 무엇을 / 말할지 / 만약 그것이 말할 수 있다면"
+    },
+    {
+     "en": "If my dog / could speak, / he / would probably ask / for more snacks.",
+     "ko": "만약 우리 개가 / 말할 수 있다면 / 그는 / 아마 달라고 할 것이다 / 간식을 더"
+    },
+    {
+     "en": "He / might also tell me / that he feels lonely / when I am at school.",
+     "ko": "그는 / 나에게 말할지도 모른다 / 외롭다고 / 내가 학교에 있을 때"
+    },
+    {
+     "en": "Of course, / animals / cannot use words / like humans.",
+     "ko": "물론 / 동물들은 / 말을 사용할 수 없다 / 사람처럼"
+    },
+    {
+     "en": "But they / communicate / through sounds, / body language, / and their eyes.",
+     "ko": "하지만 그들은 / 소통한다 / 소리 / 몸짓 / 그리고 눈을 통해"
+    },
+    {
+     "en": "If we pay attention, / we can understand / what they want.",
+     "ko": "우리가 주의를 기울이면 / 우리는 이해할 수 있다 / 그들이 원하는 것을"
+    }
+   ],
+   "qs": [
+    {
+     "q": "글쓴이가 강아지가 말할 수 있다면 할 것이라고 생각하는 말은?",
+     "o": [
+      "학교에 같이 가고 싶다",
+      "산책이 싫다",
+      "간식을 더 달라, 내가 학교에 있을 때 외롭다",
+      "새 친구가 필요하다"
+     ],
+     "a": 2,
+     "x": "ask for more snacks / feels lonely when I am at school"
+    },
+    {
+     "q": "동물이 소통하는 방법으로 언급되지 않은 것은?",
+     "o": [
+      "글씨",
+      "몸짓",
+      "눈",
+      "소리"
+     ],
+     "a": 0,
+     "x": "sounds, body language, and their eyes"
+    },
+    {
+     "q": "이 글에 쓰인 문법으로 '현재 사실과 반대되는 상상'을 나타내는 것은?",
+     "o": [
+      "we can understand what they want",
+      "But they communicate through sounds",
+      "Of course, animals cannot ~",
+      "If my dog could speak, he would ~"
+     ],
+     "a": 3,
+     "x": "가정법 과거: If + 과거, would + 동사원형"
+    }
+   ],
+   "words": [
+    {
+     "en": "wonder",
+     "ko": "궁금해하다"
+    },
+    {
+     "en": "communicate",
+     "ko": "소통하다"
+    },
+    {
+     "en": "pay attention",
+     "ko": "주의를 기울이다"
+    }
+   ]
+  },
+  {
+   "id": "r12",
+   "level": "중3",
+   "title": "The Inventor of Braille",
+   "sents": [
+    {
+     "en": "Louis Braille / was born / in France / in 1809.",
+     "ko": "루이 브라유는 / 태어났다 / 프랑스에서 / 1809년에"
+    },
+    {
+     "en": "When he was three, / he / hurt his eye / while playing / in his father's workshop.",
+     "ko": "그가 세 살 때 / 그는 / 눈을 다쳤다 / 놀다가 / 아버지의 작업장에서"
+    },
+    {
+     "en": "Soon after, / he / lost his sight / in both eyes.",
+     "ko": "얼마 지나지 않아 / 그는 / 시력을 잃었다 / 두 눈 모두"
+    },
+    {
+     "en": "At school, / books for blind students / were / very heavy and hard to read.",
+     "ko": "학교에서 / 시각장애 학생을 위한 책은 / ~였다 / 매우 무겁고 읽기 어려운"
+    },
+    {
+     "en": "So he / created / a system of raised dots / that people could read / with their fingers.",
+     "ko": "그래서 그는 / 만들었다 / 볼록한 점 체계를 / 사람들이 읽을 수 있는 / 손가락으로"
+    },
+    {
+     "en": "Today, / this system, / called Braille, / is used / all over the world.",
+     "ko": "오늘날 / 이 체계는 / 브라유(점자)라고 불리는 / 사용된다 / 전 세계에서"
+    }
+   ],
+   "qs": [
+    {
+     "q": "루이 브라유가 시력을 잃게 된 계기는?",
+     "o": [
+      "태어날 때부터",
+      "작업장에서 놀다가 눈을 다쳐서",
+      "책을 너무 많이 읽어서",
+      "병에 걸려서"
+     ],
+     "a": 1,
+     "x": "he hurt his eye while playing in his father's workshop"
+    },
+    {
+     "q": "브라유가 점자를 만든 이유는?",
+     "o": [
+      "돈을 벌기 위해서",
+      "기존 시각장애인용 책이 무겁고 읽기 어려워서",
+      "아버지가 시켜서",
+      "비밀 편지를 쓰려고"
+     ],
+     "a": 1,
+     "x": "books for blind students were very heavy and hard to read. So he created ~"
+    },
+    {
+     "q": "글의 내용과 일치하지 않는 것은?",
+     "o": [
+      "점자는 오늘날 프랑스에서만 쓰인다.",
+      "점자는 손가락으로 읽는다.",
+      "브라유는 프랑스에서 태어났다.",
+      "브라유는 세 살 때 눈을 다쳤다."
+     ],
+     "a": 0,
+     "x": "is used all over the world"
+    }
+   ],
+   "words": [
+    {
+     "en": "sight",
+     "ko": "시력"
+    },
+    {
+     "en": "raised dot",
+     "ko": "볼록한 점"
+    },
+    {
+     "en": "blind",
+     "ko": "앞을 못 보는"
+    }
+   ]
+  }
+ ]
+}
