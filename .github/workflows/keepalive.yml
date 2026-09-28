@@ -1,0 +1,75 @@
+name: keep-streamlit-awake
+
+# 단어친구 중등판 관리 페이지가 잠들지 않게 3시간마다 실제 브라우저(Playwright)로 45초 방문.
+# 앱 주소: https://wordmid0518.streamlit.app/
+
+on:
+  schedule:
+    - cron: "47 */3 * * *"   # 초등판(17분)과 30분 어긋나게
+  workflow_dispatch:
+
+permissions:
+  actions: write   # 아래 '예약 유지' 단계용 (60일 무활동 시 예약 자동 중지 방지)
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Playwright
+        run: |
+          pip install --quiet playwright
+          playwright install chromium --with-deps
+
+      - name: Open app in a real browser
+        run: |
+          cat > keepalive.py << 'PYEOF'
+          from playwright.sync_api import sync_playwright
+
+          URL = "https://wordmid0518.streamlit.app/"
+
+          with sync_playwright() as p:
+              browser = p.chromium.launch()
+              page = browser.new_page()
+              page.goto(URL, wait_until="domcontentloaded", timeout=90000)
+              print("제목:", page.title())
+
+              for sel in ["text=Yes, get this app back up",
+                          "text=get this app back up",
+                          "button:has-text('back up')"]:
+                  try:
+                      btn = page.locator(sel).first
+                      if btn.is_visible(timeout=4000):
+                          btn.click()
+                          print("깨우기 버튼 클릭함")
+                          page.wait_for_timeout(20000)
+                          break
+                  except Exception:
+                      pass
+
+              try:
+                  page.wait_for_selector("[data-testid='stAppViewContainer']", timeout=120000)
+                  print("앱 화면 확인됨")
+              except Exception:
+                  print("앱 화면 셀렉터 대기 실패 - 스냅샷으로 확인")
+
+              page.wait_for_timeout(45000)
+
+              body = page.inner_text("body")[:300]
+              print("본문 미리보기:", body.replace("\n", " ")[:200])
+              browser.close()
+              print("완료")
+          PYEOF
+          python keepalive.py
+
+      - name: Keep schedule enabled
+        # 공개 저장소는 60일간 커밋이 없으면 GitHub가 예약 실행을 멈춤 → 워크플로를 스스로 다시 '활성화'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/keepalive.yml/enable"
