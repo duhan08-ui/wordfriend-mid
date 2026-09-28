@@ -1,1 +1,18 @@
-{"weakFirst": 7, "speakRetries": 3, "speakLeniency": 1, "slowSpeed": 0.75, "ttsSlow": 0.5, "ttsNormal": 0.9, "stageMode": 1, "stageUnlockRatio": 0.7, "batchSize": 10, "batchStar": 5, "dailyStarCap": 10, "showAbc": 0}
+{
+ "weakFirst": 7,
+ "speakRetries": 3,
+ "speakLeniency": 1,
+ "slowSpeed": 0.75,
+ "ttsSlow": 0.5,
+ "ttsNormal": 0.9,
+ "stageMode": 1,
+ "stageUnlockRatio": 0.7,
+ "batchSize": 10,
+ "batchStar": 5,
+ "dailyStarCap": 10,
+ "showAbc": 0,
+ "remind": 1,
+ "remindTime": "22:00",
+ "remindDays": "12345",
+ "remindMsg": ""
+}
