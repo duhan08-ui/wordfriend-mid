@@ -27,7 +27,9 @@ APP_TITLE = _secret("APP_TITLE", "단어친구")
 SUPA_TABLE = _secret("SUPA_TABLE", "wf_stats")   # 중등판: wf_stats_mid
 MAX_TTS_PER_SAVE = int(_secret("MAX_TTS_PER_SAVE", 250))  # 한 번 저장에 만드는 발음 최대 수
 
-st.set_page_config(page_title=APP_TITLE, page_icon="🦓", layout="centered")
+APP_ICON = _secret("APP_ICON", "📘" if SUPA_TABLE.endswith("_mid") else "🦓")
+
+st.set_page_config(page_title=APP_TITLE, page_icon=APP_ICON, layout="centered")
 
 PRAISES = ["Good job!", "Excellent!", "Great!", "Perfect!", "Wonderful!"]
 
@@ -137,7 +139,7 @@ def make_questions(words, mode):
 
 
 def page_quiz(words):
-    st.subheader("🎯 퀴즈 놀이")
+    st.subheader("🎯 퀴즈")
     if len(words) < 4:
         st.info("퀴즈를 하려면 단어가 4개 이상 필요해요.")
         return
@@ -690,8 +692,8 @@ def page_admin(words):
 # ---------- 메인 ----------
 
 words = load_words()
-st.markdown(f"## 🦓 {APP_TITLE}")
-tab = st.sidebar.radio("메뉴", ["📖 단어 배우기", "🎯 퀴즈 놀이", "📊 학습 리포트", "⚙️ 단어 관리"])
+st.markdown(f"## {APP_ICON} {APP_TITLE}")
+tab = st.sidebar.radio("메뉴", ["📖 단어 배우기", "🎯 퀴즈", "📊 학습 리포트", "⚙️ 단어 관리"])
 if tab.startswith("📖"):
     page_learn(words)
 elif tab.startswith("🎯"):
