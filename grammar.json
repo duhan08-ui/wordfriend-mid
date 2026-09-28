@@ -164,31 +164,33 @@
    "term": "be동사",
    "core": [
     {
-     "h": "be동사 = '~이다' 또는 '~에 있다'",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "I am a nurse. (나는 간호사이다)",
-      "We are in the lobby. (우리는 로비에 있다)"
+      "나는 간호사이다 · 우리는 로비에 있다",
+      "우리말 '~이다', '~에 있다'를 영어에서는 am / is / are 가 맡아요."
      ]
     },
     {
-     "h": "누가 주인공이냐에 따라 am / is / are",
+     "h": "누구 이야기냐에 따라 골라 써요",
      "lines": [
-      "I → am",
-      "He · She · It · 한 명/한 개 → is",
-      "You · We · They · 여러 개 → are"
+      "I am a nurse. 나는 간호사이다.",
+      "he, she, it 처럼 한 사람/한 개면 is: The coffee is hot. 커피가 뜨겁다.",
+      "you, we, they 처럼 너나 여럿이면 are: We are in the lobby. 우리는 로비에 있다."
      ]
     },
     {
-     "h": "줄여서 말하기",
+     "h": "말할 때는 짧게 줄여요",
      "lines": [
-      "I'm · You're · He's · She's · It's · We're · They're"
+      "I'm · You're · He's · She's · It's · We're · They're",
+      "I'm tired. 나 피곤해."
      ]
     },
     {
      "h": "'아니다'는 뒤에 not, '~이니?'는 앞으로",
      "lines": [
-      "He is not(isn't) here. · They aren't busy.",
-      "Are you ready? — Yes, I am. / No, I'm not."
+      "I'm not hungry. 나는 배고프지 않다 · He isn't here. 그는 여기 없다.",
+      "Are you ready? 준비됐어? — Yes, I am. 응. / No, I'm not. 아니.",
+      "is not 은 isn't, are not 은 aren't 로 줄여 말해요."
      ]
     }
    ],
@@ -489,32 +491,34 @@
    "term": "일반동사 현재",
    "core": [
     {
-     "h": "평소에 하는 일·늘 그런 사실은 동사 그대로",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "I drink tea every morning. (나는 매일 아침 차를 마신다)",
-      "Water boils at 100°C. (물은 100도에서 끓는다)"
+      "나는 매일 아침 차를 마신다 · 물은 100도에서 끓는다",
+      "늘 하는 일, 늘 그런 사실을 말할 때 영어는 동사를 그대로 써요.",
+      "I drink tea every morning. 나는 매일 아침 차를 마신다."
      ]
     },
     {
-     "h": "He · She · It · 한 사람/한 개가 주인공이면 동사 끝에 -s",
+     "h": "한 사람·한 개 이야기면 끝에 -s 를 붙여요",
      "lines": [
-      "play → plays · like → likes",
-      "-s·-sh·-ch·-x·-o 끝 → +es: watch → watches, go → goes, do → does",
-      "자음+y → ies: study → studies · 특별히 have → has"
+      "He plays tennis. 그는 테니스를 친다 · She likes tea. 그녀는 차를 좋아한다.",
+      "나·너·여럿이 아니라 he, she, it, Tom 처럼 한 사람/한 개일 때만 붙여요."
      ]
     },
     {
-     "h": "'안 한다'는 don't / doesn't + 동사 원래 모양",
+     "h": "-s 모양이 조금 달라지는 말도 있어요",
      "lines": [
-      "I don't eat meat. · She doesn't drink coffee.",
-      "doesn't 뒤에는 -s를 빼요: doesn't likes (X) → doesn't like (O)"
+      "watch 보다 → watches · go 가다 → goes · do 하다 → does",
+      "study 공부하다 → studies · have 가지다 → has",
+      "외우려 하지 않아도 돼요. 예문에서 자주 보면 익숙해져요."
      ]
     },
     {
-     "h": "'~하니?'는 Do / Does 를 맨 앞에",
+     "h": "'안 한다', '~하니?'는 do / does 가 도와줘요",
      "lines": [
-      "Do you work on weekends?",
-      "Does this train stop at Daejeon?"
+      "I don't eat meat. 나는 고기를 안 먹는다 · She doesn't drink coffee. 그녀는 커피를 안 마신다.",
+      "Do you work on weekends? 주말에도 일해요? · Does he cook? 그는 요리해요?",
+      "does 가 -s 를 가져가서 뒤에는 원래 모양을 써요: doesn't like (likes 가 아니에요)"
      ]
     }
    ],
@@ -823,31 +827,34 @@
    "term": "명사와 관사",
    "core": [
     {
-     "h": "셀 수 있는 것 하나면 a / an, 여럿이면 -s",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "a book → two books",
-      "a 뒤에 자음 소리 · an 뒤에 모음 소리: a uniform, an apple, an hour"
+      "책 한 권 · 책 두 권",
+      "영어는 하나면 앞에 a, 여럿이면 끝에 -s 를 붙여요.",
+      "a book 책 한 권 → two books 책 두 권"
      ]
     },
     {
-     "h": "여럿 만들기 규칙과 예외",
+     "h": "an 을 쓸 때와 여럿일 때 모양",
      "lines": [
-      "box → boxes · baby → babies · leaf → leaves",
-      "man → men · child → children · tooth → teeth · foot → feet · mouse → mice"
+      "'아·에·이·오·우' 소리로 시작하면 an: an apple 사과 하나 · an hour 한 시간",
+      "box 상자 → boxes · baby 아기 → babies · child 아이 → children · tooth 이 → teeth",
+      "모양이 바뀌는 말은 외우려 하지 않아도 돼요. 예문에서 만나면 돼요."
      ]
     },
     {
-     "h": "셀 수 없는 것(물·돈·빵·정보)은 a도 -s도 못 붙여요",
+     "h": "물·돈·빵·정보는 a 도 -s 도 안 붙여요",
      "lines": [
-      "a water (X) → a glass of water (물 한 잔)",
-      "a piece of bread · two bottles of milk"
+      "하나, 둘 세기 어려운 것이라 그래요. 대신 담는 것으로 세면 돼요.",
+      "a glass of water 물 한 잔 · a piece of bread 빵 한 조각 · two bottles of milk 우유 두 병"
      ]
     },
     {
-     "h": "the = '그' (서로 아는 것 · 하나뿐인 것 · 악기)",
+     "h": "the 는 '그'라는 느낌이에요",
      "lines": [
-      "I saw a dog. The dog was small. (앞에서 말한 그 개)",
-      "the sun · play the violin"
+      "I saw a dog. The dog was small. 개를 봤는데, 그 개는 작았다.",
+      "서로 아는 것, 하나뿐인 것에 써요: the sun 해",
+      "악기를 연주할 때도 붙여요: play the piano 피아노를 치다"
      ]
     }
    ],
@@ -1154,7 +1161,14 @@
    "term": "대명사",
    "core": [
     {
-     "h": "사람·물건 이름 대신 쓰는 말, 자리에 따라 모양이 달라요",
+     "h": "우리말로 먼저 생각해 봐요",
+     "lines": [
+      "나는 · 나의 · 나를 — 우리말은 '는, 의, 를'을 붙이죠.",
+      "영어는 붙이는 대신 단어 모양이 바뀌어요: I 나는 · my 나의 · me 나를"
+     ]
+    },
+    {
+     "h": "자리에 따라 이렇게 바뀌어요",
      "lines": [
       "~은/는: I · you · he · she · it · we · they",
       "~의: my · your · his · her · its · our · their",
@@ -1162,23 +1176,18 @@
      ]
     },
     {
-     "h": "'~의 것'은 한 단어로",
+     "h": "'~의 것', '~ 자신'도 한 단어예요",
      "lines": [
-      "mine · yours · his · hers · ours · theirs",
-      "That car is hers. (저 차는 그녀의 것이다)"
+      "mine 내 것 · yours 네 것 · his 그의 것 · hers 그녀의 것 · ours 우리 것 · theirs 그들 것",
+      "That car is hers. 저 차는 그녀의 것이다.",
+      "자기 자신에게 할 땐 -self: She cut herself. 그녀는 (칼에) 베였다. (myself, himself…)"
      ]
     },
     {
-     "h": "나 자신·그 자신은 -self / -selves",
+     "h": "이것·저것도 여럿이면 모양이 바뀌어요",
      "lines": [
-      "myself · yourself · himself · herself · itself · ourselves · yourselves · themselves",
-      "주인공이 자기 자신에게 할 때: She cut herself. (그녀는 (칼에) 베였다)"
-     ]
-    },
-    {
-     "h": "이것·저것은 하나면 this / that, 여럿이면 these / those",
-     "lines": [
-      "this seat → these seats · that shoe → those shoes"
+      "this 이것 → these 이것들 · that 저것 → those 저것들",
+      "this seat 이 자리 → these seats 이 자리들 · that shoe 저 신발 → those shoes 저 신발들"
      ]
     }
    ],
@@ -1479,32 +1488,35 @@
    "term": "현재진행",
    "core": [
     {
-     "h": "am / is / are + 동사-ing = 지금 ~하고 있다",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "I am cooking dinner. (나는 저녁을 요리하고 있다)",
-      "It's snowing. (눈이 오고 있다)"
+      "요리한다 → 요리하고 있다 · 눈이 온다 → 눈이 오고 있다",
+      "지금 하는 중인 일은 am / is / are 뒤에 -ing 를 붙인 동사를 써요.",
+      "I am cooking dinner. 나는 저녁을 요리하고 있다 · It's snowing. 눈이 오고 있다."
      ]
     },
     {
-     "h": "-ing 붙이는 법",
+     "h": "-ing 는 이렇게 붙여요",
      "lines": [
-      "대부분 +ing: play → playing · e로 끝나면 e 빼고: make → making",
-      "짧은 모음+자음 하나면 자음 한 번 더: run → running, swim → swimming",
-      "-ie → ying: lie → lying, die → dying"
+      "대부분 그냥 붙여요: play 놀다 → playing · e로 끝나면 e 를 빼요: make 만들다 → making",
+      "끝 글자를 한 번 더 쓰는 말도 있어요: run 달리다 → running · swim 수영하다 → swimming",
+      "ie 로 끝나면 y 로 바꿔요: lie 눕다 → lying · die 죽다 → dying"
      ]
     },
     {
-     "h": "'안 하고 있다'는 not, '하고 있니?'는 am/is/are 를 앞으로",
+     "h": "'안 하고 있다', '하고 있니?'",
      "lines": [
-      "They aren't watching TV.",
-      "Are you listening to me?"
+      "They aren't watching TV. 그들은 TV를 보고 있지 않다.",
+      "Are you listening to me? 내 말 듣고 있어?",
+      "아니라고 할 땐 뒤에 not, 물을 땐 am / is / are 를 앞으로 보내요."
      ]
     },
     {
-     "h": "좋아하다·알다·원하다·가지다는 보통 -ing로 안 써요",
+     "h": "-ing 로 잘 안 쓰는 말도 있어요",
      "lines": [
-      "I am knowing him. (X) → I know him. (O)",
-      "I want coffee. · She has a car."
+      "좋아하다·알다·원하다·가지다처럼 '상태'를 말하는 동사는 그냥 써요.",
+      "I know him. 나는 그를 안다. (I am knowing him 이라고는 안 해요)",
+      "I want coffee. 커피 마시고 싶어 · She has a car. 그녀는 차가 있다."
      ]
     }
    ],
@@ -1801,31 +1813,33 @@
    "term": "과거",
    "core": [
     {
-     "h": "지난 일은 동사 끝에 -ed",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "play → played (놀았다) · like → liked",
-      "study → studied · stop → stopped"
+      "놀다 → 놀았다 · 먹다 → 먹었다",
+      "우리말은 '-었-'을 넣어서 지난 일을 말하죠."
      ]
     },
     {
-     "h": "be동사는 was / were",
+     "h": "영어는 끝에 -ed 를 붙여요",
      "lines": [
-      "am · is → was: I was tired.",
-      "are → were: We were in Busan."
+      "play 놀다 → played 놀았다",
+      "walk 걷다 → walked 걸었다",
+      "I played soccer yesterday. 나는 어제 축구를 했다."
      ]
     },
     {
      "h": "자주 쓰는 동사는 모양이 바뀌어요",
      "lines": [
-      "go → went · come → came · eat → ate · see → saw · have → had",
-      "make → made · buy → bought · take → took · get → got · write → wrote"
+      "go 가다 → went 갔다 · eat 먹다 → ate 먹었다",
+      "am, is 는 was, are 는 were: I was tired. 나는 피곤했다.",
+      "외우려 하지 않아도 돼요. 예문에서 자주 보면 익숙해져요."
      ]
     },
     {
-     "h": "안 했다 · 했니? 는 did 하나로 (뒤는 원래 모양)",
+     "h": "'안 했다', '했어?'는 did 가 도와줘요",
      "lines": [
-      "I didn't go. · Did you see it?",
-      "yesterday · last week · two days ago · in 2020 과 잘 어울려요"
+      "I didn't go. 나는 안 갔다 · Did you go? 너 갔어?",
+      "did 가 과거를 맡아서 뒤에는 원래 모양(go)을 써요."
      ]
     }
    ],
@@ -2134,31 +2148,35 @@
    "term": "미래 (will / be going to)",
    "core": [
     {
-     "h": "앞으로 할 일·일어날 일은 will + 동사원형",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "It will rain tomorrow. (내일 비가 올 것이다)",
-      "I'll call you later. (나중에 전화할게 — 지금 막 정한 일)"
+      "내일 갈 거야 · 곧 비가 올 거야",
+      "우리말은 '-ㄹ 거야'로 앞으로의 일을 말하죠.",
+      "영어도 tomorrow 내일 · next week 다음 주 · soon 곧 같은 말과 자주 함께 나와요."
      ]
     },
     {
-     "h": "이미 정해 둔 계획은 be going to + 동사원형",
+     "h": "영어는 앞에 will 을 붙여요",
      "lines": [
-      "I'm going to visit Busan next week. (부산에 갈 예정이다)",
-      "Look at the clouds. It's going to rain. (눈앞의 근거로 확실한 예측)"
+      "It will rain tomorrow. 내일 비가 올 거야",
+      "will 뒤에는 원래 모양(rain, go)을 그대로 써요.",
+      "I'll call you later. 나중에 전화할게 — 지금 막 정한 일에도 잘 써요."
      ]
     },
     {
-     "h": "안 한다 · 하니? 만들기",
+     "h": "미리 정해 둔 계획은 be going to",
      "lines": [
-      "will not = won't → I won't be late again.",
-      "Will you come? · Are you going to join?",
-      "be동사 + not going to → I'm not going to buy it."
+      "I'm going to visit Busan next week. 다음 주에 부산에 갈 거야",
+      "Look at the clouds. It's going to rain. 구름 좀 봐. 비 오겠다",
+      "눈앞에 보이는 게 있어서 확실할 때도 이렇게 말해요."
      ]
     },
     {
-     "h": "미래를 알려 주는 말",
+     "h": "'안 할 거야', '할 거야?'도 쉬워요",
      "lines": [
-      "tomorrow · next week · soon · in the future"
+      "I won't be late again. 다시는 안 늦을게 (won't = will not)",
+      "I'm not going to buy it. 그거 안 살 거야",
+      "Will you come? 올 거야? · Are you going to join us? 너도 같이 할 거야?"
      ]
     }
    ],
@@ -2467,33 +2485,35 @@
    "term": "조동사",
    "core": [
     {
-     "h": "조동사는 동사 앞에서 뜻을 더해 줘요 — 뒤엔 항상 동사원형",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "She can swim. (O) · She cans swims. (X)",
-      "주어가 he, she여도 -s를 안 붙여요"
+      "수영하다 → 수영할 수 있다 · 수영해야 한다",
+      "우리말은 뒤에 말을 붙여 뜻을 더하죠. 영어는 can, must 같은 말을 앞에 붙여요.",
+      "뒤에는 늘 원래 모양이에요. She can swim. 그녀는 수영할 수 있어 (cans, swims 가 아니에요)"
      ]
     },
     {
-     "h": "can = 할 수 있다 · may = 해도 된다 / 일지도 모른다",
+     "h": "can 할 수 있다 · may 해도 된다, ~일지도 몰라",
      "lines": [
-      "I can drive. = I'm able to drive. (능력)",
-      "Can I sit here? · You may go now. (허락)",
-      "It may snow tonight. (~일지도 몰라)"
+      "I can drive. 나 운전할 수 있어 (= I'm able to drive.)",
+      "Can I sit here? 여기 앉아도 돼요? · You may go now. 이제 가도 돼요",
+      "It may snow tonight. 오늘 밤 눈이 올지도 몰라"
      ]
     },
     {
-     "h": "must · have to = 해야 한다 / should = 하는 게 좋다",
+     "h": "must · have to 해야 한다 / should 하는 게 좋아",
      "lines": [
-      "You must wear a seat belt. = You have to wear… (의무)",
-      "You should drink more water. (충고)",
-      "He must be tired. (피곤한 게 틀림없다)"
+      "You must wear a seat belt. 안전벨트를 꼭 매야 해요 (= You have to wear…)",
+      "You should drink more water. 물을 더 마시는 게 좋아",
+      "He must be tired. 그는 피곤한 게 틀림없어 — 확신할 때도 must 를 써요."
      ]
     },
     {
      "h": "must not 과 don't have to 는 뜻이 달라요",
      "lines": [
-      "must not → 하면 안 된다 (금지)",
-      "don't have to → 안 해도 된다 (필요 없음)"
+      "You must not park here. 여기 주차하면 안 돼요",
+      "You don't have to wait. 안 기다려도 돼요",
+      "'하면 안 된다'와 '안 해도 된다' — 우리말로 떠올리면 헷갈리지 않아요."
      ]
     }
    ],
@@ -2804,32 +2824,34 @@
    "term": "형용사와 부사",
    "core": [
     {
-     "h": "형용사는 '어떤', 부사는 '어떻게'",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "a careful driver (조심성 있는 운전자) — 사람·물건을 꾸밈",
-      "She drives carefully. (조심스럽게 운전한다) — 동작을 꾸밈"
+      "조심스러운 운전자 · 조심스럽게 운전한다",
+      "'어떤'을 말할 땐 '-운', '어떻게'를 말할 땐 '-게'를 붙이죠. 영어도 이 둘을 나눠 써요."
      ]
     },
     {
-     "h": "형용사는 명사 앞 또는 be동사 뒤",
+     "h": "'어떤'은 사람·물건 앞에, 또는 is 뒤에",
      "lines": [
-      "a tall man · He is tall.",
-      "look · feel · sound · taste · smell 뒤에도 형용사: You look happy. · It smells good."
+      "a careful driver 조심성 있는 운전자 · He is tall. 그는 키가 커",
+      "look · feel · sound · taste · smell 뒤에도 같은 모양을 써요.",
+      "You look happy. 너 행복해 보여 · It smells good. 냄새 좋다"
      ]
     },
     {
-     "h": "부사는 보통 형용사 + ly",
+     "h": "'어떻게'는 보통 끝에 -ly 를 붙여요",
      "lines": [
-      "quick → quickly · careful → carefully · easy → easily",
-      "형용사와 모양이 같은 것: fast, hard, early, late · good의 부사는 well",
-      "뜻이 다른 것: hardly(거의 ~않다) · lately(최근에)"
+      "She drives carefully. 그녀는 조심스럽게 운전해 · quick → quickly 빠르게",
+      "fast, hard, early, late 는 모양 그대로 · good 좋은 → well 잘",
+      "hardly 거의 ~않다, lately 최근에 — 이 둘은 뜻이 달라져요."
      ]
     },
     {
-     "h": "얼마나 자주? always > usually > often > sometimes > never",
+     "h": "'얼마나 자주'를 말하는 말",
      "lines": [
-      "be동사·조동사 뒤, 일반동사 앞",
-      "She is always late. · I often walk."
+      "always 항상 > usually 보통 > often 자주 > sometimes 가끔 > never 전혀 안",
+      "She is always late. 그녀는 항상 늦어 — is, can 같은 말 뒤에 와요.",
+      "I often walk. 나는 자주 걸어 — walk, eat 같은 말 앞에 와요."
      ]
     }
    ],
@@ -3134,32 +3156,35 @@
    "term": "비교급과 최상급",
    "core": [
     {
-     "h": "둘을 비교하면 -er than, 여럿 중 최고는 the -est",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "fast → faster → the fastest",
-      "A cheetah is faster than a lion. (치타가 사자보다 빠르다)"
+      "키가 크다 → 더 크다 → 가장 크다",
+      "우리말은 '더', '가장'을 앞에 붙이죠. 영어는 짧은 단어면 끝에 -er, -est 를 붙여요.",
+      "tall 큰 → taller 더 큰 → the tallest 가장 큰"
      ]
     },
     {
-     "h": "긴 단어는 more / most를 앞에",
+     "h": "둘을 견줄 땐 than, 여럿 중 제일은 the",
      "lines": [
-      "beautiful → more beautiful → the most beautiful",
-      "the most interesting book in the library (in + 장소·집단 / of + 여러 개)"
+      "Today is colder than yesterday. 오늘은 어제보다 추워",
+      "He is the tallest in my class. 그는 우리 반에서 제일 커 (셋 중에선 of the three)",
+      "긴 단어는 more, most: more important 더 중요한 · the most beautiful 가장 아름다운"
      ]
     },
     {
-     "h": "모양이 바뀌는 것 (외워 두기)",
+     "h": "모양이 바뀌는 것도 있어요",
      "lines": [
-      "good/well → better → best · bad → worse → worst",
-      "many/much → more → most · little → less → least",
-      "big → bigger · easy → easier (철자 주의)"
+      "good 좋은 → better → best · bad 나쁜 → worse → worst",
+      "many/much 많은 → more → most · little 적은 → less → least",
+      "big → bigger · easy → easier 처럼 끝이 살짝 바뀌기도 해요. 보다 보면 익숙해져요."
      ]
     },
     {
      "h": "'~만큼'은 as ~ as, '훨씬'은 much",
      "lines": [
-      "My bag is as heavy as yours. · not as ~ as (~만큼 …하지 않다)",
-      "much · even · far · a lot + 비교급 (very는 X)"
+      "My son is as tall as his father. 아들이 아빠만큼 키가 커",
+      "It's not as cold as yesterday. 어제만큼 춥진 않아",
+      "much better 훨씬 더 좋은 — '훨씬'엔 very 대신 much, even, far, a lot 을 써요."
      ]
     }
    ],
@@ -3466,31 +3491,35 @@
    "term": "to부정사",
    "core": [
     {
-     "h": "to + 동사원형 = '~하는 것 · ~할 · ~하려고'",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "to go · to eat · to learn — 자리에 따라 뜻이 달라져요"
+      "배우다 → 배우는 것 · 배울 · 배우려고",
+      "우리말은 끝을 바꾸죠. 영어는 앞에 to 하나만 붙이고, 뒤는 원래 모양 그대로예요.",
+      "to learn 하나가 자리에 따라 이 세 가지 뜻이 돼요."
      ]
     },
     {
-     "h": "~하는 것 (명사처럼)",
+     "h": "'~하는 것'으로 쓸 때",
      "lines": [
-      "I want to learn Chinese. (배우는 것을 원한다)",
-      "My dream is to be a pilot. (되는 것이다)",
-      "want · hope · plan · decide · need · would like 뒤엔 to"
+      "I want to learn Chinese. 나는 중국어를 배우고 싶어 (배우는 것을 원해)",
+      "My dream is to be a pilot. 내 꿈은 조종사가 되는 거야",
+      "want · hope · plan · decide · need · would like 뒤에 to 가 자주 와요."
      ]
     },
     {
-     "h": "~할 (명사 뒤에서 꾸밈)",
+     "h": "'~할'로 쓸 때는 뒤에서 꾸며요",
      "lines": [
-      "something to drink (마실 것)",
-      "a lot of work to do (해야 할 일)"
+      "something to drink 마실 것 · a lot of work to do 해야 할 많은 일",
+      "Would you like something to drink? 마실 것 좀 드릴까요?",
+      "우리말과 순서가 반대예요. '마실 것'이 영어로는 '것 + 마실'."
      ]
     },
     {
-     "h": "~하려고 · ~해서 (목적과 감정의 이유)",
+     "h": "'~하려고', '~해서'로 쓸 때",
      "lines": [
-      "He went to the store to buy milk. (우유를 사려고)",
-      "I'm glad to see you. (만나서 기쁘다)"
+      "He went to the store to buy milk. 그는 우유를 사려고 가게에 갔어",
+      "I'm glad to see you. 만나서 반가워 — 기쁨·슬픔 같은 마음 뒤에선 '~해서'",
+      "우리말로 자연스럽게 옮겨 보면 어떤 뜻인지 금방 보여요."
      ]
     }
    ],
@@ -3799,31 +3828,35 @@
    "term": "동명사",
    "core": [
     {
-     "h": "동사 + -ing = '~하는 것'",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "swim → swimming (수영하는 것)",
-      "Swimming is good for your health. (주어로 쓰면 하나로 봐서 is)"
+      "걷다 → 걷기 · 수영하다 → 수영하는 것",
+      "우리말은 '-기', '-는 것'을 붙이죠. 영어는 끝에 -ing 를 붙여요.",
+      "walk → walking 걷기 · swim → swimming 수영하는 것"
      ]
     },
     {
-     "h": "-ing만 오는 동사 vs to만 오는 동사",
+     "h": "'~하는 것'은 하나로 봐요",
      "lines": [
-      "-ing: enjoy · finish · mind · stop · give up · keep · avoid",
-      "to: want · hope · plan · decide · need · expect",
-      "둘 다 OK: like · love · start · begin · hate"
+      "Walking is good exercise. 걷기는 좋은 운동이야 — 하나로 보니까 is",
+      "at, for 같은 말 뒤에도 -ing: I'm good at drawing. 나 그림 잘 그려",
+      "Thank you for helping me. 도와줘서 고마워"
      ]
     },
     {
-     "h": "at, for, of 같은 전치사 뒤엔 -ing",
+     "h": "-ing 가 오는 말, to 가 오는 말",
      "lines": [
-      "I'm good at drawing. · Thank you for helping me."
+      "enjoy · finish · mind · stop · give up · keep · avoid 뒤엔 -ing",
+      "want · hope · plan · decide · need · expect 뒤엔 to",
+      "like · love · start · begin · hate 는 둘 다 돼요: I like to cook. 요리하는 게 좋아"
      ]
     },
     {
-     "h": "stop은 뒤에 따라 뜻이 달라요",
+     "h": "stop 은 뒤에 따라 뜻이 달라요",
      "lines": [
-      "stop smoking → 담배 피우는 것을 멈추다(끊다)",
-      "stop to smoke → 담배를 피우려고 멈추다"
+      "He stopped smoking. 그는 담배를 끊었어 (피우는 걸 멈춤)",
+      "He stopped to smoke. 그는 담배를 피우려고 멈춰 섰어",
+      "to 가 '~하려고'라는 걸 떠올리면 쉬워요."
      ]
     }
    ],
@@ -4132,32 +4165,34 @@
    "term": "현재완료",
    "core": [
     {
-     "h": "have/has + p.p. = 과거 일이 지금까지 이어짐",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "I have lost my key. (열쇠를 잃어버려서 지금도 없다)",
-      "She has lived here since 2020. (2020년부터 지금까지 살아 왔다)"
+      "'부산에 가 본 적 있어' · '여기서 3년째 살고 있어'",
+      "지난 일이 지금까지 이어지는 말이죠. 영어는 이걸 have 로 말해요."
      ]
     },
     {
-     "h": "뜻은 네 가지, 같이 오는 말로 구별해요",
+     "h": "have + 바뀐 모양(seen, done)으로 말해요",
      "lines": [
-      "경험: ever, never, before, once, twice",
-      "계속: for + 기간 / since + 시작 시점",
-      "완료: just, already, yet · 결과: ~해 버려서 지금 …"
+      "I have lost my key. 열쇠를 잃어버렸어 (그래서 지금도 없어)",
+      "She has lived here since 2020. 그녀는 2020년부터 여기 살아 왔어",
+      "he·she 처럼 한 사람이면 has · 바뀐 모양: gone, seen, eaten, done, been"
      ]
     },
     {
-     "h": "안 했다 · 했니? 는 have로",
+     "h": "같이 오는 말을 보면 뜻이 보여요",
      "lines": [
-      "I haven't finished it yet.",
-      "Have you ever seen a whale?"
+      "해 본 적: ever 한 번이라도 · never 한 번도 안 · before 전에 · once 한 번 · twice 두 번",
+      "쭉 해 왔다: for 3 years 3년 동안 · since 2020 2020년부터",
+      "막 했다·벌써 했다: just 막 · already 벌써 · yet 아직(안 했을 때)"
      ]
     },
     {
-     "h": "yesterday, ago, last year 와는 같이 못 써요",
+     "h": "'안 했어', '해 봤어?' 그리고 헷갈리기 쉬운 것",
      "lines": [
-      "I have seen it yesterday. (×) → I saw it yesterday. (○)",
-      "p.p.: go-gone · see-seen · eat-eaten · do-done · be-been"
+      "I haven't finished it yet. 아직 못 끝냈어 · Have you ever seen a whale? 고래 본 적 있어?",
+      "yesterday 어제 · ago 전에 · last year 작년처럼 지난 때를 콕 집으면",
+      "그냥 과거로 말하면 돼요: I saw it yesterday. 어제 그거 봤어"
      ]
     }
    ],
@@ -4470,31 +4505,34 @@
    "term": "접속사",
    "core": [
     {
-     "h": "두 문장을 한 문장으로 잇는 말",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "and 그리고 · but 그러나 · or 또는 · so 그래서",
-      "I was tired, so I went to bed early."
+      "'피곤했어. 그래서 일찍 잤어.' 우리말도 '그래서', '그런데'로 문장을 잇죠.",
+      "영어도 짧은 말 하나로 두 문장을 한 문장으로 이어요."
      ]
     },
     {
-     "h": "언제? 왜? 를 붙이는 말",
+     "h": "and · but · or · so 로 이어요",
      "lines": [
-      "when ~할 때 · before ~하기 전에 · after ~한 후에",
-      "while ~하는 동안 · until ~할 때까지",
-      "because + 문장 / because of + 명사"
+      "and 그리고 · but 그런데 · or 또는 · so 그래서",
+      "I was tired, so I went to bed early. 피곤해서 일찍 잤어",
+      "I like coffee, but she likes tea. 나는 커피가 좋은데 그녀는 차가 좋대"
      ]
     },
     {
-     "h": "만약 · ~이지만",
+     "h": "'언제', '왜'를 붙이는 말",
      "lines": [
-      "if 만약 ~라면 · unless ~하지 않으면 · although/though ~이지만",
-      "If it rains tomorrow, I will stay home. (미래 일이라도 if 안은 현재형)"
+      "when ~할 때 · before ~하기 전에 · after ~한 후에 · while ~하는 동안 · until ~할 때까지",
+      "I stayed home because I had a cold. 감기에 걸려서 집에 있었어",
+      "because 뒤엔 문장, because of 뒤엔 짧은 말: because of the rain 비 때문에"
      ]
     },
     {
-     "h": "that = '~라는 것' (생략 가능)",
+     "h": "'만약', '~이지만', '~라는 것'",
      "lines": [
-      "I think (that) he is right."
+      "if 만약 ~라면 · unless ~하지 않으면 · although(though) ~이지만",
+      "If it rains tomorrow, I'll stay home. 내일 비 오면 집에 있을게 (if 쪽엔 will 을 안 써요)",
+      "I think (that) he is right. 그가 맞는 것 같아 · 이 that 은 빼도 돼요"
      ]
     }
    ],
@@ -4808,33 +4846,34 @@
    "term": "문장의 형식",
    "core": [
     {
-     "h": "동사에 따라 뒤에 오는 모양이 정해져요",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "be/look형: 주어 + 동사 + 상태",
-      "주다형: 주어 + 동사 + 사람에게 + 물건을",
-      "만들다형: 주어 + 동사 + 목적어 + 상태/행동"
+      "'피곤해 보여' · '나에게 시계를 줬어' · '그 소식이 나를 기쁘게 했어'",
+      "영어는 어떤 말(look, give, make)을 쓰느냐에 따라 뒤에 오는 순서가 정해져요. 크게 이런 모양들이 있어요."
      ]
     },
     {
-     "h": "look · feel · sound · smell · taste 뒤엔 형용사",
+     "h": "look · feel · sound · smell · taste 뒤엔 상태를 말해요",
      "lines": [
-      "You look tired. (tiredly ×)",
-      "명사가 오면 like: You look like a model."
+      "You look tired. 너 피곤해 보여 (tiredly 는 안 써요)",
+      "This soup tastes a little salty. 이 수프 조금 짜",
+      "사람·물건이 오면 like 를 붙여요: You look like a model. 너 모델 같아"
      ]
     },
     {
-     "h": "'누구에게 무엇을' 주는 동사",
+     "h": "'누구에게 무엇을' 주는 말",
      "lines": [
-      "give · send · show · tell · teach · lend + 물건 + to 사람",
-      "buy · make · cook + 물건 + for 사람 / ask + 물건 + of 사람"
+      "My uncle gave me a watch. 삼촌이 나에게 시계를 줬어",
+      "순서를 바꾸면 to: He gave a watch to me. 같은 뜻 (send·show·tell·teach·lend 도 to)",
+      "buy · make · cook 은 for: She made a cake for me. 나에게 케이크를 만들어 줬어 (ask 는 of)"
      ]
     },
     {
-     "h": "목적어를 어떤 상태로 만들기",
+     "h": "'누구를 어떻게' 만드는 말",
      "lines": [
-      "make/keep/find + 목적어 + 형용사: The news made me happy.",
-      "call/name + 목적어 + 이름: We call him Captain.",
-      "want/ask/tell + 목적어 + to 동사: I want you to come."
+      "The news made me happy. 그 소식이 나를 기쁘게 했어 (make · keep · find)",
+      "We call him Captain. 우리는 그를 캡틴이라고 불러 (call · name)",
+      "I want you to come. 네가 왔으면 좋겠어 (want · ask · tell 뒤엔 사람 + to)"
      ]
     }
    ],
@@ -5144,30 +5183,33 @@
    "term": "수동태",
    "core": [
     {
-     "h": "주어가 '당하는' 쪽이면 be + p.p.",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "Many people love the song. (사랑한다)",
-      "→ The song is loved by many people. (사랑받는다)"
+      "'사람들이 그 노래를 사랑해' → '그 노래는 사랑받아'",
+      "누가 했는지보다 무엇이 그렇게 됐는지 말하고 싶을 때 '~되다, ~받다'로 말하죠."
      ]
     },
     {
-     "h": "누가 했는지는 by ~ (중요하지 않으면 생략)",
+     "h": "영어는 be + 바뀐 모양(loved, made)",
      "lines": [
-      "The window was broken by Tom.",
-      "English is spoken in many countries. (by 생략)"
+      "Many people love the song. 많은 사람이 그 노래를 사랑해",
+      "→ The song is loved by many people. 그 노래는 많은 사람에게 사랑받아",
+      "누가 했는지는 by 뒤에 붙여요."
      ]
     },
     {
-     "h": "시제는 be동사가 맡아요",
+     "h": "누가 했는지 중요하지 않으면 by 는 빼요",
      "lines": [
-      "is made (현재) · was made (과거) · will be made (미래)"
+      "English is spoken in many countries. 영어는 많은 나라에서 쓰여",
+      "My bike was stolen last night. 어젯밤에 내 자전거를 도둑맞았어"
      ]
     },
     {
-     "h": "안 됐다 · 됐니? 도 be동사로",
+     "h": "언제인지, '안 됐어', '됐어?'는 be 가 맡아요",
      "lines": [
-      "It was not made in Korea.",
-      "Was the letter written by her?"
+      "is made 만들어져 · was made 만들어졌어 · will be made 만들어질 거야",
+      "It was not made in Korea. 그건 한국에서 만든 게 아니야",
+      "Was the letter written by her? 그 편지 그녀가 쓴 거야?"
      ]
     }
    ],
@@ -5481,29 +5523,33 @@
    "term": "관계대명사",
    "core": [
     {
-     "h": "명사 뒤에 who/which/that + 설명을 붙여요",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "a friend who lives in Canada (캐나다에 사는 친구)",
-      "the bag which I lost (내가 잃어버린 가방)"
+      "'캐나다에 사는 친구' · '내가 잃어버린 가방'",
+      "우리말은 설명을 앞에 붙이지만, 영어는 '친구', '가방' 뒤에 who·which·that 으로 이어 붙여요."
      ]
     },
     {
-     "h": "사람은 who, 사물·동물은 which, 둘 다 that",
+     "h": "사람이면 who, 물건·동물이면 which",
      "lines": [
-      "뒤 동사는 앞 명사에 맞춰요: a friend who lives / friends who live"
+      "a friend who lives in Canada 캐나다에 사는 친구",
+      "the bag which I lost 내가 잃어버린 가방",
+      "that 은 둘 다 돼요: the book that you lent me 네가 빌려준 책"
      ]
     },
     {
-     "h": "'~를'에 해당하면 생략해도 돼요",
+     "h": "앞말에 맞추고, 뺄 수 있을 땐 빼요",
      "lines": [
-      "This is the book (which) I bought yesterday."
+      "a friend who lives 사는 친구(한 명) · friends who live 사는 친구들(여럿)",
+      "'내가 산 책'처럼 뒤에 I·you 가 바로 오면 which·that 은 빼도 돼요",
+      "This is the book (which) I bought yesterday. 이게 내가 어제 산 책이야"
      ]
     },
     {
-     "h": "'그의 ~가' 는 whose, 최상급·the only·all 뒤엔 주로 that",
+     "h": "이런 것도 있어요, 예문에서 만나면 돼요",
      "lines": [
-      "I know a girl whose father is a pilot.",
-      "the best player that I have ever seen"
+      "whose '그 사람의': I know a girl whose father is a pilot. 아빠가 조종사인 여자아이를 알아",
+      "'제일 ~한'·the only·all 뒤엔 주로 that: the best movie that I've seen 내가 본 최고의 영화"
      ]
     }
    ],
@@ -5816,30 +5862,34 @@
    "term": "관계대명사 what · 관계부사",
    "core": [
     {
-     "h": "what = '~하는 것' (앞에 명사 없이 혼자 써요)",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "What I want is a new bike. (내가 원하는 것)",
-      "Show me what you have."
+      "'내가 원하는 것' · '내가 태어난 마을' · '우리가 처음 만난 날'",
+      "'것', '곳', '날'을 설명할 때도 영어는 짧은 말 하나로 이어요."
      ]
     },
     {
-     "h": "장소·시간 명사 뒤엔 where / when",
+     "h": "what 은 '~하는 것'",
      "lines": [
-      "the town where I was born (내가 태어난 마을)",
-      "the day when we first met (우리가 처음 만난 날)"
+      "What I want is a new bike. 내가 원하는 건 새 자전거야",
+      "Show me what you bought. 네가 산 것 좀 보여 줘",
+      "what 안에 '것'이 이미 들어 있어서 앞에 thing 같은 말을 안 붙여요."
+     ]
+    },
+    {
+     "h": "곳은 where, 때는 when",
+     "lines": [
+      "the town where I was born 내가 태어난 마을",
+      "the day when we first met 우리가 처음 만난 날",
+      "the town where 는 the town in which 와 같은 뜻이에요."
      ]
     },
     {
      "h": "이유는 why, 방법은 how",
      "lines": [
-      "the reason why you were late",
-      "This is how I solved it. (the way how ×)"
-     ]
-    },
-    {
-     "h": "where = 전치사 + which",
-     "lines": [
-      "the town where = the town in which"
+      "the reason why you were late 네가 늦은 이유",
+      "This is how I solved it. 이게 내가 푼 방법이야",
+      "the way 와 how 는 같이 쓰지 않아요. 둘 중 하나만 쓰면 돼요."
      ]
     }
    ],
@@ -6152,30 +6202,33 @@
    "term": "분사",
    "core": [
     {
-     "h": "동사에 -ing나 p.p.를 붙이면 명사를 꾸미는 말이 돼요",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "a sleeping baby (자고 있는 아기)",
-      "a broken window (깨진 창문)"
+      "자다 → 자는 아기 · 깨지다 → 깨진 창문",
+      "우리말은 '-는', '-ㄴ'을 붙여서 뒤에 오는 말을 꾸미죠."
      ]
     },
     {
-     "h": "-ing는 '~하는, ~하고 있는', p.p.는 '~된, ~당한'",
+     "h": "영어는 -ing 는 '~하는', 바뀐 모양은 '~된'",
      "lines": [
-      "falling leaves (떨어지는 잎) · fallen leaves (떨어진 잎)"
+      "a sleeping baby 자고 있는 아기 · a broken window 깨진 창문",
+      "falling leaves 떨어지는 잎 · fallen leaves 떨어진 잎",
+      "broken, fallen 처럼 바뀐 모양은 '~된, ~당한' 느낌이에요."
      ]
     },
     {
-     "h": "꾸미는 말이 길어지면 명사 뒤로 가요",
+     "h": "꾸미는 말이 길어지면 뒤에서 꾸며요",
      "lines": [
-      "the boy playing the guitar (기타를 치는 소년)",
-      "a car made in Korea (한국에서 만들어진 차)"
+      "the boy playing the guitar 기타를 치는 소년",
+      "a car made in Korea 한국에서 만들어진 차"
      ]
     },
     {
-     "h": "감정: 느끼게 만들면 -ing, 직접 느끼면 p.p.",
+     "h": "기분을 말할 땐 조금 헷갈릴 수 있어요",
      "lines": [
-      "The movie was boring. (지루하게 하는) / I was bored. (지루함을 느낀)",
-      "exciting/excited · interesting/interested · surprising/surprised · tiring/tired"
+      "The movie was boring. 영화가 지루했다 · I was bored. 나는 지루했다",
+      "기분을 만드는 쪽은 -ing, 느끼는 사람은 -ed 예요. (interesting/interested 도 같아요)",
+      "exciting 신나게 하는 / excited 신난 · tiring 피곤하게 하는 / tired 피곤한"
      ]
     }
    ],
@@ -6484,29 +6537,32 @@
    "term": "가정법 과거",
    "core": [
     {
-     "h": "지금 사실과 반대로 상상할 땐: If + 과거, would + 동사원형",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "If I had wings, I could fly. (실제로는 날개가 없음)",
-      "would(~할 텐데) · could(~할 수 있을 텐데) · might(~할지도)"
+      "날개가 있다면 날 수 있을 텐데.",
+      "진짜로는 없지만 상상해 보는 말이죠. '-다면 ~텐데' 느낌이에요."
      ]
     },
     {
-     "h": "be동사는 누구든 were",
+     "h": "영어는 과거 모양으로 '현실은 아니야'를 보여 줘요",
      "lines": [
-      "If I were you, I would take the bus. (내가 너라면)"
+      "If I had wings, I could fly. 나에게 날개가 있다면 날 수 있을 텐데",
+      "뒤에는 would ~할 텐데 · could ~할 수 있을 텐데 · might ~할지도 + 원래 모양",
+      "am, is 자리는 누구든 were: If I were you, I would take the bus. 내가 너라면 버스를 탈 텐데"
      ]
     },
     {
-     "h": "이룰 수 없는 소망은 I wish, '마치 ~처럼'은 as if + 과거",
+     "h": "'~라면 좋을 텐데', '마치 ~처럼'도 같은 방식이에요",
      "lines": [
-      "I wish I had a sister. (여동생이 있으면 좋을 텐데)",
-      "He talks as if he knew everything. (다 아는 것처럼)"
+      "I wish I had a sister. 여동생이 있으면 좋을 텐데",
+      "He talks as if he knew everything. 그는 다 아는 것처럼 말해"
      ]
     },
     {
-     "h": "실제로 일어날 수 있는 일은 그냥 현재형",
+     "h": "정말 일어날 수 있는 일은 그대로 말해요",
      "lines": [
-      "If it rains tomorrow, I will stay home. (가능성 있는 일)"
+      "If it rains tomorrow, I will stay home. 내일 비가 오면 집에 있을 거야",
+      "이건 상상이 아니라 진짜 그럴 수 있는 일이라 과거 모양을 쓰지 않아요."
      ]
     }
    ],
@@ -6815,28 +6871,34 @@
    "term": "간접의문문",
    "core": [
     {
-     "h": "질문이 문장 안에 들어가면 '의문사 + 주어 + 동사' 순서",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "Where is he? → Do you know where he is?"
+      "그는 어디 있어? → 그가 어디 있는지 알아?",
+      "우리말도 질문이 문장 안에 들어가면 '-는지'로 모양이 바뀌죠."
      ]
     },
     {
-     "h": "do/does/did는 빠지고, 시제는 동사에 붙여요",
+     "h": "영어는 '누가 + 어떻다' 순서로 돌아와요",
      "lines": [
-      "What does she want? → I don't know what she wants."
+      "Where is he? → Do you know where he is? 그가 어디 있는지 알아?",
+      "What does she want? → I don't know what she wants. 그녀가 뭘 원하는지 몰라",
+      "does 는 빠지고, 대신 wants 처럼 동사에 흔적이 남아요."
      ]
     },
     {
-     "h": "의문사가 없는 질문은 if / whether (~인지 아닌지)",
+     "h": "'~인지 아닌지'는 if 로 이어요",
      "lines": [
-      "Is it true? → I wonder if it is true."
+      "Is it true? 그게 사실이야?",
+      "→ I wonder if it is true. 그게 사실인지 궁금해",
+      "whether 도 같은 뜻으로 써요."
      ]
     },
     {
-     "h": "예외 두 가지: 의문사가 주어면 그대로, think류가 있으면 의문사가 맨 앞",
+     "h": "조금 다른 경우 두 가지",
      "lines": [
-      "Who broke it? → Tell me who broke it.",
-      "Who do you think he is? (think · believe · guess)"
+      "Who broke it? → Tell me who broke it. 누가 깼는지 말해 줘 (who 가 '누가'라서 순서 그대로)",
+      "Who do you think he is? 그가 누구라고 생각해?",
+      "think · believe · guess 가 끼면 who 같은 말이 맨 앞으로 와요."
      ]
     }
    ],
@@ -7149,30 +7211,34 @@
    "term": "to부정사 심화",
    "core": [
     {
-     "h": "긴 주어는 뒤로 보내고 그 자리에 it",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "To learn English is fun. → It is fun to learn English.",
-      "It is easy for me to swim. (누가 하는지는 for + 사람)",
-      "It is kind of you to help me. (성격을 말할 땐 of + 사람)"
+      "'영어를 배우는 것은 재미있다'처럼 앞부분이 길면 좀 무겁죠.",
+      "영어는 It is fun 을 먼저 말하고, 긴 부분(to learn English)은 뒤로 보내요."
      ]
     },
     {
-     "h": "too ~ to: 너무 ~해서 …할 수 없다",
+     "h": "긴 앞부분은 it 이 대신 맡아요",
      "lines": [
-      "He is too young to drive. = He is so young that he can't drive."
+      "It is fun to learn English. 영어를 배우는 건 재미있다",
+      "It is easy for me to swim. 나는 수영하는 게 쉽다 (누가 하는지는 for + 사람)",
+      "It is kind of you to help me. 도와주다니 친절하구나 (사람 성격을 말할 땐 of)"
      ]
     },
     {
-     "h": "~ enough to: …할 만큼 충분히 ~하다",
+     "h": "'너무 ~해서 못 해', '~할 만큼 돼'",
      "lines": [
-      "She is old enough to drive. = She is so old that she can drive."
+      "He is too young to drive. 그는 너무 어려서 운전을 못 해",
+      "She is old enough to drive. 그녀는 운전할 만큼 나이가 됐어",
+      "too 는 '못 한다', enough 는 '할 수 있다' 쪽이고, enough 는 old 뒤에 와요."
      ]
     },
     {
-     "h": "의문사 + to, 그리고 '누구에게 ~하라고'",
+     "h": "'뭘 ~할지', '누구에게 ~하라고'",
      "lines": [
-      "what to do · how to swim · where to go · when to start",
-      "want / ask / tell / allow + 사람 + to ~"
+      "what to do 뭘 할지 · how to swim 수영하는 법",
+      "where to go 어디 갈지 · when to start 언제 시작할지",
+      "I want you to come. 네가 왔으면 좋겠어 (ask · tell · allow 도 이 모양)"
      ]
     }
    ],
@@ -7485,31 +7551,35 @@
    "term": "수동태 심화",
    "core": [
     {
-     "h": "조동사 뒤에서 '~되다'는 be + p.p.",
+     "h": "'~되다'는 be + 바뀐 모양, 기억나죠?",
      "lines": [
-      "The work must be done today. (오늘 끝내져야 한다)",
-      "It can be seen from here. (여기서 보일 수 있다)"
+      "The window was broken. 창문이 깨졌다",
+      "must, can 뒤에서는 be 그대로: The work must be done today. 그 일은 오늘 끝나야 해",
+      "It can be seen from here. 그건 여기서 보여"
      ]
     },
     {
-     "h": "지금 ~되는 중이면 be being p.p., 이미 ~되었으면 have been p.p.",
+     "h": "'~되는 중', '이미 ~됐다'",
      "lines": [
-      "The road is being repaired. (수리되는 중)",
-      "The bridge has been built. (다 지어졌다)"
+      "The road is being repaired. 길이 수리되는 중이야",
+      "The bridge has been built. 다리가 다 지어졌어",
+      "being 은 '지금 하는 중', has been 은 '이미 끝남' 느낌이에요."
      ]
     },
     {
-     "h": "'주다' 문장은 받는 사람도, 물건도 주어가 될 수 있어요",
+     "h": "'주다' 문장은 두 가지로 바꿀 수 있어요",
      "lines": [
-      "He gave me a book.",
-      "→ I was given a book. / A book was given to me."
+      "He gave me a book. 그가 나에게 책을 줬어",
+      "→ I was given a book. 나는 책을 받았어",
+      "→ A book was given to me. 책이 나에게 주어졌어"
      ]
     },
     {
-     "h": "by 대신 다른 전치사와 짝을 이루는 표현",
+     "h": "by 대신 다른 짝이 오기도 해요",
      "lines": [
-      "be interested in · be covered with · be filled with · be surprised at · be known to",
-      "be made of (재료가 그대로 보임) · be made from (재료가 변함)"
+      "be interested in ~에 관심 있다 · be filled with ~로 가득하다 · be covered with ~로 덮이다",
+      "be surprised at ~에 놀라다 · be known to ~에게 알려지다",
+      "be made of 재료가 그대로 보일 때(나무 탁자) · be made from 재료가 변할 때(우유로 만든 치즈)"
      ]
     }
    ],
@@ -7822,30 +7892,33 @@
    "term": "비교 표현 심화",
    "core": [
     {
-     "h": "~할수록 더 …하다: the 비교급, the 비교급",
+     "h": "우리말로 먼저 생각해 봐요",
      "lines": [
-      "The more you practice, the better you get. (연습할수록 더 잘하게 된다)"
+      "'연습할수록 더 잘해진다' · '점점 더 추워진다'",
+      "우리말에서도 자주 쓰죠. 영어는 better, colder 같은 '더 ~' 모양으로 만들어요."
      ]
     },
     {
-     "h": "점점 더 ~: 비교급 and 비교급",
+     "h": "'~할수록 더 …': the 더 ~, the 더 …",
      "lines": [
-      "It's getting colder and colder. (점점 더 추워진다)",
-      "more and more popular (점점 더 인기 있는)"
+      "The more you practice, the better you get. 연습할수록 더 잘하게 돼",
+      "The more you read, the more you learn. 많이 읽을수록 더 많이 배워"
      ]
     },
     {
-     "h": "몇 배 ~한: 배수 + as ~ as / 가능한 한 ~: as ~ as possible",
+     "h": "'점점 더', '몇 배', '가능한 한'",
      "lines": [
-      "This room is three times as large as mine. (내 방의 세 배)",
-      "as soon as possible = as soon as I can (가능한 한 빨리)"
+      "colder and colder 점점 더 추운 · more and more popular 점점 더 인기 있는",
+      "This room is three times as large as mine. 이 방은 내 방의 세 배 크기야",
+      "as soon as possible 가능한 한 빨리 (= as soon as I can)"
      ]
     },
     {
-     "h": "'가장 ~하다'를 다르게 말하기",
+     "h": "'가장 ~'을 다르게 말할 수도 있어요",
      "lines": [
-      "No other student is taller than Tom. = Tom is taller than any other student.",
-      "one of the best singers (가장 뛰어난 가수 중 한 명, 뒤는 복수)"
+      "Tom is taller than any other student. 톰은 다른 어떤 학생보다 키가 커",
+      "No other student is taller than Tom. 톰보다 키 큰 학생은 없어",
+      "one of the best singers 가장 뛰어난 가수 중 한 명 (singers 처럼 여러 명 모양)"
      ]
     }
    ],
