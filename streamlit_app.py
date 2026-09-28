@@ -110,6 +110,17 @@ def validate_grammar(g):
                         errs.append(f"{w}: 배열 정답 문장이 너무 짧아요")
                 else:
                     errs.append(f"{w}: 유형(t)은 c/b/o 중 하나")
+        for i, x in enumerate(u.get("sents") or []):
+            w = f"{uid} 예문 {i + 1}번"
+            e, k = _chunks(x.get("en", "")), _chunks(x.get("ko", ""))
+            if not e:
+                errs.append(f"{w}: 영어 없음")
+            elif len(e) != len(k):
+                errs.append(f"{w}: 덩어리 수가 달라요 (영어 {len(e)} / 우리말 {len(k)})")
+            if not str(x.get("full", "")).strip():
+                errs.append(f"{w}: 완성 해석 없음")
+            if not [y for y in (x.get("wrong") or []) if str(y).strip()]:
+                errs.append(f"{w}: 틀린 해석이 최소 1개 필요해요")
     return errs
 
 
@@ -141,7 +152,7 @@ def validate_reading(d):
     if not isinstance(sets, list) or not isinstance(passages, list):
         return ["sets / passages 는 목록이어야 해요"]
     if not sets and not passages:
-        return ["문장 세트와 지문이 모두 비어 있어요"]
+        return ["글이 하나도 없어요"]
     ids = set()
     for s_ in sets:
         sid = s_.get("id", "")
@@ -150,30 +161,19 @@ def validate_reading(d):
         if sid in ids:
             errs.append(f"{sid}: id 중복")
         ids.add(sid)
-        items = s_.get("items") or []
-        if not items:
-            errs.append(f"{sid}: 문장이 없어요")
-        for i, it in enumerate(items):
-            w = f"{sid} {i + 1}번 문장"
+        for i, it in enumerate(s_.get("items") or []):
             e, k = _chunks(it.get("en", "")), _chunks(it.get("ko", ""))
-            if not e:
-                errs.append(f"{w}: 영어 없음")
-            elif len(e) != len(k):
-                errs.append(f"{w}: 덩어리 수가 달라요 (영어 {len(e)} / 우리말 {len(k)})")
-            if not str(it.get("full", "")).strip():
-                errs.append(f"{w}: 전체 해석 없음")
-            wr = [x for x in (it.get("wrong") or []) if str(x).strip()]
-            if not wr:
-                errs.append(f"{w}: 틀린 해석(오답 보기)이 최소 1개 필요해요")
-            if str(it.get("full", "")).strip() in [str(x).strip() for x in wr]:
-                errs.append(f"{w}: 오답 보기에 정답과 같은 문장이 있어요")
+            if not e or len(e) != len(k) or not str(it.get("full", "")).strip():
+                errs.append(f"{sid} {i + 1}번 문장: 덩어리/해석 확인")
     for p_ in passages:
         pid = p_.get("id", "")
         if not pid:
-            errs.append("id 없는 지문이 있어요"); continue
+            errs.append("id 없는 글이 있어요"); continue
         if pid in ids:
             errs.append(f"{pid}: id 중복")
         ids.add(pid)
+        if not str(p_.get("title", "")).strip():
+            errs.append(f"{pid}: 제목 없음")
         sents = p_.get("sents") or []
         if not sents:
             errs.append(f"{pid}: 문장이 없어요")
@@ -183,6 +183,8 @@ def validate_reading(d):
                 errs.append(f"{pid} {i + 1}번 문장: 영어 없음")
             elif len(e) != len(k):
                 errs.append(f"{pid} {i + 1}번 문장: 덩어리 수가 달라요 (영어 {len(e)} / 우리말 {len(k)})")
+            if not str(s2.get("full", "")).strip():
+                errs.append(f"{pid} {i + 1}번 문장: 완성 해석 없음")
         for i, q in enumerate(p_.get("qs") or []):
             o = q.get("o") or []
             if not str(q.get("q", "")).strip() or len(o) < 2 or not all(str(x).strip() for x in o) \
@@ -631,31 +633,21 @@ def reading_report(stats):
     wk = [(today - timedelta(days=i)).isoformat() for i in range(7)]
     rr = sum((days.get(x) or {}).get("rRight", 0) for x in wk)
     rw = sum((days.get(x) or {}).get("rWrong", 0) for x in wk)
-
-    def passed(i):
-        r = rs.get(i) or {}
-        return r.get("total", 0) > 0 and r.get("best", 0) * 10 >= r.get("total", 0) * 7
-
-    sets, passages = d.get("sets") or [], d.get("passages") or []
-    st.markdown("##### 🔍 문장해석 · 📄 독해 진도")
-    c1, c2, c3 = st.columns(3)
-    c1.metric("문장해석 통과", f"{sum(passed(x['id']) for x in sets)} / {len(sets)}")
-    c2.metric("독해 통과", f"{sum(passed(x['id']) for x in passages)} / {len(passages)}")
-    c3.metric("해석·독해 7일 정답률", f"{round(rr / (rr + rw) * 100)}%" if (rr + rw) else "-",
-              help=f"최근 7일 {rr + rw}문제 (통과 = 최고 70% 이상)")
-
-    def cell(i):
-        r = rs.get(i)
+    passages = d.get("passages") or []
+    st.markdown("##### 📄 짧은 글 읽기")
+    c1, c2 = st.columns(2)
+    c1.metric("읽은 글", f"{sum(1 for x in passages if x['id'] in rs)} / {len(passages)}")
+    c2.metric("해석·내용 문제 7일 정답률", f"{round(rr / (rr + rw) * 100)}%" if (rr + rw) else "-",
+              help=f"최근 7일 {rr + rw}문제 (문장 공부의 해석 고르기 포함)")
+    rows = []
+    for x in passages:
+        r = rs.get(x["id"])
         if not r:
-            return "-"
-        mark = " ✅" if passed(i) else ""
-        return f"{r.get('best', 0)}/{r.get('total', 0)}{mark} ({r.get('tries', 0)}회)"
-
-    rows = [{"구분": "🔍 해석", "내용": f"{x.get('level', '')} {x.get('title', '')}", "최고": cell(x["id"]),
-             "최근": (rs.get(x["id"]) or {}).get("date", "-")} for x in sets]
-    rows += [{"구분": "📄 독해", "내용": f"{x.get('level', '')} {x.get('title', '')}", "최고": cell(x["id"]),
-              "최근": (rs.get(x["id"]) or {}).get("date", "-")} for x in passages]
-    st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+            continue
+        rows.append({"글": f"{x.get('title', '')} ({x.get('tk', '')})",
+                     "맞힘": f"{r.get('best', 0)}/{r.get('total', 0)}", "횟수": r.get("tries", 0), "최근": r.get("date", "-")})
+    if rows:
+        st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
 
 
 def grammar_report(stats):
@@ -670,31 +662,33 @@ def grammar_report(stats):
     wk = [(today - timedelta(days=i)).isoformat() for i in range(7)]
     gr = sum((days.get(d) or {}).get("gRight", 0) for d in wk)
     gw = sum((days.get(d) or {}).get("gWrong", 0) for d in wk)
-    st.markdown("##### 📐 문법 진도")
+    known = len(stats.get("known") or {})
+
+    def done(u):
+        r = (gs.get(u["id"]) or {}).get("step") or {}
+        return r.get("total", 0) >= 5 and r.get("best", 0) * 10 >= r.get("total", 0) * 7
+
+    st.markdown("##### 🧩 문장 공부")
     c1, c2, c3 = st.columns(3)
-    done = sum(1 for u in g["units"] if (gs.get(u["id"]) or {}).get("basic"))
-    c1.metric("시작한 단원", f"{done} / {len(g['units'])}")
-    c2.metric("최근 7일 문법 문제", gr + gw)
+    c1.metric("익힌 단어", known)
+    c2.metric("완료한 단계", f"{sum(done(u) for u in g['units'])} / {len(g['units'])}",
+              help="문제를 5개 이상 풀고 70% 이상 맞힌 단계")
     c3.metric("최근 7일 문법 정답률", f"{round(gr / (gr + gw) * 100)}%" if (gr + gw) else "-")
 
-    def cell(u, sec):
-        r = (gs.get(u["id"]) or {}).get(sec)
+    def cell(u):
+        r = (gs.get(u["id"]) or {}).get("step")
         if not r:
             return "-"
-        mark = " ✅" if r.get("best", 0) >= r.get("total", 0) > 0 else ""
-        return f"{r.get('best', 0)}/{r.get('total', 0)}{mark} ({r.get('tries', 0)}회)"
+        return f"{r.get('best', 0)}/{r.get('total', 0)}" + (" ✅" if done(u) else "") + f" ({r.get('tries', 0)}회)"
 
-    rows = [{
-        "단원": f"{u.get('level', '')} {u.get('title', '')}",
-        "기본(최고)": cell(u, "basic"),
-        "다지기(최고)": cell(u, "drill"),
-        "최근": max([((gs.get(u["id"]) or {}).get(s) or {}).get("date", "") for s in ("basic", "drill")]) or "-",
-    } for u in g["units"]]
+    rows = [{"단계": f"{i + 1}. {u.get('name', u.get('title', ''))}", "문법": u.get("term", u.get("title", "")),
+             "최고": cell(u), "최근": ((gs.get(u["id"]) or {}).get("step") or {}).get("date", "-")}
+            for i, u in enumerate(g["units"])]
     st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
 
 
 def page_grammar_admin():
-    st.subheader("📐 문법 관리")
+    st.subheader("🧩 문장 공부 관리")
     if not check_admin():
         return
     import json as _j
@@ -703,16 +697,38 @@ def page_grammar_admin():
         st.info("grammar.json 이 없어요 (문법은 중등판 저장소에서만 사용)")
         return
     units = g["units"]
-    labels = [f"{u['id']} · {u.get('level', '')} {u.get('title', '')}" for u in units]
-    pick = st.selectbox("단원", labels)
+    labels = [f"{i + 1}단계 · {u.get('name', u.get('title', ''))} ({u.get('term', u.get('title', ''))})"
+              for i, u in enumerate(units)]
+    pick = st.selectbox("단계", labels)
     u = units[labels.index(pick)]
-    st.caption(f"기본 {len(u.get('basic') or [])}문제 · 다지기 {len(u.get('drill') or [])}문제 · 예문 {len(u.get('examples') or [])}개")
+    st.caption(f"문제 {len(u.get('basic') or []) + len(u.get('drill') or [])}개 · 덩어리 예문 {len(u.get('sents') or [])}개 "
+               "(앱에서는 문제와 예문 해석 고르기가 섞여서 계속 나와요)")
 
-    with st.expander("📖 개념 설명 · 예문 수정"):
-        concept = st.text_area("개념 설명", u.get("concept", ""), height=220, key=f"cc_{u['id']}")
-        ex_text = st.text_area("예문 (한 줄에 하나: 영어 | 우리말)",
+    with st.expander("📖 이름 · 핵심 설명 수정"):
+        c1, c2 = st.columns(2)
+        name = c1.text_input("단계 이름 (쉬운 말)", u.get("name", u.get("title", "")), key=f"nm_{u['id']}")
+        term = c2.text_input("문법 이름 (작게 표시)", u.get("term", u.get("title", "")), key=f"tm_{u['id']}")
+        core_text = st.text_area(
+            "핵심 (덩어리마다 빈 줄로 구분 · 첫 줄은 제목, 다음 줄들은 짧은 예시)",
+            "\n\n".join("\n".join([b.get("h", "")] + list(b.get("lines") or [])) for b in u.get("core") or []),
+            height=240, key=f"co_{u['id']}")
+        concept = st.text_area("예전 개념 설명 (핵심이 비어 있을 때만 앱에 보임)", u.get("concept", ""), height=120,
+                               key=f"cc_{u['id']}")
+        ex_text = st.text_area("예전 예문 (한 줄에 하나: 영어 | 우리말)",
                                "\n".join(f"{e['en']} | {e['ko']}" for e in u.get("examples") or []),
-                               height=140, key=f"ex_{u['id']}")
+                               height=100, key=f"ex_{u['id']}")
+
+    sent_delete = []
+    with st.expander(f"🧩 덩어리 예문 ({len(u.get('sents') or [])})"):
+        for i, x in enumerate(u.get("sents") or []):
+            if st.checkbox(f"{x['en']}  →  {x.get('full', '')}", key=f"sdel_{u['id']}_{i}", help="체크하면 저장할 때 삭제"):
+                sent_delete.append(i)
+        st.markdown("**➕ 예문 추가** (비워 두면 추가 안 함)")
+        s_en = st.text_input("영어 (덩어리 / 로)", key=f"sen_{u['id']}", placeholder="I / lost / my umbrella / yesterday.")
+        s_ko = st.text_input("우리말 덩어리 (같은 개수)", key=f"sko_{u['id']}", placeholder="나는 / 잃어버렸다 / 내 우산을 / 어제")
+        s_ok = _chunk_check(s_en, s_ko)
+        s_full = st.text_input("완성 해석", key=f"sfu_{u['id']}")
+        s_wrong = st.text_area("틀린 해석 (한 줄에 하나, 1~3개 — 헷갈리지만 분명히 틀린 해석)", key=f"swr_{u['id']}")
 
     type_names = {"c": "고르기", "b": "빈칸", "o": "배열"}
     to_delete = []
@@ -754,7 +770,7 @@ def page_grammar_admin():
         if ko.strip() and len(a.split()) >= 2:
             new_q = {"t": "o", "ko": ko.strip(), "a": a.strip().rstrip(".?!"), "x": x.strip()}
 
-    if st.button("💾 문법 저장 → 앱에 적용", type="primary", use_container_width=True):
+    if st.button("💾 이 단계 저장 → 앱에 적용", type="primary", use_container_width=True):
         g2 = _j.loads(_j.dumps(g))
         u2 = next(x for x in g2["units"] if x["id"] == u["id"])
         u2["concept"] = concept.strip()
@@ -765,6 +781,21 @@ def page_grammar_admin():
                 if en.strip() and ko.strip():
                     exs.append({"en": en.strip(), "ko": ko.strip()})
         u2["examples"] = exs
+        u2["name"] = name.strip() or u2.get("title", "")
+        u2["term"] = term.strip() or u2.get("title", "")
+        blocks = []
+        for para in [x for x in core_text.split("\n\n") if x.strip()]:
+            ls = [x.strip() for x in para.splitlines() if x.strip()]
+            blocks.append({"h": ls[0], "lines": ls[1:]})
+        u2["core"] = blocks
+        sents = [x for i, x in enumerate(u2.get("sents") or []) if i not in sent_delete]
+        if s_en.strip():
+            if not s_ok:
+                st.error("추가할 예문의 덩어리 수를 맞춰 주세요")
+                return
+            sents.append({"en": s_en.strip(), "ko": s_ko.strip(), "full": s_full.strip(),
+                          "wrong": [w.strip() for w in s_wrong.splitlines() if w.strip()][:3]})
+        u2["sents"] = sents
         for sec, i in sorted(to_delete, key=lambda t: -t[1]):
             del u2[sec][i]
         if new_q:
@@ -835,7 +866,7 @@ def _chunk_check(en, ko):
 
 
 def page_reading_admin():
-    st.subheader("🔍 문장해석 · 📄 독해 관리")
+    st.subheader("📄 짧은 글 관리")
     if not check_admin():
         return
     import json as _j
@@ -843,94 +874,37 @@ def page_reading_admin():
     if d is None:
         st.info("reading.json 이 없어요 (중등판 저장소에서만 사용)")
         return
-    d.setdefault("sets", [])
     d.setdefault("passages", [])
     st.caption("끊어 읽기는 영어와 우리말을 모두 ' / ' (띄어쓰기-슬래시-띄어쓰기)로 나누고, 덩어리 수를 똑같이 맞춰요.")
-    kind = st.radio("무엇을 관리할까요?", ["🔍 문장해석 세트", "📄 독해 지문", "🛠 전체 JSON"], horizontal=True)
-    lv_opts = ["중1", "중2", "중3"]
+    kind = st.radio("무엇을 할까요?", ["📄 글 추가·수정", "🛠 전체 JSON"], horizontal=True)
 
-    if kind.startswith("🔍"):
-        labels = [f"{x['id']} · {x.get('level', '')} {x.get('title', '')} ({len(x.get('items') or [])}문장)" for x in d["sets"]]
-        pick = st.selectbox("세트", labels + ["➕ 새 세트 만들기"])
-        if pick == "➕ 새 세트 만들기":
-            nid = _next_id([x["id"] for x in d["sets"]], "s")
-            lv = st.selectbox("학년", lv_opts, key="ns_lv")
-            title = st.text_input("세트 제목 (예: 분사구문)", key="ns_title")
-            tip = st.text_area("읽는 요령 (한두 문장)", key="ns_tip")
-            st.caption("세트를 만든 뒤 이 화면에서 문장을 추가하세요. (문장이 1개 이상 있어야 저장돼요)")
-            en = st.text_input("첫 문장 영어 (덩어리 / 로)", key="ns_en")
-            ko = st.text_input("첫 문장 우리말 덩어리 (같은 개수)", key="ns_ko")
-            _chunk_check(en, ko)
-            full = st.text_input("전체 해석 (정답)", key="ns_full")
-            wrong = st.text_area("틀린 해석 (한 줄에 하나, 1~3개)", key="ns_wrong")
-            if st.button("💾 새 세트 저장", type="primary", use_container_width=True):
-                if not title.strip():
-                    st.error("제목을 입력해 주세요")
-                else:
-                    d2 = _j.loads(_j.dumps(d))
-                    d2["sets"].append({"id": nid, "level": lv, "title": title.strip(), "tip": tip.strip(), "items": [{
-                        "en": en.strip(), "ko": ko.strip(), "full": full.strip(),
-                        "wrong": [w.strip() for w in wrong.splitlines() if w.strip()][:3]}]})
-                    _save_reading(d2, f"reading: 새 세트 {nid}")
-            return
-        s_ = d["sets"][labels.index(pick)]
-        with st.expander("✏️ 제목 · 요령 수정"):
-            lv = st.selectbox("학년", lv_opts, index=lv_opts.index(s_.get("level")) if s_.get("level") in lv_opts else 0,
-                              key=f"sl_{s_['id']}")
-            title = st.text_input("제목", s_.get("title", ""), key=f"st_{s_['id']}")
-            tip = st.text_area("읽는 요령", s_.get("tip", ""), key=f"sp_{s_['id']}")
-        to_delete = []
-        with st.expander(f"📋 문장 목록 ({len(s_.get('items') or [])})", expanded=False):
-            for i, it in enumerate(s_.get("items") or []):
-                if st.checkbox(f"{it['en']}  →  {it.get('full', '')}", key=f"sd_{s_['id']}_{i}",
-                               help="체크하면 저장할 때 삭제"):
-                    to_delete.append(i)
-        st.markdown("**➕ 문장 추가** (비워 두면 추가 안 함)")
-        en = st.text_input("영어 (덩어리 / 로)", key=f"se_{s_['id']}", placeholder="My little brother / plays games / after dinner")
-        ko = st.text_input("우리말 덩어리 (같은 개수)", key=f"sk_{s_['id']}", placeholder="내 남동생은 / 게임을 한다 / 저녁 식사 후에")
-        ok_chunks = _chunk_check(en, ko)
-        full = st.text_input("전체 해석 (정답)", key=f"sf_{s_['id']}")
-        wrong = st.text_area("틀린 해석 (한 줄에 하나, 1~3개 — 헷갈리지만 분명히 틀린 해석)", key=f"sw_{s_['id']}")
-        new_item = None
-        if en.strip():
-            new_item = {"en": en.strip(), "ko": ko.strip(), "full": full.strip(),
-                        "wrong": [w.strip() for w in wrong.splitlines() if w.strip()][:3]}
-        if st.button("💾 세트 저장 → 앱에 적용", type="primary", use_container_width=True):
-            if new_item and not ok_chunks:
-                st.error("추가할 문장의 덩어리 수를 맞춰 주세요")
-            else:
-                d2 = _j.loads(_j.dumps(d))
-                s2 = next(x for x in d2["sets"] if x["id"] == s_["id"])
-                s2.update({"level": lv, "title": title.strip(), "tip": tip.strip()})
-                for i in sorted(to_delete, reverse=True):
-                    del s2["items"][i]
-                if new_item:
-                    s2["items"].append(new_item)
-                _save_reading(d2, f"reading: {s2['id']} 수정")
-
-    elif kind.startswith("📄"):
-        labels = [f"{x['id']} · {x.get('level', '')} {x.get('title', '')}" for x in d["passages"]]
-        pick = st.selectbox("지문", labels + ["➕ 새 지문 만들기"])
-        new = pick == "➕ 새 지문 만들기"
-        p_ = {"id": _next_id([x["id"] for x in d["passages"]], "r"), "level": "중1", "title": "",
+    if kind.startswith("📄"):
+        labels = [f"{x['id']} · {x.get('title', '')} ({x.get('tk', '')})" for x in d["passages"]]
+        pick = st.selectbox("글", labels + ["➕ 새 글 만들기"])
+        new = pick == "➕ 새 글 만들기"
+        p_ = {"id": _next_id([x["id"] for x in d["passages"]], "p"), "title": "", "tk": "",
               "sents": [], "qs": [], "words": []} if new else d["passages"][labels.index(pick)]
         k = p_["id"]
-        c1, c2 = st.columns([1, 3])
-        lv = c1.selectbox("학년", lv_opts, index=lv_opts.index(p_.get("level")) if p_.get("level") in lv_opts else 0, key=f"pl_{k}")
-        title = c2.text_input("제목 (영어)", p_.get("title", ""), key=f"pt_{k}")
-        body = st.text_area("본문 — 한 줄에 한 문장:  영어 덩어리 | 우리말 덩어리",
-                            "\n".join(f"{s2['en']} | {s2['ko']}" for s2 in p_.get("sents") or []), height=260, key=f"pb_{k}",
-                            placeholder="Every morning, / I / walk to school. | 매일 아침 / 나는 / 학교에 걸어간다")
+        c1, c2 = st.columns(2)
+        title = c1.text_input("제목 (영어)", p_.get("title", ""), key=f"pt_{k}")
+        tk = c2.text_input("제목 (우리말)", p_.get("tk", ""), key=f"pk_{k}")
+        body = st.text_area("본문 — 한 줄에 한 문장:  영어 덩어리 | 우리말 덩어리 | 완성 해석",
+                            "\n".join(f"{s2['en']} | {s2['ko']} | {s2.get('full', '')}" for s2 in p_.get("sents") or []),
+                            height=300, key=f"pb_{k}",
+                            placeholder="Every morning, / I / walk to work. | 매일 아침 / 나는 / 걸어서 출근한다 | 나는 매일 아침 걸어서 출근한다.")
         sents, bad = [], []
         for n, line in enumerate(body.splitlines(), 1):
             if not line.strip():
                 continue
-            if "|" not in line:
-                bad.append(f"{n}번 줄: | 로 영어와 우리말을 나눠 주세요"); continue
-            en, ko = [x.strip() for x in line.split("|", 1)]
+            parts = [x.strip() for x in line.split("|")]
+            if len(parts) < 3:
+                bad.append(f"{n}번 줄: 영어 | 우리말 덩어리 | 완성 해석 세 칸이 필요해요"); continue
+            en, ko, full = parts[0], parts[1], "|".join(parts[2:]).strip()
             if len(_chunks(en)) != len(_chunks(ko)):
                 bad.append(f"{n}번 줄: 덩어리 수가 달라요 (영어 {len(_chunks(en))} / 우리말 {len(_chunks(ko))})")
-            sents.append({"en": en, "ko": ko})
+            if not full:
+                bad.append(f"{n}번 줄: 완성 해석이 비어 있어요")
+            sents.append({"en": en, "ko": ko, "full": full})
         if bad:
             st.warning("\n".join(bad[:8]))
         elif sents:
@@ -943,18 +917,21 @@ def page_reading_admin():
                 ans = q["o"][q["a"]] if 0 <= q.get("a", -1) < len(q.get("o") or []) else "?"
                 if st.checkbox(f"{q['q']}  →  {ans}", key=f"pq_{k}_{i}", help="체크하면 저장할 때 삭제"):
                     to_delete.append(i)
-        st.markdown("**➕ 문제 추가** (비워 두면 추가 안 함)")
+        st.markdown("**➕ 문제 추가** (비워 두면 추가 안 함 · 유형은 [주제] [빈칸] 처럼 앞에 표시)")
         q = st.text_input("문제", key=f"nq_{k}")
-        opts = [st.text_input(f"보기 {n + 1}", key=f"no_{k}_{n}") for n in range(4)]
-        a = st.radio("정답", [1, 2, 3, 4], horizontal=True, key=f"na_{k}")
+        opts = [st.text_input(f"보기 {n + 1}" + (" (없어도 됨)" if n == 4 else ""), key=f"no_{k}_{n}") for n in range(5)]
+        a = st.radio("정답", [1, 2, 3, 4, 5], horizontal=True, key=f"na_{k}")
         x = st.text_input("해설 (근거 문장 등)", key=f"nx_{k}")
-        if st.button("💾 지문 저장 → 앱에 적용", type="primary", use_container_width=True):
+        if st.button("💾 글 저장 → 앱에 적용", type="primary", use_container_width=True):
+            used = [o.strip() for o in opts if o.strip()]
             if not title.strip() or not sents:
                 st.error("제목과 본문을 입력해 주세요")
             elif bad:
                 st.error("본문 줄을 먼저 고쳐 주세요")
-            elif q.strip() and not all(o.strip() for o in opts):
-                st.error("보기 4개를 모두 입력해 주세요")
+            elif q.strip() and (len(used) < 4 or any(not o.strip() for o in opts[:4])):
+                st.error("보기를 4개 이상(1~4번은 꼭) 입력해 주세요")
+            elif q.strip() and int(a) > len(used):
+                st.error("정답 번호에 해당하는 보기가 없어요")
             else:
                 d2 = _j.loads(_j.dumps(d))
                 wl = []
@@ -965,15 +942,15 @@ def page_reading_admin():
                             wl.append({"en": w1, "ko": w2})
                 qs = [qq for i, qq in enumerate(p_.get("qs") or []) if i not in to_delete]
                 if q.strip():
-                    qs.append({"q": q.strip(), "o": [o.strip() for o in opts], "a": int(a) - 1, "x": x.strip()})
-                np_ = {"id": k, "level": lv, "title": title.strip(), "sents": sents, "qs": qs, "words": wl}
+                    qs.append({"q": q.strip(), "o": used, "a": int(a) - 1, "x": x.strip()})
+                np_ = {"id": k, "title": title.strip(), "tk": tk.strip(), "sents": sents, "qs": qs, "words": wl}
                 if new:
                     d2["passages"].append(np_)
                 else:
                     d2["passages"] = [np_ if pp["id"] == k else pp for pp in d2["passages"]]
-                _save_reading(d2, f"reading: 지문 {k} " + ("추가" if new else "수정"))
-
+                _save_reading(d2, f"reading: 글 {k} " + ("추가" if new else "수정"))
     else:
+        st.caption("글 삭제·순서 바꾸기는 여기서 해요. 저장 전에 자동으로 검사해요.")
         raw = st.text_area("reading.json", _j.dumps(d, ensure_ascii=False, indent=1), height=360)
         if st.button("검사 후 저장", key="raw_reading"):
             try:
@@ -1203,9 +1180,9 @@ words = load_words()
 st.markdown(f"## {APP_ICON} {APP_TITLE}")
 _menu = ["📖 단어 배우기", "🎯 퀴즈", "📊 학습 리포트", "⚙️ 단어 관리"]
 if os.path.exists(GRAMMAR_FILE):
-    _menu.append("📐 문법 관리")
+    _menu.append("📐 문장 공부 관리")
 if os.path.exists(READING_FILE):
-    _menu.append("🔍 해석·독해 관리")
+    _menu.append("📄 짧은 글 관리")
 tab = st.sidebar.radio("메뉴", _menu)
 if tab.startswith("📖"):
     page_learn(words)
@@ -1215,7 +1192,7 @@ elif tab.startswith("📊"):
     page_report(words)
 elif tab.startswith("📐"):
     page_grammar_admin()
-elif tab.startswith("🔍"):
+elif tab.startswith("📄"):
     page_reading_admin()
 else:
     page_admin(words)
