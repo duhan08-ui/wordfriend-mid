@@ -52,15 +52,24 @@ jobs:
                   except Exception:
                       pass
 
-              try:
-                  page.wait_for_selector("[data-testid='stAppViewContainer']", timeout=120000)
-                  print("앱 화면 확인됨")
-              except Exception:
-                  print("앱 화면 셀렉터 대기 실패 - 스냅샷으로 확인")
+              # Streamlit Cloud 는 앱을 iframe(/~/+/) 안에 띄움 → 모든 프레임에서 앱 화면을 찾음
+              app = None
+              for _ in range(24):
+                  for fr in page.frames:
+                      try:
+                          if fr.query_selector("[data-testid='stAppViewContainer']"):
+                              app = fr
+                              break
+                      except Exception:
+                          pass
+                  if app:
+                      break
+                  page.wait_for_timeout(5000)
+              print("앱 화면 확인됨" if app else "앱 화면 확인 실패 - 잠들었거나 로딩 지연")
 
               page.wait_for_timeout(45000)
 
-              body = page.inner_text("body")[:300]
+              body = (app or page).inner_text("body")[:300]
               print("본문 미리보기:", body.replace("\n", " ")[:200])
               browser.close()
               print("완료")
