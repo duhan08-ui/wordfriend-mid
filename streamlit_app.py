@@ -1147,6 +1147,25 @@ def page_admin(words):
         index=int(_cfg.get("speakLeniency", 2)),
         format_func=lambda v: {0:"0 엄격", 1:"1 보통", 2:"2 관대(기본)", 3:"3 매우 관대"}[v])
     st.caption("말하기 인식이 자꾸 실패하면 관대함을 3으로 올려보세요. 아무 소리나 통과되면 1로 낮추세요.")
+    _rm_on, _rm_time, _rm_days, _rm_msg = _cfg.get("remind", 1), _cfg.get("remindTime", "20:00"), \
+        _cfg.get("remindDays", "1234567"), _cfg.get("remindMsg", "")
+    if not SHOW_STARS:   # 중등판: 하루 한 번 공부 알림
+        import datetime as _dt
+        st.markdown("**🔔 공부 알림** — 그날 아직 공부하지 않았을 때만, 알람 화면 + 알림으로 한 번 울려요")
+        _rm_on = 1 if st.checkbox("알림 켜기", value=bool(int(_cfg.get("remind", 1)))) else 0
+        ra, rb = st.columns([1, 2])
+        try:
+            _h, _m = [int(x) for x in str(_rm_time).split(":")[:2]]
+            _t0 = _dt.time(_h, _m)
+        except Exception:
+            _t0 = _dt.time(20, 0)
+        _t = ra.time_input("알림 시간", value=_t0, step=300)
+        _rm_time = f"{_t.hour:02d}:{_t.minute:02d}"
+        _names = ["월", "화", "수", "목", "금", "토", "일"]
+        _sel = rb.multiselect("요일", _names, default=[_names[int(c) - 1] for c in str(_rm_days) if c in "1234567"] or _names)
+        _rm_days = "".join(str(_names.index(n) + 1) for n in _names if n in _sel) or "1234567"
+        _rm_msg = st.text_input("알림 문구 (비우면 '오늘 영어, 잠깐 들러 볼까요?')", value=str(_cfg.get("remindMsg", "")), max_chars=40)
+        st.caption("'30분 뒤에 다시'를 누르면 30분 뒤 한 번 더 울려요. 시간을 바꾸면 친구 폰이 다음에 앱을 열 때 적용돼요.")
     _abc = st.checkbox("🔤 홈에 '알파벳 소리' 버튼 보이기 (파닉스용 · 중등판은 보통 끔)",
                        value=bool(_cfg.get("showAbc", 0)))
     _child = st.text_input("👤 아이 이름 (학습 리포트·관리자 앱에 표시 · 비우면 폰 기종 이름)",
@@ -1170,6 +1189,10 @@ def page_admin(words):
             "ttsSlow": float(_cfg.get("ttsSlow", 0.45)),
             "ttsNormal": float(_cfg.get("ttsNormal", 0.8)),
             "weakFirst": int(_cfg.get("weakFirst", 7)),
+            "remind": int(_rm_on),
+            "remindTime": str(_rm_time),
+            "remindDays": str(_rm_days),
+            "remindMsg": str(_rm_msg).strip(),
         }).encode("utf-8")
         try:
             commit_files({"config.json": body}, "config: 원격 설정 변경")
