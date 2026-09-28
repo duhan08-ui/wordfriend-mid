@@ -363,18 +363,33 @@ def page_quiz(words):
 # ---------- 관리 (보호자) ----------
 
 def gh(path, method="GET", **kw):
-    r = requests.request(
-        method,
-        f"https://api.github.com/repos/{st.secrets['GH_REPO']}/{path}",
-        headers={
-            "Authorization": f"Bearer {st.secrets['GH_TOKEN']}",
-            "Accept": "application/vnd.github+json",
-        },
-        timeout=30,
-        **kw,
-    )
-    r.raise_for_status()
-    return r.json()
+    """GitHub API 호출. 일시적 오류(5xx·429·시간 초과)는 잠깐 쉬었다가 최대 5번까지 다시 시도
+    (발음 파일 수백 개를 올리다 한 번 504가 나도 그동안 만든 게 날아가지 않게)"""
+    import time as _time
+    last = None
+    for attempt in range(5):
+        try:
+            r = requests.request(
+                method,
+                f"https://api.github.com/repos/{st.secrets['GH_REPO']}/{path}",
+                headers={
+                    "Authorization": f"Bearer {st.secrets['GH_TOKEN']}",
+                    "Accept": "application/vnd.github+json",
+                },
+                timeout=60,
+                **kw,
+            )
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+            last = e
+            _time.sleep(2 * (attempt + 1))
+            continue
+        if r.status_code >= 500 or r.status_code == 429:
+            last = requests.HTTPError(f"{r.status_code} {r.reason}", response=r)
+            _time.sleep(2 * (attempt + 1))
+            continue
+        r.raise_for_status()
+        return r.json()
+    raise last
 
 
 def commit_files(files: dict, message: str):
