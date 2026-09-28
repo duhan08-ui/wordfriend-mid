@@ -27,6 +27,7 @@ APP_TITLE = _secret("APP_TITLE", "단어친구")
 SUPA_TABLE = _secret("SUPA_TABLE", "wf_stats")   # 중등판: wf_stats_mid
 MAX_TTS_PER_SAVE = int(_secret("MAX_TTS_PER_SAVE", 250))  # 한 번 저장에 만드는 발음 최대 수
 
+SHOW_STARS = not SUPA_TABLE.endswith("_mid")   # 중등판은 별 제도 없음 → 리포트·설정에서 별 숨김
 APP_ICON = _secret("APP_ICON", "📘" if SUPA_TABLE.endswith("_mid") else "🦓")
 
 st.set_page_config(page_title=APP_TITLE, page_icon=APP_ICON, layout="centered")
@@ -400,16 +401,21 @@ def page_report(words):
     _star_all = sum((_o or {}).get("stars", 0) for _o in days.values())
     _star_today = (days.get(_today.isoformat()) or {}).get("stars", 0)
 
-    st.markdown("##### ⭐ 모은 별")
-    _sc1, _sc2, _sc3 = st.columns(3)
-    _sc1.metric("오늘", f"⭐{_star_today}")
-    _sc2.metric("이번 주 (월~일)", f"⭐{_wk_star}")
-    _sc3.metric("지금까지 모두", f"⭐{_star_all}")
+    if SHOW_STARS:
+        st.markdown("##### ⭐ 모은 별")
+        _sc1, _sc2, _sc3 = st.columns(3)
+        _sc1.metric("오늘", f"⭐{_star_today}")
+        _sc2.metric("이번 주 (월~일)", f"⭐{_wk_star}")
+        _sc3.metric("지금까지 모두", f"⭐{_star_all}")
 
     st.markdown("##### 📅 이번 주 요약 (월~일)")
     _wc1, _wc2, _wc3, _wc4 = st.columns(4)
     _wc1.metric("공부 시간", f"{_wk_play//60}분")
-    _wc2.metric("받은 별", f"⭐{_wk_star}")
+    if SHOW_STARS:
+        _wc2.metric("받은 별", f"⭐{_wk_star}")
+    else:
+        _wk_rate = round(_wk_r / (_wk_r + _wk_w) * 100) if (_wk_r + _wk_w) else 0
+        _wc2.metric("정답률", f"{_wk_rate}%" if (_wk_r + _wk_w) else "-")
     _wc3.metric("학습한 날", f"{_wk_days}일")
     _wc4.metric("정답/오답", f"{_wk_r}/{_wk_w}")
     import pandas as _pd
@@ -444,7 +450,7 @@ def page_report(words):
                 "⭕": days[k].get("right", 0),
                 "❌": days[k].get("wrong", 0),
                 "🎤": days[k].get("speak", 0),
-                "⭐": days[k].get("stars", 0),
+                **({"⭐": days[k].get("stars", 0)} if SHOW_STARS else {}),
             }
             for k in keys
         ],
@@ -593,15 +599,22 @@ def page_admin(words):
         except Exception:
             pass
     st.markdown("**학습 흐름 (새 단어 묶음제)**")
-    st.caption("새 단어 N개 배우기 → 그 N개 섞어서 퀴즈 → 다 맞으면 ⭐ 지급 · "
-               "틀리면 틀린 단어 배우고 다시 → 하루 상한까지")
+    st.caption("새 단어 N개 배우기 → 그 N개로 퀴즈 → 다 맞으면 통과 · 틀리면 틀린 단어 배우고 다시"
+               + (" → 하루 상한까지" if SHOW_STARS else ""))
     bc1, bc2 = st.columns(2)
     _batch = bc1.number_input("새 단어 묶음 크기 (= 퀴즈 문제 수)", 3, 50,
                               int(_cfg.get("batchSize", 10)))
-    _cap = bc2.number_input("하루 별 상한 (0=무제한)", 0, 200, int(_cfg.get("dailyStarCap", 10)))
+    if SHOW_STARS:
+        _cap = bc2.number_input("하루 별 상한 (0=무제한)", 0, 200, int(_cfg.get("dailyStarCap", 10)))
+    else:
+        _cap = 0
+        bc2.caption("중등판은 별·하루 상한이 없어요 (진도는 5가지 퀴즈 통과로만)")
     _bstar = int(_cfg.get("batchStar", 5))  # (미사용 · 모드별 1개 고정)
-    st.caption("퀴즈는 5가지(듣기·영어·한글·섞어서·철자)이고 각 만점마다 ⭐1개 → 한 묶음에서 최대 ⭐5개. "
-               f"하루 상한 {int(_cap)}개면 하루 최대 {int(_cap)//5 if _cap else '∞'}묶음까지 별을 받아요 (그 뒤엔 공부만).")
+    if SHOW_STARS:
+        st.caption("퀴즈는 5가지(듣기·영어·한글·섞어서·철자)이고 각 만점마다 ⭐1개 → 한 묶음에서 최대 ⭐5개. "
+                   f"하루 상한 {int(_cap)}개면 하루 최대 {int(_cap)//5 if _cap else '∞'}묶음까지 별을 받아요 (그 뒤엔 공부만).")
+    else:
+        st.caption("퀴즈 5가지(듣기·영어·한글·섞어서·철자)를 모두 만점으로 통과하면 다음 새 단어 묶음으로 넘어가요.")
 
     _stage = st.checkbox("📘 단원제 (단원을 순서대로 · 한 단원 익히면 다음 단원 해금)",
                          value=bool(_cfg.get("stageMode", 1)))
